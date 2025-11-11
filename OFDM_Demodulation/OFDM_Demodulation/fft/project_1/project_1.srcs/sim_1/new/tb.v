@@ -11,8 +11,8 @@ module tb();
 	always #5 clk = ~clk;
 	//reset active high
 	initial begin
-		#0 rst =0; i_fwd =0; i_trigger_cp=0; i_start_symbol=0;
-		#100 rst =1;
+		#0 rst =1; i_fwd =0; i_trigger_cp=0; i_start_symbol=0;
+		#100 rst =0;
 	end
 	//instance fft
 	fft fft_v0(clk, rst, i_fwd, i_trigger_cp, i_start_symbol, i_imag_pucch_ofdm, i_real_pucch_ofdm, 
