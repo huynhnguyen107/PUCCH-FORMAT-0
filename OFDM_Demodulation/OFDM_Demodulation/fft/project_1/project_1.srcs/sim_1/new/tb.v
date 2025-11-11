@@ -15,11 +15,13 @@ module tb();
 		#100 rst =1;
 	end
 	//instance fft
+	fft fft_v0(clk, rst, i_fwd, i_trigger_cp, i_start_symbol, i_imag_pucch_ofdm, i_real_pucch_ofdm, 
+				o_imag_pucch_ofdm, o_real_pucch_ofdm, o_valid);
 	
 	
 	//stimulation of data
 	initial begin
-		wait (!rst);
+		wait (!rst); 
 		@(posedge clk) begin
 			i_fwd <= 1;
 			i_trigger_cp <= 1;
