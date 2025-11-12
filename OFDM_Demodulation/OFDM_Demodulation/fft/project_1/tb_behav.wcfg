@@ -12,133 +12,53 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="75000fs"></ZoomStartTime>
-      <ZoomEndTime time="83575001fs"></ZoomEndTime>
-      <Cursor1Time time="17875000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="61800001fs"></ZoomEndTime>
+      <Cursor1Time time="51500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+      <ValueColumnWidth column_width="125"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="30" />
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/clk" type="logic">
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/rst" type="logic">
+   <wvobject fp_name="/tb/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_trigger_cp" type="logic">
+   <wvobject fp_name="/tb/i_fwd" type="logic">
+      <obj_property name="ElementShortName">i_fwd</obj_property>
+      <obj_property name="ObjectShortName">i_fwd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i_trigger_cp" type="logic">
       <obj_property name="ElementShortName">i_trigger_cp</obj_property>
       <obj_property name="ObjectShortName">i_trigger_cp</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_start_symbol" type="logic">
+   <wvobject fp_name="/tb/i_start_symbol" type="logic">
       <obj_property name="ElementShortName">i_start_symbol</obj_property>
       <obj_property name="ObjectShortName">i_start_symbol</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_img_pucch_ofdm" type="array">
-      <obj_property name="ElementShortName">i_img_pucch_ofdm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">i_img_pucch_ofdm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_real_pucch_ofdm" type="array">
-      <obj_property name="ElementShortName">i_real_pucch_ofdm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">i_real_pucch_ofdm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_fwd" type="logic">
-      <obj_property name="ElementShortName">o_fwd</obj_property>
-      <obj_property name="ObjectShortName">o_fwd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_trigger_cp" type="logic">
-      <obj_property name="ElementShortName">o_trigger_cp</obj_property>
-      <obj_property name="ObjectShortName">o_trigger_cp</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_start_symbol" type="logic">
-      <obj_property name="ElementShortName">o_start_symbol</obj_property>
-      <obj_property name="ObjectShortName">o_start_symbol</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_imag_pucch_ofdm" type="array">
-      <obj_property name="ElementShortName">o_imag_pucch_ofdm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">o_imag_pucch_ofdm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_real_pucch_ofdm" type="array">
-      <obj_property name="ElementShortName">o_real_pucch_ofdm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">o_real_pucch_ofdm[15:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_data_valid" type="logic">
       <obj_property name="ElementShortName">o_data_valid</obj_property>
       <obj_property name="ObjectShortName">o_data_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_data_last" type="logic">
-      <obj_property name="ElementShortName">o_data_last</obj_property>
-      <obj_property name="ObjectShortName">o_data_last</obj_property>
+   <wvobject fp_name="/tb/i_imag_pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">i_imag_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_imag_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_tready" type="logic">
-      <obj_property name="ElementShortName">o_tready</obj_property>
-      <obj_property name="ObjectShortName">o_tready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_aclken" type="logic">
-      <obj_property name="ElementShortName">o_aclken</obj_property>
-      <obj_property name="ObjectShortName">o_aclken</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_trigger_cp" type="logic">
-      <obj_property name="ElementShortName">i_trigger_cp</obj_property>
-      <obj_property name="ObjectShortName">i_trigger_cp</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_start_symbol" type="logic">
-      <obj_property name="ElementShortName">i_start_symbol</obj_property>
-      <obj_property name="ObjectShortName">i_start_symbol</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_img_pucch_ofdm" type="array">
-      <obj_property name="ElementShortName">i_img_pucch_ofdm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">i_img_pucch_ofdm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_real_pucch_ofdm" type="array">
+   <wvobject fp_name="/tb/i_real_pucch_ofdm" type="array">
       <obj_property name="ElementShortName">i_real_pucch_ofdm[15:0]</obj_property>
       <obj_property name="ObjectShortName">i_real_pucch_ofdm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_fwd" type="logic">
-      <obj_property name="ElementShortName">o_fwd</obj_property>
-      <obj_property name="ObjectShortName">o_fwd</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_trigger_cp" type="logic">
-      <obj_property name="ElementShortName">o_trigger_cp</obj_property>
-      <obj_property name="ObjectShortName">o_trigger_cp</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_start_symbol" type="logic">
-      <obj_property name="ElementShortName">o_start_symbol</obj_property>
-      <obj_property name="ObjectShortName">o_start_symbol</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_imag_pucch_ofdm" type="array">
-      <obj_property name="ElementShortName">o_imag_pucch_ofdm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">o_imag_pucch_ofdm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_real_pucch_ofdm" type="array">
-      <obj_property name="ElementShortName">o_real_pucch_ofdm[15:0]</obj_property>
-      <obj_property name="ObjectShortName">o_real_pucch_ofdm[15:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_data_valid" type="logic">
-      <obj_property name="ElementShortName">o_data_valid</obj_property>
-      <obj_property name="ObjectShortName">o_data_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_data_last" type="logic">
-      <obj_property name="ElementShortName">o_data_last</obj_property>
-      <obj_property name="ObjectShortName">o_data_last</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_tready" type="logic">
-      <obj_property name="ElementShortName">o_tready</obj_property>
-      <obj_property name="ObjectShortName">o_tready</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_aclken" type="logic">
-      <obj_property name="ElementShortName">o_aclken</obj_property>
-      <obj_property name="ObjectShortName">o_aclken</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
 </wave_config>
