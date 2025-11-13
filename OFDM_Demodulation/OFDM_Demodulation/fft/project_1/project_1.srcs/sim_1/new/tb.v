@@ -7,7 +7,8 @@ module tb;
   always #0.5 clk = ~clk;         // 100 MHz
 
   // ===== DUT I/O =====
-  reg        i_fwd, i_trigger_cp, i_start_symbol;
+  reg        i_fwd, i_start_symbol;
+  reg  		  [11:0] i_trigger_cp;
   reg signed [15:0] i_imag_pucch_ofdm, i_real_pucch_ofdm;  // signed 16.15 in two’s-complement
 
   wire signed [15:0] o_imag_pucch_ofdm, o_real_pucch_ofdm; // signed 16.15 in two’s-complement
@@ -20,7 +21,7 @@ module tb;
   reg [15:0] I_mem [0:NUM_SAMPLES-1];  // raw 16-bit words from I.mem
   reg [15:0] Q_mem [0:NUM_SAMPLES-1];  // raw 16-bit words from Q.mem
   integer idx;
-  integer n, k;
+  integer n, cycle, slot;
 
   // ===== Read stimulus files =====
   initial begin
@@ -55,36 +56,29 @@ module tb;
   initial begin
 
 	wait(!rst);      
-    @(posedge clk) begin
-      i_fwd          <= 1;
-      i_trigger_cp   <= 1;
-      i_start_symbol <= 1;
-    end
-    @(posedge clk) begin
-      i_trigger_cp   <= 0;
-      i_start_symbol <= 0;
-    end
-	//symbol 0 cp 352
-    repeat (4384+352-288-2) @(posedge clk); 
-	@(posedge clk)
-	begin
-	  i_trigger_cp   <= 0;
-      i_start_symbol <= 1;
-	end
-	@(posedge clk) begin
-      i_trigger_cp   <= 0;
-      i_start_symbol <= 0;
-	end
-	//symbol from 1-13 -cp 288
-    for (n = 0; n < 13; n = n + 1) begin
-		// wait GAP cycles
-		for (k = 0; k < 4384-2; k = k + 1) @(posedge clk);
+	i_fwd <= 1;
+	for (slot = 0; slot < 19; slot= slot +1) begin
 		// 1-cycle pulse
-		@(posedge clk) i_start_symbol <= 1;
-		@(posedge clk) i_start_symbol <= 0;
-	  end
-
-	
+		 @(posedge clk) begin
+		  i_trigger_cp   <= 352;
+		  i_start_symbol <= 1;
+		end
+		@(posedge clk) begin
+			i_start_symbol <= 0;
+		end
+		//symbol 0 cp 352
+		for (cycle = 0; cycle < 4384+352-288-2; cycle = cycle + 1) @(posedge clk);
+		//symbol from 1-13 -cp 288
+		for (n = 0; n < 13; n = n + 1) begin
+			// 1-cycle pulse
+			@(posedge clk) begin
+				i_start_symbol <= 1;
+				i_trigger_cp   <= 288;
+			end 
+			@(posedge clk) i_start_symbol <= 0;
+			for (cycle = 0; cycle < 4384-2; cycle = cycle + 1) @(posedge clk);
+		  end
+	end  
 	
   end
   

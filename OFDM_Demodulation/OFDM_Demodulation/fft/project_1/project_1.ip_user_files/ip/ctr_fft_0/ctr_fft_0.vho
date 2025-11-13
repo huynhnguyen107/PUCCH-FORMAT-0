@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:ctr_fft:1.0
--- IP Revision: 2
+-- IP Revision: 5
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -56,12 +56,12 @@ COMPONENT ctr_fft_0
   PORT (
     clk : IN STD_LOGIC;
     rst : IN STD_LOGIC;
-    i_trigger_cp : IN STD_LOGIC;
+    i_trigger_cp : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
     i_start_symbol : IN STD_LOGIC;
     i_img_pucch_ofdm : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     i_real_pucch_ofdm : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     o_fwd : OUT STD_LOGIC;
-    o_trigger_cp : OUT STD_LOGIC;
+    o_trigger_cp : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
     o_start_symbol : OUT STD_LOGIC;
     o_imag_pucch_ofdm : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     o_real_pucch_ofdm : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);

@@ -24,7 +24,7 @@ module fft #(parameter DATA_WIDTH=16)(
 		input clk,
 		input rst,
 		input i_fwd,
-		input i_trigger_cp,
+		input [11:0] i_trigger_cp,
 		input i_start_symbol,
 		input [DATA_WIDTH-1:0] i_imag_pucch_ofdm,
 		input [DATA_WIDTH-1:0] i_real_pucch_ofdm,
@@ -33,10 +33,12 @@ module fft #(parameter DATA_WIDTH=16)(
 		output  o_valid
     );
 	wire o_fwd;
-	wire o_trigger_cp;
+	wire [11:0] o_trigger_cp;
 	wire o_start_symbol;
 	wire [DATA_WIDTH-1:0] imag_pucch_ofdm;
 	wire [DATA_WIDTH-1:0] real_pucch_ofdm;
+	wire [32-1:0] imag_pucch_ofdm_1;
+	wire [32-1:0] real_pucch_ofdm_1;
 	wire [2*DATA_WIDTH-1:0] s_axis_data_tdata;
 	wire [63:0] m_axis_data_tdata;
 	wire o_data_valid;
@@ -47,12 +49,12 @@ module fft #(parameter DATA_WIDTH=16)(
 	ctr_fft_0 ctr_fft_v0 (
 	  .clk(clk),                              // input wire clk
 	  .rst(rst),                              // input wire rst
-	  .i_trigger_cp(i_trigger_cp),            // input wire i_trigger_cp
+	  .i_trigger_cp(i_trigger_cp),            // input wire [11 : 0] i_trigger_cp
 	  .i_start_symbol(i_start_symbol),        // input wire i_start_symbol
 	  .i_img_pucch_ofdm(i_imag_pucch_ofdm),    // input wire [15 : 0] i_img_pucch_ofdm
 	  .i_real_pucch_ofdm(i_real_pucch_ofdm),  // input wire [15 : 0] i_real_pucch_ofdm
 	  .o_fwd(o_fwd),                          // output wire o_fwd
-	  .o_trigger_cp(o_trigger_cp),            // output wire o_trigger_cp
+	  .o_trigger_cp(o_trigger_cp),            // output wire [11 : 0] o_trigger_cp
 	  .o_start_symbol(o_start_symbol),        // output wire o_start_symbol
 	  .o_imag_pucch_ofdm(imag_pucch_ofdm),  // output wire [15 : 0] o_imag_pucch_ofdm
 	  .o_real_pucch_ofdm(real_pucch_ofdm),  // output wire [15 : 0] o_real_pucch_ofdm
@@ -61,12 +63,13 @@ module fft #(parameter DATA_WIDTH=16)(
 	  .o_tready(o_tready),                    // output wire o_tready
 	  .o_aclken(o_aclken)                    // output wire o_aclken
 	);
-	assign s_axis_data_tdata = {imag_pucch_ofdm, real_pucch_ofdm};
+	// assign s_axis_data_tdata = {imag_pucch_ofdm, real_pucch_ofdm};
+	assign s_axis_data_tdata = {real_pucch_ofdm, imag_pucch_ofdm};
 	//instance FFT
 	xfft_0 fft (
 	  .aclk(clk),                                                // input wire aclk
 	  .aclken(o_aclken),                                            // input wire aclken
-	  .s_axis_config_tdata(o_trigger_cp),                  // input wire [23 : 0] s_axis_config_tdata
+	  .s_axis_config_tdata({12'd0,o_trigger_cp}),                  // input wire [23 : 0] s_axis_config_tdata
 	  .s_axis_config_tvalid(o_start_symbol),                // input wire s_axis_config_tvalid
 	  .s_axis_config_tready(),                // output wire s_axis_config_tready
 	  .s_axis_data_tdata(s_axis_data_tdata),                      // input wire [31 : 0] s_axis_data_tdata
@@ -86,5 +89,7 @@ module fft #(parameter DATA_WIDTH=16)(
 	);
 	assign o_valid = m_axis_data_tvalid;
 	assign o_imag_pucch_ofdm = m_axis_data_tdata [63:32];
+	assign imag_pucch_ofdm_1 = m_axis_data_tdata [63:32];
 	assign o_real_pucch_ofdm = m_axis_data_tdata [31:0];
+	assign real_pucch_ofdm_1 = m_axis_data_tdata [31:0];
 endmodule

@@ -39,7 +39,7 @@ module tb ();
 	@(posedge clk)
 	i_start_symbol <= 0;
 	#44960;
-    $finish;
+    //$finish;
   end
 
 endmodule
