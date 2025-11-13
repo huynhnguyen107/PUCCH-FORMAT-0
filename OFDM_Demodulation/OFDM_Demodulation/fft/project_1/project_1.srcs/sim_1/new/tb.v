@@ -61,7 +61,7 @@ module tb;
 		// 1-cycle pulse
 		 @(posedge clk) begin
 		  i_trigger_cp   <= 352;
-		  i_start_symbol <= 1;
+		  i_start_symbol <= (slot==4|slot==9|slot==14|slot==19) ? 1:0;
 		end
 		@(posedge clk) begin
 			i_start_symbol <= 0;
@@ -72,7 +72,7 @@ module tb;
 		for (n = 0; n < 13; n = n + 1) begin
 			// 1-cycle pulse
 			@(posedge clk) begin
-				i_start_symbol <= 1;
+				i_start_symbol <= (slot==4|slot==9|slot==14|slot==19) ? 1:0;
 				i_trigger_cp   <= 288;
 			end 
 			@(posedge clk) i_start_symbol <= 0;
