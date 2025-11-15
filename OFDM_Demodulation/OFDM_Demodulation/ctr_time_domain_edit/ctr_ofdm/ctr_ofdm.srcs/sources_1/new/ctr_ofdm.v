@@ -3,9 +3,9 @@
 // Company: N/A
 // Engineer: Van-Huynh Nguyen-nvhuynh107@gmail.com
 // 
-// Create Date: 11/10/2025 03:59:34 PM
+// Create Date: 11/14/2025 03:59:34 PM
 // Design Name: 
-// Module Name: CTR_FFT
+// Module Name: CTR_FFT_Pre_FFT
 // Project Name: PUCCH-FORMAT-0
 // Target Devices: VCU108
 // Tool Versions: Vivado2019a
@@ -37,9 +37,10 @@ module ctr_fft #(parameter DATA_WIDTH=16)(
 		output o_tready,
 		output o_aclken
     );
-	
+	wire o_data_valid_tmp;
 //extend valid to 4096 cycles
-	extend_valid_4096 extend_valid_4096_0(clk, rst, i_start_symbol, o_data_valid);
+	extend_valid_4096 extend_valid_4096_0(clk, rst, i_start_symbol, o_data_valid_tmp);
+	extend_valid_4096 extend_valid_4096_1(clk, rst, o_data_valid_tmp, o_data_valid);
 //output
 	assign o_fwd = 1'b1;
 	assign o_trigger_cp = i_trigger_cp;

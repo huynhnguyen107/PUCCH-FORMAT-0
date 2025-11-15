@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/OFDM_Demodulation/OFDM_Demodulation/ctr_ofdm/ctr_ofdm/ctr_ofdm.xpr">
+<Project Version="7" Minor="44" Path="D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/OFDM_Demodulation/OFDM_Demodulation/ctr_time_domain_edit/ctr_ofdm/ctr_ofdm.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a0a0697f79c94c32b2f7a40686717ed8"/>
@@ -31,7 +31,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="vcu108"/>
-    <Option Name="WTXSimLaunchSim" Val="33"/>
+    <Option Name="WTXSimLaunchSim" Val="37"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>

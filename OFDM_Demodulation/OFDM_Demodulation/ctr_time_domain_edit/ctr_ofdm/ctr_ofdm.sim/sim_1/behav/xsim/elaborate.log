@@ -4,8 +4,8 @@ Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto a0a0697f79
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'i_trigger_cp' [D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/OFDM_Demodulation/OFDM_Demodulation/ctr_ofdm/ctr_ofdm/ctr_ofdm.srcs/sim_1/new/tb.v:25]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'o_trigger_cp' [D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/OFDM_Demodulation/OFDM_Demodulation/ctr_ofdm/ctr_ofdm/ctr_ofdm.srcs/sim_1/new/tb.v:26]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'i_trigger_cp' [D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/OFDM_Demodulation/OFDM_Demodulation/ctr_time_domain_edit/ctr_ofdm/ctr_ofdm.srcs/sim_1/new/tb.v:25]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 12 for port 'o_trigger_cp' [D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/OFDM_Demodulation/OFDM_Demodulation/ctr_time_domain_edit/ctr_ofdm/ctr_ofdm.srcs/sim_1/new/tb.v:26]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
