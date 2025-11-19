@@ -27,29 +27,35 @@ module ctr_fft #(parameter DATA_WIDTH=16)(
 		input i_start_symbol,
 		input [DATA_WIDTH-1:0] i_img_pucch_ofdm,
 		input [DATA_WIDTH-1:0] i_real_pucch_ofdm,
-		output o_fwd,
-		output [11:0] o_trigger_cp,
-		output o_start_symbol,
 		output [DATA_WIDTH-1:0] o_imag_pucch_ofdm,
 		output [DATA_WIDTH-1:0] o_real_pucch_ofdm,
-		output o_data_valid,
-		output o_data_last,
-		output o_tready,
-		output o_aclken
+		output o_data_valid
     );
-	wire o_data_valid_tmp;
-//extend valid to 4096 cycles
-	extend_valid_4096 extend_valid_4096_0(clk, rst, i_start_symbol, o_data_valid_tmp);
-	extend_valid_4096 extend_valid_4096_1(clk, rst, o_data_valid_tmp, o_data_valid);
-//output
-	assign o_fwd = 1'b1;
-	assign o_trigger_cp = i_trigger_cp;
-	assign o_start_symbol = i_start_symbol;
-	assign o_imag_pucch_ofdm = i_img_pucch_ofdm;
-	assign o_real_pucch_ofdm = i_real_pucch_ofdm;
-	assign o_data_last = 1'b0;
-	assign o_tready = 1'b1;
-	assign o_aclken = 1'b1;
+wire extend_1;
+reg d_extend_1;
+wire falling_edge;
+reg odd_valid;
+//extend valid to CP cycles
+extend_valid_4096 extend_valid_4096_0(clk, rst, i_start_symbol, {1'b0, i_trigger_cp}, extend_1);
+//falling edge
+always @(posedge clk)
+	if (rst) begin
+			d_extend_1 <=1'b0;
+			odd_valid <=1'b0;
+		end
+	else  begin
+			d_extend_1 <=extend_1;
+			odd_valid <=!odd_valid;
+		end
+//falling_edge
+assign falling_edge = d_extend_1& (!extend_1);
+// extend 4096 cylces
+extend_valid_4096 extend_valid_4096_1(clk, rst, falling_edge, 13'd4096, o_data_valid);
+
+//multiply data with x_shifted[n] = x[n] * (-1)^n; ======X_shift = [X(N/2+1:end,:); X(1:N/2,:)];
+assign o_imag_pucch_ofdm = odd_valid ? i_img_pucch_ofdm: -i_img_pucch_ofdm;
+assign o_real_pucch_ofdm = odd_valid ? i_real_pucch_ofdm: -i_real_pucch_ofdm;
+
 
 endmodule
 
@@ -57,9 +63,9 @@ module extend_valid_4096 (
 		input clk,
 		input rst,
 		input i_pulse,
+		input [12:0] N,
 		output o_valid
 	);
-	parameter N=4096;
 	reg [12:0] cnt;
 	reg  valid;
 	always @(posedge clk)
