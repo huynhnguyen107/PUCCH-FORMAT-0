@@ -12,217 +12,69 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="218799500fs"></ZoomStartTime>
-      <ZoomEndTime time="278449501fs"></ZoomEndTime>
-      <Cursor1Time time="230899500fs"></Cursor1Time>
+      <ZoomStartTime time="254841000fs"></ZoomStartTime>
+      <ZoomEndTime time="254960801fs"></ZoomEndTime>
+      <Cursor1Time time="254928500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="223"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="21" />
-   <wvobject fp_name="/tb/clk" type="logic">
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/rst" type="logic">
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/aclk" type="logic">
-      <obj_property name="ElementShortName">aclk</obj_property>
-      <obj_property name="ObjectShortName">aclk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/aclken" type="logic">
-      <obj_property name="ElementShortName">aclken</obj_property>
-      <obj_property name="ObjectShortName">aclken</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/s_axis_config_tdata" type="array">
-      <obj_property name="ElementShortName">s_axis_config_tdata[23:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_config_tdata[23:0]</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_trigger_cp" type="array">
+      <obj_property name="ElementShortName">i_trigger_cp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_trigger_cp[11:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/s_axis_config_tvalid" type="logic">
-      <obj_property name="ElementShortName">s_axis_config_tvalid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_config_tvalid</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_start_symbol" type="logic">
+      <obj_property name="ElementShortName">i_start_symbol</obj_property>
+      <obj_property name="ObjectShortName">i_start_symbol</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">s_axis_data_tdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tdata[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="vbus231" type="vbus">
-      <obj_property name="label">I</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_img_pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">i_img_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_img_pucch_ofdm[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[15]" type="logic">
-         <obj_property name="ElementShortName">[15]</obj_property>
-         <obj_property name="ObjectShortName">[15]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[14]" type="logic">
-         <obj_property name="ElementShortName">[14]</obj_property>
-         <obj_property name="ObjectShortName">[14]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[13]" type="logic">
-         <obj_property name="ElementShortName">[13]</obj_property>
-         <obj_property name="ObjectShortName">[13]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[12]" type="logic">
-         <obj_property name="ElementShortName">[12]</obj_property>
-         <obj_property name="ObjectShortName">[12]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[11]" type="logic">
-         <obj_property name="ElementShortName">[11]</obj_property>
-         <obj_property name="ObjectShortName">[11]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[10]" type="logic">
-         <obj_property name="ElementShortName">[10]</obj_property>
-         <obj_property name="ObjectShortName">[10]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[9]" type="logic">
-         <obj_property name="ElementShortName">[9]</obj_property>
-         <obj_property name="ObjectShortName">[9]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[8]" type="logic">
-         <obj_property name="ElementShortName">[8]</obj_property>
-         <obj_property name="ObjectShortName">[8]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[7]" type="logic">
-         <obj_property name="ElementShortName">[7]</obj_property>
-         <obj_property name="ObjectShortName">[7]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[6]" type="logic">
-         <obj_property name="ElementShortName">[6]</obj_property>
-         <obj_property name="ObjectShortName">[6]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[5]" type="logic">
-         <obj_property name="ElementShortName">[5]</obj_property>
-         <obj_property name="ObjectShortName">[5]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[4]" type="logic">
-         <obj_property name="ElementShortName">[4]</obj_property>
-         <obj_property name="ObjectShortName">[4]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[3]" type="logic">
-         <obj_property name="ElementShortName">[3]</obj_property>
-         <obj_property name="ObjectShortName">[3]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[2]" type="logic">
-         <obj_property name="ElementShortName">[2]</obj_property>
-         <obj_property name="ObjectShortName">[2]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[1]" type="logic">
-         <obj_property name="ElementShortName">[1]</obj_property>
-         <obj_property name="ObjectShortName">[1]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[0]" type="logic">
-         <obj_property name="ElementShortName">[0]</obj_property>
-         <obj_property name="ObjectShortName">[0]</obj_property>
-      </wvobject>
    </wvobject>
-   <wvobject fp_name="vbus248" type="vbus">
-      <obj_property name="label">Q</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/i_real_pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">i_real_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_real_pucch_ofdm[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[31]" type="logic">
-         <obj_property name="ElementShortName">[31]</obj_property>
-         <obj_property name="ObjectShortName">[31]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[30]" type="logic">
-         <obj_property name="ElementShortName">[30]</obj_property>
-         <obj_property name="ObjectShortName">[30]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[29]" type="logic">
-         <obj_property name="ElementShortName">[29]</obj_property>
-         <obj_property name="ObjectShortName">[29]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[28]" type="logic">
-         <obj_property name="ElementShortName">[28]</obj_property>
-         <obj_property name="ObjectShortName">[28]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[27]" type="logic">
-         <obj_property name="ElementShortName">[27]</obj_property>
-         <obj_property name="ObjectShortName">[27]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[26]" type="logic">
-         <obj_property name="ElementShortName">[26]</obj_property>
-         <obj_property name="ObjectShortName">[26]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[25]" type="logic">
-         <obj_property name="ElementShortName">[25]</obj_property>
-         <obj_property name="ObjectShortName">[25]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[24]" type="logic">
-         <obj_property name="ElementShortName">[24]</obj_property>
-         <obj_property name="ObjectShortName">[24]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[23]" type="logic">
-         <obj_property name="ElementShortName">[23]</obj_property>
-         <obj_property name="ObjectShortName">[23]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[22]" type="logic">
-         <obj_property name="ElementShortName">[22]</obj_property>
-         <obj_property name="ObjectShortName">[22]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[21]" type="logic">
-         <obj_property name="ElementShortName">[21]</obj_property>
-         <obj_property name="ObjectShortName">[21]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[20]" type="logic">
-         <obj_property name="ElementShortName">[20]</obj_property>
-         <obj_property name="ObjectShortName">[20]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[19]" type="logic">
-         <obj_property name="ElementShortName">[19]</obj_property>
-         <obj_property name="ObjectShortName">[19]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[18]" type="logic">
-         <obj_property name="ElementShortName">[18]</obj_property>
-         <obj_property name="ObjectShortName">[18]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[17]" type="logic">
-         <obj_property name="ElementShortName">[17]</obj_property>
-         <obj_property name="ObjectShortName">[17]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tdata[16]" type="logic">
-         <obj_property name="ElementShortName">[16]</obj_property>
-         <obj_property name="ObjectShortName">[16]</obj_property>
-      </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tvalid" type="logic">
-      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/inst/valid_tmp" type="logic">
+      <obj_property name="ElementShortName">valid_tmp</obj_property>
+      <obj_property name="ObjectShortName">valid_tmp</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tlast" type="logic">
-      <obj_property name="ElementShortName">s_axis_data_tlast</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tlast</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/inst/d_valid_tmp" type="logic">
+      <obj_property name="ElementShortName">d_valid_tmp</obj_property>
+      <obj_property name="ObjectShortName">d_valid_tmp</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/m_axis_data_tready" type="logic">
-      <obj_property name="ElementShortName">m_axis_data_tready</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tready</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/inst/odd_valid" type="logic">
+      <obj_property name="ElementShortName">odd_valid</obj_property>
+      <obj_property name="ObjectShortName">odd_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/s_axis_config_tready" type="logic">
-      <obj_property name="ElementShortName">s_axis_config_tready</obj_property>
-      <obj_property name="ObjectShortName">s_axis_config_tready</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/inst/d1_valid_tmp" type="logic">
+      <obj_property name="ElementShortName">d1_valid_tmp</obj_property>
+      <obj_property name="ObjectShortName">d1_valid_tmp</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/s_axis_data_tready" type="logic">
-      <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
-      <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_data_valid" type="logic">
+      <obj_property name="ElementShortName">o_data_valid</obj_property>
+      <obj_property name="ObjectShortName">o_data_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/m_axis_data_tdata" type="array">
-      <obj_property name="ElementShortName">m_axis_data_tdata[63:0]</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tdata[63:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/fft/m_axis_data_tvalid" type="logic">
-      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
-      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/fft_v0/o_imag_pucch_ofdm" type="array">
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_imag_pucch_ofdm" type="array">
       <obj_property name="ElementShortName">o_imag_pucch_ofdm[15:0]</obj_property>
       <obj_property name="ObjectShortName">o_imag_pucch_ofdm[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -230,7 +82,7 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/o_real_pucch_ofdm" type="array">
+   <wvobject fp_name="/tb/fft_v0/ctr_fft_v0/o_real_pucch_ofdm" type="array">
       <obj_property name="ElementShortName">o_real_pucch_ofdm[15:0]</obj_property>
       <obj_property name="ObjectShortName">o_real_pucch_ofdm[15:0]</obj_property>
       <obj_property name="Radix">REALRADIX</obj_property>
@@ -238,9 +90,193 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/fft_v0/o_valid" type="logic">
-      <obj_property name="ElementShortName">o_valid</obj_property>
-      <obj_property name="ObjectShortName">o_valid</obj_property>
+   <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_config_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_config_tdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_config_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_config_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_config_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_config_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_data_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus129" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus112" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tdata[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/s_axis_data_tlast" type="logic">
+      <obj_property name="ElementShortName">s_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/m_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/fft_0/m_axis_data_tlast" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/fft_v0/imag_pucch_ofdm_1" type="array">
       <obj_property name="ElementShortName">imag_pucch_ofdm_1[31:0]</obj_property>
@@ -249,6 +285,8 @@
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/fft_v0/real_pucch_ofdm_1" type="array">
       <obj_property name="ElementShortName">real_pucch_ofdm_1[31:0]</obj_property>
@@ -257,5 +295,27 @@
       <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/o_imag_pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">o_imag_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_imag_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/fft_v0/o_real_pucch_ofdm" type="array">
+      <obj_property name="ElementShortName">o_real_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="ObjectShortName">o_real_pucch_ofdm[15:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
    </wvobject>
 </wave_config>

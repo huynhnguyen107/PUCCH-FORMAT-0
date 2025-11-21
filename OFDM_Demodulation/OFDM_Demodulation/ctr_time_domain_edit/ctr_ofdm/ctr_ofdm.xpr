@@ -21,6 +21,7 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_time_domain_edit/ctr_ofdm"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -31,7 +32,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="vcu108"/>
-    <Option Name="WTXSimLaunchSim" Val="78"/>
+    <Option Name="WTXSimLaunchSim" Val="79"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -67,7 +68,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm/component.xml">
+      <File Path="$PPRDIR/../../../../../../../../fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_time_domain_edit/ctr_ofdm/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>

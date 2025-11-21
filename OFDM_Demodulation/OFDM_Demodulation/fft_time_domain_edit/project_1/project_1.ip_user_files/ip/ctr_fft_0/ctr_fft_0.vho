@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:ctr_fft:1.0
--- IP Revision: 5
+-- IP Revision: 16
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -60,15 +60,9 @@ COMPONENT ctr_fft_0
     i_start_symbol : IN STD_LOGIC;
     i_img_pucch_ofdm : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     i_real_pucch_ofdm : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-    o_fwd : OUT STD_LOGIC;
-    o_trigger_cp : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
-    o_start_symbol : OUT STD_LOGIC;
     o_imag_pucch_ofdm : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     o_real_pucch_ofdm : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-    o_data_valid : OUT STD_LOGIC;
-    o_data_last : OUT STD_LOGIC;
-    o_tready : OUT STD_LOGIC;
-    o_aclken : OUT STD_LOGIC
+    o_data_valid : OUT STD_LOGIC
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -85,15 +79,9 @@ your_instance_name : ctr_fft_0
     i_start_symbol => i_start_symbol,
     i_img_pucch_ofdm => i_img_pucch_ofdm,
     i_real_pucch_ofdm => i_real_pucch_ofdm,
-    o_fwd => o_fwd,
-    o_trigger_cp => o_trigger_cp,
-    o_start_symbol => o_start_symbol,
     o_imag_pucch_ofdm => o_imag_pucch_ofdm,
     o_real_pucch_ofdm => o_real_pucch_ofdm,
-    o_data_valid => o_data_valid,
-    o_data_last => o_data_last,
-    o_tready => o_tready,
-    o_aclken => o_aclken
+    o_data_valid => o_data_valid
   );
 -- INST_TAG_END ------ End INSTANTIATION Template ---------
 

@@ -299,8 +299,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>ctr_fft_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-11-19T22:03:20Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-11-20T20:37:15Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@22b45822_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@35e3a41b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
@@ -357,6 +357,24 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@725beafb_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@449d0579_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@5e2964bc_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b1bff0c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ff9556d_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77e62156_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23a8156e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49d31455_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@642a9070_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48caa206_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b623c3c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d3d7a4a_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@307bffc8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@598eda52_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@496368fb_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22e7f415_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6473b1ff_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d16d9e6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f76841c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53039cbc_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12e0d107_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/ofdm_demodulation/ofdm_demodulation/ctr_ofdm/ctr_ofdm</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

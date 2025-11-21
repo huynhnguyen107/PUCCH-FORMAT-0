@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:ctr_fft:1.0
-// IP Revision: 5
+// IP Revision: 16
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -61,15 +61,9 @@ ctr_fft_0 your_instance_name (
   .i_start_symbol(i_start_symbol),        // input wire i_start_symbol
   .i_img_pucch_ofdm(i_img_pucch_ofdm),    // input wire [15 : 0] i_img_pucch_ofdm
   .i_real_pucch_ofdm(i_real_pucch_ofdm),  // input wire [15 : 0] i_real_pucch_ofdm
-  .o_fwd(o_fwd),                          // output wire o_fwd
-  .o_trigger_cp(o_trigger_cp),            // output wire [11 : 0] o_trigger_cp
-  .o_start_symbol(o_start_symbol),        // output wire o_start_symbol
   .o_imag_pucch_ofdm(o_imag_pucch_ofdm),  // output wire [15 : 0] o_imag_pucch_ofdm
   .o_real_pucch_ofdm(o_real_pucch_ofdm),  // output wire [15 : 0] o_real_pucch_ofdm
-  .o_data_valid(o_data_valid),            // output wire o_data_valid
-  .o_data_last(o_data_last),              // output wire o_data_last
-  .o_tready(o_tready),                    // output wire o_tready
-  .o_aclken(o_aclken)                    // output wire o_aclken
+  .o_data_valid(o_data_valid)            // output wire o_data_valid
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

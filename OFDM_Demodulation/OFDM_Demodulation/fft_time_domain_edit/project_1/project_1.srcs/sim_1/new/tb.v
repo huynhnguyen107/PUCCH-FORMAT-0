@@ -34,7 +34,6 @@ module tb;
   fft fft_v0 (
     .clk               (clk),
     .rst               (rst),               // active-high
-    .i_fwd             (i_fwd),
     .i_trigger_cp      (i_trigger_cp),
     .i_start_symbol    (i_start_symbol),
     .i_imag_pucch_ofdm (i_imag_pucch_ofdm),

@@ -32,29 +32,45 @@ module ctr_fft #(parameter DATA_WIDTH=16)(
 		output o_data_valid
     );
 wire extend_1;
+wire valid_tmp;
 reg d_extend_1;
 wire falling_edge;
-reg odd_valid;
+reg odd_valid, d_valid_tmp, d1_valid_tmp;
+reg [DATA_WIDTH-1:0] real_pucch_ofdm_tmp, imag_pucch_ofdm_tmp;
+reg [DATA_WIDTH-1:0] real_pucch_ofdm_tmp1, imag_pucch_ofdm_tmp1;
 //extend valid to CP cycles
 extend_valid_4096 extend_valid_4096_0(clk, rst, i_start_symbol, {1'b0, i_trigger_cp}, extend_1);
 //falling edge
 always @(posedge clk)
 	if (rst) begin
 			d_extend_1 <=1'b0;
-			odd_valid <=1'b0;
+			odd_valid <=1'b1;
+			d_valid_tmp <=1'b0;
+			d1_valid_tmp <=1'b0;
+			real_pucch_ofdm_tmp <=0;
+			real_pucch_ofdm_tmp1 <=0;
+			imag_pucch_ofdm_tmp <=0;
+			imag_pucch_ofdm_tmp1 <=0;
 		end
 	else  begin
 			d_extend_1 <=extend_1;
-			odd_valid <=!odd_valid;
+			odd_valid <= d_valid_tmp ? !odd_valid: odd_valid;
+			d_valid_tmp <= valid_tmp;
+			d1_valid_tmp <= d_valid_tmp;
+			imag_pucch_ofdm_tmp <=odd_valid ? i_img_pucch_ofdm: -i_img_pucch_ofdm;
+			real_pucch_ofdm_tmp <=odd_valid ? i_real_pucch_ofdm: -i_real_pucch_ofdm;
+			imag_pucch_ofdm_tmp1 <=imag_pucch_ofdm_tmp;
+			real_pucch_ofdm_tmp1 <=real_pucch_ofdm_tmp;
 		end
 //falling_edge
 assign falling_edge = d_extend_1& (!extend_1);
 // extend 4096 cylces
-extend_valid_4096 extend_valid_4096_1(clk, rst, falling_edge, 13'd4096, o_data_valid);
+extend_valid_4096 extend_valid_4096_1(clk, rst, falling_edge, 13'd4096, valid_tmp);
 
 //multiply data with x_shifted[n] = x[n] * (-1)^n; ======X_shift = [X(N/2+1:end,:); X(1:N/2,:)];
-assign o_imag_pucch_ofdm = odd_valid ? i_img_pucch_ofdm: -i_img_pucch_ofdm;
-assign o_real_pucch_ofdm = odd_valid ? i_real_pucch_ofdm: -i_real_pucch_ofdm;
+assign o_imag_pucch_ofdm = imag_pucch_ofdm_tmp1;
+assign o_real_pucch_ofdm = real_pucch_ofdm_tmp1;
+assign o_data_valid = d1_valid_tmp;
 
 
 endmodule

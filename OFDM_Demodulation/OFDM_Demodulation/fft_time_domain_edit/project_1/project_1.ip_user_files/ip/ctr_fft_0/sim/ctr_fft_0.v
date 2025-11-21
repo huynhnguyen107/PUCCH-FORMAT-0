@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:ctr_fft:1.0
-// IP Revision: 5
+// IP Revision: 16
 
 `timescale 1ns/1ps
 
@@ -61,15 +61,9 @@ module ctr_fft_0 (
   i_start_symbol,
   i_img_pucch_ofdm,
   i_real_pucch_ofdm,
-  o_fwd,
-  o_trigger_cp,
-  o_start_symbol,
   o_imag_pucch_ofdm,
   o_real_pucch_ofdm,
-  o_data_valid,
-  o_data_last,
-  o_tready,
-  o_aclken
+  o_data_valid
 );
 
 input wire clk;
@@ -78,15 +72,9 @@ input wire [11 : 0] i_trigger_cp;
 input wire i_start_symbol;
 input wire [15 : 0] i_img_pucch_ofdm;
 input wire [15 : 0] i_real_pucch_ofdm;
-output wire o_fwd;
-output wire [11 : 0] o_trigger_cp;
-output wire o_start_symbol;
 output wire [15 : 0] o_imag_pucch_ofdm;
 output wire [15 : 0] o_real_pucch_ofdm;
 output wire o_data_valid;
-output wire o_data_last;
-output wire o_tready;
-output wire o_aclken;
 
   ctr_fft #(
     .DATA_WIDTH(16)
@@ -97,14 +85,8 @@ output wire o_aclken;
     .i_start_symbol(i_start_symbol),
     .i_img_pucch_ofdm(i_img_pucch_ofdm),
     .i_real_pucch_ofdm(i_real_pucch_ofdm),
-    .o_fwd(o_fwd),
-    .o_trigger_cp(o_trigger_cp),
-    .o_start_symbol(o_start_symbol),
     .o_imag_pucch_ofdm(o_imag_pucch_ofdm),
     .o_real_pucch_ofdm(o_real_pucch_ofdm),
-    .o_data_valid(o_data_valid),
-    .o_data_last(o_data_last),
-    .o_tready(o_tready),
-    .o_aclken(o_aclken)
+    .o_data_valid(o_data_valid)
   );
 endmodule
