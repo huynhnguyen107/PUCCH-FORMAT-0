@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/OFDM_Demodulation/OFDM_Demodulation/ofdm_demodulation_pre_fft/ofdm_demodulation_pre_fft/project_1.srcs/sources_1/ip/xfft_0/sim/xfft_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'xfft_0'
