@@ -22,7 +22,7 @@
 
 module tb(
     );
-	reg clk, rst, i_trigger_05;
+	reg clk, rst, in_start_symbol;
 	wire [7:0] slot_idx;
 	wire      start_slot;
 	wire [8:0] sub_idx;
@@ -33,25 +33,38 @@ module tb(
 	wire [7:0] frame_idx;
 	wire     start_frame;
 	wire start_subframe;
+	wire start_symbol_cp;
+	wire slot_en;
 	wire  valid;
+	integer i, j, slot;
 	// instance frame synchronozation
-	frame_sync frame_sync_0(clk, rst, i_trigger_05, slot_idx, start_slot, sub_idx, 
+	frame_sync frame_sync_0(clk, rst, in_start_symbol, slot_idx, start_slot, sub_idx, 
 							rb_idx, start_rb, sym_idx, start_symbol, frame_idx, start_frame, start_subframe,
-							valid
+							start_symbol_cp, slot_en, valid
 								);
-	//init rst, clk, i_trigger_05
+	//init rst, clk, in_start_symbol
 	initial begin
 		clk =0;
 		rst =1;
-		i_trigger_05 =0;
+		in_start_symbol =0;
 		#50 rst =0;
 	end
 	// clock
 	always #0.5 clk =~clk;
-	//i_trigger_05
+	//in_start_symbol (symbol 0 has 4448 cycles; from 1-13 have 4348 cycles  )
 	initial begin
 		wait (!rst)
-		@(posedge clk) i_trigger_05 <=1;
-		@(posedge clk) i_trigger_05 <=0;
+		for (slot=0; slot<21; slot=slot+1) begin
+			@(posedge clk) in_start_symbol <=1;
+			@(posedge clk) in_start_symbol <=0;
+			for (i=0; i< 4448-2; i=i+1)
+				@(posedge clk);
+			for (j=1; j<14; j=j+1) begin
+				@(posedge clk) in_start_symbol <=1;
+				@(posedge clk) in_start_symbol <=0;
+				for (i=0; i<4348-2; i=i+1)
+					@(posedge clk);
+			end
+		end
 	end
 endmodule

@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="49850fs"></ZoomStartTime>
-      <ZoomEndTime time="59751fs"></ZoomEndTime>
-      <Cursor1Time time="51500fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3001000001fs"></ZoomEndTime>
+      <Cursor1Time time="487826500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="223"></NameColumnWidth>
-      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="6" />
+   <WVObjectSize size="5" />
    <wvobject fp_name="/tb/frame_sync_0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -28,20 +28,16 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/frame_sync_0/i_trigger_05" type="logic">
-      <obj_property name="ElementShortName">i_trigger_05</obj_property>
-      <obj_property name="ObjectShortName">i_trigger_05</obj_property>
+   <wvobject fp_name="/tb/in_start_symbol" type="logic">
+      <obj_property name="ElementShortName">in_start_symbol</obj_property>
+      <obj_property name="ObjectShortName">in_start_symbol</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/frame_sync_0/ext_valid" type="logic">
-      <obj_property name="ElementShortName">ext_valid</obj_property>
-      <obj_property name="ObjectShortName">ext_valid</obj_property>
+   <wvobject fp_name="/tb/frame_sync_0/ext_valid_2376" type="logic">
+      <obj_property name="ElementShortName">ext_valid_2376</obj_property>
+      <obj_property name="ObjectShortName">ext_valid_2376</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/frame_sync_0/d_trigger_05" type="logic">
-      <obj_property name="ElementShortName">d_trigger_05</obj_property>
-      <obj_property name="ObjectShortName">d_trigger_05</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/frame_sync_0/d_ext_valid" type="logic">
-      <obj_property name="ElementShortName">d_ext_valid</obj_property>
-      <obj_property name="ObjectShortName">d_ext_valid</obj_property>
+   <wvobject fp_name="/tb/frame_sync_0/d_ext_valid_2376" type="logic">
+      <obj_property name="ElementShortName">d_ext_valid_2376</obj_property>
+      <obj_property name="ObjectShortName">d_ext_valid_2376</obj_property>
    </wvobject>
 </wave_config>
