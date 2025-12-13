@@ -23,24 +23,21 @@
 module tb(
     );
 	reg clk, rst, in_start_symbol;
-	wire [7:0] slot_idx;
+	wire [4:0] slot_idx;
 	wire      start_slot;
-	wire [8:0] sub_idx;
-	wire [7:0] rb_idx;
-	wire start_rb;
-	wire [7:0] sym_idx;
+	wire [3:0] sub_idx;
+	wire [8:0] rb_idx;
+	wire [3:0] sym_idx;
 	wire start_symbol;
 	wire [7:0] frame_idx;
 	wire     start_frame;
-	wire start_subframe;
 	wire start_symbol_cp;
-	wire slot_en;
 	wire  valid;
 	integer i, j, slot;
 	// instance frame synchronozation
 	frame_sync frame_sync_0(clk, rst, in_start_symbol, slot_idx, start_slot, sub_idx, 
-							rb_idx, start_rb, sym_idx, start_symbol, frame_idx, start_frame, start_subframe,
-							start_symbol_cp, slot_en, valid
+							rb_idx, sym_idx, start_symbol, frame_idx, start_frame,
+							start_symbol_cp, valid
 								);
 	//init rst, clk, in_start_symbol
 	initial begin
