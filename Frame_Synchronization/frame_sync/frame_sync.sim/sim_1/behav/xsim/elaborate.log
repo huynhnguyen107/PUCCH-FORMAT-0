@@ -14,13 +14,10 @@ Compiling module xil_defaultlib.des_cnt(WIDTH=4)
 Compiling module xil_defaultlib.delay_N(N=5,WIDTH=4)
 Compiling module xil_defaultlib.des_cnt(WIDTH=9)
 Compiling module xil_defaultlib.delay_N(N=5,WIDTH=9)
-Compiling module xil_defaultlib.delay_N(N=5,WIDTH=1)
-Compiling module xil_defaultlib.delay_N(N=4,WIDTH=1)
 Compiling module xil_defaultlib.des_cnt(WIDTH=5)
-Compiling module xil_defaultlib.delay_N(N=3,WIDTH=5)
+Compiling module xil_defaultlib.delay_N(N=5,WIDTH=5)
 Compiling module xil_defaultlib.des_cnt
-Compiling module xil_defaultlib.delay_N(N=2,WIDTH=8)
-Compiling module xil_defaultlib.delay_N(N=3,WIDTH=1)
+Compiling module xil_defaultlib.delay_N(N=5,WIDTH=8)
 Compiling module xil_defaultlib.frame_sync
 Compiling module xil_defaultlib.tb
 Compiling module xil_defaultlib.glbl

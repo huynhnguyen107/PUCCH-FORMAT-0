@@ -32,7 +32,6 @@ module frame_sync(
 	output start_symbol,
 	output [7:0] frame_idx,
 	output     start_frame,
-	output start_symbol_cp,
 	output  valid_out
     );
 	//extend definitions
@@ -71,36 +70,35 @@ module frame_sync(
 	des_cnt #(9) des_cnt_rb (clk, rst, sub_index_en, 9'd272, rb_index_en, rb_index);
 	delay_N #(5, 9) delay_N_rb(clk, rst, rb_index, rb_index_d);
 	//Symbol 0-13
-	delay_N #(5, 1) delay_N_sym1(clk, rst, rb_index_en, start_symbol_d);
+	delay_N #(6, 1) delay_N_sym1(clk, rst, rb_index_en, start_symbol_d);
 	des_cnt #(4) des_cnt_sym (clk, rst, rb_index_en, 4'd13, symbol_index_en, symbol_index);
 	delay_N #(5, 4) delay_N_sym(clk, rst, symbol_index, symbol_index_d);
 	// slot 0-19
-	delay_N #(4, 1) delay_N_slot(clk, rst, symbol_index_en, start_slot_d);
+	delay_N #(6, 1) delay_N_slot(clk, rst, symbol_index_en, start_slot_d);
 	des_cnt #(5) des_cnt_slot (clk, rst, symbol_index_en, 5'd19, slot_index_en, slot_index);
-	delay_N #(3, 5) delay_N_slot1(clk, rst, slot_index, slot_index_d);
+	delay_N #(5, 5) delay_N_slot1(clk, rst, slot_index, slot_index_d);
 	// frame 0-255
 	des_cnt #(8) des_cnt_frame (clk, rst, slot_index_en, 8'd255, frame_index_en, frame_index);
-	delay_N #(2, 8) delay_N_frame(clk, rst, frame_index, frame_index_d);
-	assign start_frame_d = frame_index_en;
+	delay_N #(5, 8) delay_N_frame(clk, rst, frame_index, frame_index_d);
+	delay_N #(6, 1) delay_N_frame1(clk, rst, frame_index_en, start_frame_d);
+	// assign start_frame_d = frame_index_en;
 	
 	//assign outputs
 	//slot
 	assign slot_idx =  slot_index_d;
 	assign start_slot = start_slot_d;
 	//subcarier
-	assign sub_idx =  slot_index_d;
+	assign sub_idx =  sub_index_d;
 	//assign start_slot = start_slot_d;
 	//resouce blocks
 	assign rb_idx =  rb_index_d;
 	// assign start_rb = rb_index_en;
 	//symbol
-	assign sym_idx =  slot_index_d;
+	assign sym_idx =  symbol_index_d;
 	assign start_symbol = start_symbol_d;
 	//frame
 	assign frame_idx =  frame_index_d;
 	assign start_frame = start_frame_d;
-	//start symbol cp
-	delay_N #(3, 1) delay_N_symbol_cp(clk, rst, rb_index_en, start_symbol_cp);
 
 	
 endmodule
@@ -122,7 +120,7 @@ module des_cnt #(parameter WIDTH=8) (
 		end else begin
 			cnt <= (valid_in) ? (cnt==in? 0: cnt+1): cnt;
 		end
-	assign index_out = cnt;
+	assign index_out = (cnt==0)? in : cnt-1;
 	assign en_out = (cnt ==0) & valid_in;;
 endmodule
 

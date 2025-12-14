@@ -1,7 +1,7 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.srcs/sources_1/new/frame_sync.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module frame_sync
 INFO: [VRFC 10-311] analyzing module des_cnt
-WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.srcs/sources_1/new/frame_sync.v:126]
+WARNING: [VRFC 10-2292] extra semicolon is not allowed here in this dialect. Use SystemVerilog mode [D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.srcs/sources_1/new/frame_sync.v:124]
 INFO: [VRFC 10-311] analyzing module delay_N
 INFO: [VRFC 10-311] analyzing module extend_valid
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Frame_Synchronization/frame_sync/frame_sync.srcs/sim_1/new/tb.v" into library xil_defaultlib
