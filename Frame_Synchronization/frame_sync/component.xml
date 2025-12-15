@@ -18,7 +18,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f19f9368</spirit:value>
+            <spirit:value>7a226a20</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -34,7 +34,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f19f9368</spirit:value>
+            <spirit:value>7a226a20</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -49,7 +49,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>80553770</spirit:value>
+            <spirit:value>1f8aac79</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -253,7 +253,7 @@
       <spirit:file>
         <spirit:name>frame_sync.srcs/sources_1/new/frame_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_f19f9368</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_7a226a20</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -327,8 +327,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>frame_sync_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-14T03:33:57Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>6</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-12-15T01:37:26Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1c70385f_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@12d9e3f6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
@@ -347,11 +347,47 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1800de3e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@69562efa_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@62300973_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bf12a1c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eb46381_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56ed3138_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33d83713_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f9761fe_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@173fac8e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a08aef1_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20cff340_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12259102_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43a8d71c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f82c776_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@143b6e5_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a338fa8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43eafa51_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@611e96c8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63caae7_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c328db8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@691c93d1_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39aef058_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65190f18_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dda9f53_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@616008a6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69e2b6b2_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75f92996_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23b5cdc0_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4160624_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56b24be5_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@468489d4_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d7914a4_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d9c17a8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47bb10e4_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19dc30d2_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55165e30_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bda2e9_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b477c1e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19f6a91a_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/frame_synchronization/frame_sync</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6c316d32"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a8b002d1"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="47eb7087"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="ebc8ff86"/>
     </xilinx:packagingInfo>
