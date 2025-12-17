@@ -82,7 +82,7 @@ module demapping(
 			rb_valid <= valid ? uci_prbsoffset == fr_rb  : rb_valid;
 			second_symbol_valid <= valid ? (uci_first_symbol_idx + 1) == fr_symbol  : second_symbol_valid;
 			second_rb_valid <= valid ? (uci_prbsoffset + uci_secondhop_prb) == fr_rb  : second_rb_valid;
-			two_symbol_valid_temp <= valid ? uci_nsymbols == 2'd1  : two_symbol_valid_temp;
+			two_symbol_valid_temp <= valid ? uci_nsymbols == 2'd2  : two_symbol_valid_temp;
 			fre_hopping_valid <= valid ?  uci_instra_fre_hop == 1'b1  : fre_hopping_valid;
 		end
 		//assign all conditions

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="50498fs"></ZoomStartTime>
+      <ZoomEndTime time="50503fs"></ZoomEndTime>
+      <Cursor1Time time="50500fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="223"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/resource_set0" type="logic">
+      <obj_property name="ElementShortName">resource_set0</obj_property>
+      <obj_property name="ObjectShortName">resource_set0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/valid_d" type="logic">
+      <obj_property name="ElementShortName">valid_d</obj_property>
+      <obj_property name="ObjectShortName">valid_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/resource_set1" type="logic">
+      <obj_property name="ElementShortName">resource_set1</obj_property>
+      <obj_property name="ObjectShortName">resource_set1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/two_symbol_valid" type="logic">
+      <obj_property name="ElementShortName">two_symbol_valid</obj_property>
+      <obj_property name="ObjectShortName">two_symbol_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/in_ofdm" type="array">
+      <obj_property name="ElementShortName">in_ofdm[127:0]</obj_property>
+      <obj_property name="ObjectShortName">in_ofdm[127:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/ofdm0" type="array">
+      <obj_property name="ElementShortName">ofdm0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ofdm0[127:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/ofdm1" type="array">
+      <obj_property name="ElementShortName">ofdm1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ofdm1[127:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/r_edge0" type="logic">
+      <obj_property name="ElementShortName">r_edge0</obj_property>
+      <obj_property name="ObjectShortName">r_edge0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/r_edge1" type="logic">
+      <obj_property name="ElementShortName">r_edge1</obj_property>
+      <obj_property name="ObjectShortName">r_edge1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/valid_96_0" type="logic">
+      <obj_property name="ElementShortName">valid_96_0</obj_property>
+      <obj_property name="ObjectShortName">valid_96_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/valid_96_1" type="logic">
+      <obj_property name="ElementShortName">valid_96_1</obj_property>
+      <obj_property name="ObjectShortName">valid_96_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/RX_num" type="array">
+      <obj_property name="ElementShortName">RX_num[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RX_num[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ofdm_resource_ext" type="array">
+      <obj_property name="ElementShortName">ofdm_resource_ext[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ofdm_resource_ext[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/ofdm_resource_ext_valid" type="logic">
+      <obj_property name="ElementShortName">ofdm_resource_ext_valid</obj_property>
+      <obj_property name="ObjectShortName">ofdm_resource_ext_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/ofdm_resource_ext" type="array">
+      <obj_property name="ElementShortName">ofdm_resource_ext[127:0]</obj_property>
+      <obj_property name="ObjectShortName">ofdm_resource_ext[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/ofdm_resource_ext_valid" type="logic">
+      <obj_property name="ElementShortName">ofdm_resource_ext_valid</obj_property>
+      <obj_property name="ObjectShortName">ofdm_resource_ext_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/wea0" type="logic">
+      <obj_property name="ElementShortName">wea0</obj_property>
+      <obj_property name="ObjectShortName">wea0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/addra0" type="array">
+      <obj_property name="ElementShortName">addra0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addra0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/douta0" type="array">
+      <obj_property name="ElementShortName">douta0[127:0]</obj_property>
+      <obj_property name="ObjectShortName">douta0[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/wea1" type="logic">
+      <obj_property name="ElementShortName">wea1</obj_property>
+      <obj_property name="ObjectShortName">wea1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/addra1" type="array">
+      <obj_property name="ElementShortName">addra1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">addra1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/douta1" type="array">
+      <obj_property name="ElementShortName">douta1[127:0]</obj_property>
+      <obj_property name="ObjectShortName">douta1[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/rasing_edge0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/rasing_edge0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/rasing_edge0/in" type="logic">
+      <obj_property name="ElementShortName">in</obj_property>
+      <obj_property name="ObjectShortName">in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/rasing_edge0/reg_not_in" type="logic">
+      <obj_property name="ElementShortName">reg_not_in</obj_property>
+      <obj_property name="ObjectShortName">reg_not_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/rasing_edge0/out" type="logic">
+      <obj_property name="ElementShortName">out</obj_property>
+      <obj_property name="ObjectShortName">out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/extend_valid_new_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/extend_valid_new_0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/extend_valid_new_0/i_pulse" type="logic">
+      <obj_property name="ElementShortName">i_pulse</obj_property>
+      <obj_property name="ObjectShortName">i_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/extend_valid_new_0/o_valid" type="logic">
+      <obj_property name="ElementShortName">o_valid</obj_property>
+      <obj_property name="ObjectShortName">o_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/extend_valid_new_0/number_cycles" type="array">
+      <obj_property name="ElementShortName">number_cycles[31:0]</obj_property>
+      <obj_property name="ObjectShortName">number_cycles[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/extend_valid_new_0/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rx_duplication_v0/extend_valid_new_0/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[6:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.srcs/sim_1/new/tb.v,1765940791,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1765926497,verilog,,D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.srcs/sources_1/new/rx_duplication.v,,blk_mem_gen_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.srcs/sources_1/ip/blk_mem_gen_1/sim/blk_mem_gen_1.v,1765929035,verilog,,D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,blk_mem_gen_1,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.srcs/sources_1/new/rx_duplication.v,1765944602,verilog,,D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/RX_Duplication/rx_duplication/rx_duplication.srcs/sim_1/new/tb.v,,extend_valid_new;falling_edge;rx_duplication,,,,,,,,
