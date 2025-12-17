@@ -84,7 +84,7 @@ module rx_duplication #(parameter RX_num=4)(
 			addra1 <= resource_set1 ? addra1 +1 :(valid_96_1 ? (addra1 < 11 ? addra1 + 1:0 ):0);
 			// valid out
 			d1_valid_96_0 <= valid_96_0;
-			d2_valid_96_0 <= d2_valid_96_0;
+			d2_valid_96_0 <= d1_valid_96_0;
 			d1_valid_96_1 <= valid_96_1;
 			d2_valid_96_1 <= d1_valid_96_1;
 		end
