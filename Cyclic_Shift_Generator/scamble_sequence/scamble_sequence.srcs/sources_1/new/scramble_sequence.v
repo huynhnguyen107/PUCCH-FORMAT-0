@@ -21,8 +21,69 @@
 
 
 module scramble_sequence(
-
+	input clk,
+	input rst,
+	input in_valid,
+	input [5:0] ID,
+	input [7:0] markP,
+	output out_valid,
+	output [7:0] scramble
     );
+	wire out_valid_16;
+	wire [30:0] x1_16;
+	wire [30:0] x2_16;
+	//x1 x1_1600-1631
+	x1_x2_init x1_x2_init_0 (clk, rst, in_valid, ID, out_valid_16, x1_16, x2_16);
+	reg [30:0] x1_next;
+	reg [30:0] x2_next;
+	reg [7:0] c;
+	reg [8:0] cnt;
+	reg [7:0] max_cnt;
+	reg scramble_valid;
+	//control
+	always @(posedge clk)
+		if (rst) begin
+			cnt <=0;
+			scramble_valid <=0;
+			max_cnt <=0;
+		end
+		else begin
+			max_cnt <= in_valid ? markP: max_cnt;
+			scramble_valid <= (in_valid & cnt <= max_cnt) ? 1'b1: (cnt > max_cnt ? 1'b0 : scramble_valid);
+			cnt <= (scramble_valid|in_valid) ? cnt +1: 0;
+		end
+	//Calculate scramble sequence
+	always @(posedge clk)
+		if (rst) begin
+			x1_next <= 0;
+			x2_next <= 0;
+			c <= 0;
+		end
+		else begin
+			if (out_valid_16) begin
+				x1_next <= x1_16;
+				x2_next <= x2_16;
+			end
+			else if (scramble_valid) begin
+				c <= x1_next[7:0] ^ x2_next[7:0];
+				x1_next = {x1_next[10]^x1_next[7], x1_next[9]^x1_next[6], x1_next[8]^x1_next[5],
+						   x1_next[7]^x1_next[4], x1_next[6]^x1_next[3], x1_next[5]^x1_next[2],
+						   x1_next[4]^x1_next[1], x1_next[3]^x1_next[0], x1_next[30:8]
+									};
+				x2_next = {x2_next[10]^x2_next[9]^x2_next[8]^x2_next[7],x2_next[9]^x2_next[8]^x2_next[7]^x2_next[6] , x2_next[8]^x2_next[7]^x2_next[6]^x2_next[5],
+						   x2_next[7]^x2_next[6]^x2_next[5]^x2_next[4], x2_next[6]^x2_next[5]^x2_next[4]^x2_next[3], x2_next[5]^x2_next[4]^x2_next[3]^x2_next[2],
+						   x2_next[4]^x2_next[3]^x2_next[2]^x2_next[1], x2_next[3]^x2_next[2]^x2_next[1]^x2_next[0], x2_next[30:8]
+								};
+			end
+			else begin
+				x1_next <= 0;
+				x2_next <= 0;
+				c <= 0;
+			end
+			
+		end
+		assign scramble = out_valid ? c :0;
+		assign out_valid = cnt== max_cnt+2;
 endmodule
 
 // find the x1 x2 at i=1600 first
@@ -30,8 +91,8 @@ endmodule
 // we use a alternative method to find x1[1600] and x2[1600] which costs few cycles
 //ref https://patents.google.com/patent/US8793295B2/en
 //https://patents.google.com/patent/WO2022001427A1/en details the mask
-// This means that x2(1600) is a Boolean function of the initial state x2(0..31),
-// i.e., x2(1600) = f(x2(0), x2(1), ..., x2(31)).
+// This means that x2(1600) is a Boolean function of the initial state x2(0..30),
+// i.e., x2(1600) = f(x2(0), x2(1), ..., x2(30)).
 // It can be computed using a precomputed mask.
 //
 // Example (explicit XOR form):
@@ -39,8 +100,8 @@ endmodule
 //                ^ x2[16] ^ x2[19] ^ x2[20] ^ x2[23];
 //
 // Equivalent mask-based form:
-// assign x2_1600 = ^(x2[31:0] & 32'd10031374);
-// for x1 because we know value x1[31:0] we can precaculate x1[1631:1600]=1581799488
+// assign x2_1600 = ^(x2[30:0] & 32'd10031374);
+// for x1 because we know value x1[30:0] we can precaculate x1[1630:1600]=1581799488
 
 module x1_x2_init(
 	input clk,
@@ -48,8 +109,8 @@ module x1_x2_init(
 	input in_valid,
 	input [5:0] ID,
 	output out_valid,
-	output [31:0] x1_1600_1631,
-	output [31:0] x2_1600_1631
+	output [30:0] x1_16,
+	output [30:0] x2_1600_1631
     );
 	wire [31:0] temp_in;
 	assign temp_in = {26'd0, ID};
@@ -85,12 +146,10 @@ module x1_x2_init(
 	assign x2_1600_1631[28]= ^(temp_in[31:0] & 32'd1625358319);
 	assign x2_1600_1631[29]= ^(temp_in[31:0] & 32'd1103232977);
 	assign x2_1600_1631[30]= ^(temp_in[31:0] & 32'd58982317);
-	assign x2_1600_1631[31]= x2_1600_1631[0]^x2_1600_1631[1]^x2_1600_1631[2]^x2_1600_1631[3];
 	//x1
-	assign x1_1600_1631 = 32'd1581799488;
+	assign x1_16 = 31'd1581799488;
 	assign out_valid = in_valid;
 endmodule
-
 
 
 

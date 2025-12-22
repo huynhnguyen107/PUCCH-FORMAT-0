@@ -25,17 +25,18 @@ module tb();
 	reg rst;
 	reg in_valid;
 	reg [5:0] ID;
+	reg [7:0] markP;
 	wire out_valid;
-	wire [31:0] x1_1600_1631;
-	wire [31:0] x2_1600_1631;
-	//instance x1_x2_init
-	x1_x2_init x1_x2_init_0 (clk, rst, in_valid, ID, out_valid, x1_1600_1631, x2_1600_1631);
+	wire [7:0] scramble;
+	//instance scramble_sequence
+	scramble_sequence scramble_sequence_0 (clk, rst, in_valid, ID, markP, scramble);
 	//intial all signals and create rst
 	initial begin
 		clk =0;
 		rst =1;
 		in_valid =0;
 		ID =0;
+		markP =0;
 		#50 rst=0;
 	end
 	//create clock
@@ -46,10 +47,12 @@ module tb();
 		@(posedge clk) begin
 			in_valid <= 1;
 			ID <= 1;
+			markP <= 9;
 		end
 		@(posedge clk) begin
 			in_valid <= 0;
 			ID <= 0;
+			markP <= 0;
 		end
 	end
 endmodule
