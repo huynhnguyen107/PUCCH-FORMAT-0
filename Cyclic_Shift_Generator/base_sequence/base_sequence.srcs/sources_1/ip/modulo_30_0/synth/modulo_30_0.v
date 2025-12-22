@@ -48,31 +48,37 @@
 
 
 // IP VLNV: xilinx.com:user:modulo_30:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 (* X_CORE_INFO = "modulo_30,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "modulo_30_0,modulo_30,{}" *)
-(* CORE_GENERATION_INFO = "modulo_30_0,modulo_30,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=modulo_30,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "modulo_30_0,modulo_30,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=modulo_30,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module modulo_30_0 (
   clk,
   rst,
+  in_valid,
   in,
+  out_valid,
   quotient,
   remainder
 );
 
 input wire clk;
 input wire rst;
+input wire in_valid;
 input wire [10 : 0] in;
+output wire out_valid;
 output wire [5 : 0] quotient;
 output wire [4 : 0] remainder;
 
   modulo_30 inst (
     .clk(clk),
     .rst(rst),
+    .in_valid(in_valid),
     .in(in),
+    .out_valid(out_valid),
     .quotient(quotient),
     .remainder(remainder)
   );

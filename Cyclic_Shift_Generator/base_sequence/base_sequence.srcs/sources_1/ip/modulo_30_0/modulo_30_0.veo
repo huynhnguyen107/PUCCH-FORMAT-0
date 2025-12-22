@@ -47,7 +47,7 @@
 // DO NOT MODIFY THIS FILE.
 
 // IP VLNV: xilinx.com:user:modulo_30:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 // The following must be inserted into your Verilog file for this
 // core to be instantiated. Change the instance name and port connections
@@ -57,7 +57,9 @@
 modulo_30_0 your_instance_name (
   .clk(clk),              // input wire clk
   .rst(rst),              // input wire rst
+  .in_valid(in_valid),    // input wire in_valid
   .in(in),                // input wire [10 : 0] in
+  .out_valid(out_valid),  // output wire out_valid
   .quotient(quotient),    // output wire [5 : 0] quotient
   .remainder(remainder)  // output wire [4 : 0] remainder
 );

@@ -23,14 +23,17 @@
 module tb();
 	reg clk;
 	reg rst;
+	reg  in_valid ;
 	reg [10:0] in ;
+	wire  out_valid ;
 	wire [5:0] quotient;	
 	wire [4:0] remainder;	
 	//instance Module
-	modulo_30 modulo_n_0 (clk, rst, in, quotient, remainder);
+	modulo_30 modulo_n_0 (clk, rst, in_valid,  in, out_valid, quotient, remainder);
 	// initial all signals and create rst
 	initial begin
 		clk = 0;
+		in_valid = 0;
 		in = 0;
 		rst = 1;
 		in = 0;
@@ -42,7 +45,12 @@ module tb();
 	initial begin
 		wait (!rst);
 		@(posedge clk) begin
+			in_valid <= 1;
 			in <= 35;
+		end
+		@(posedge clk) begin
+			in_valid <= 0;
+			in <= 0;
 		end
 	
 	end

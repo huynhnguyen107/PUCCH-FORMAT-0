@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:modulo_30:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
@@ -57,21 +57,27 @@
 module modulo_30_0 (
   clk,
   rst,
+  in_valid,
   in,
+  out_valid,
   quotient,
   remainder
 );
 
 input wire clk;
 input wire rst;
+input wire in_valid;
 input wire [10 : 0] in;
+output wire out_valid;
 output wire [5 : 0] quotient;
 output wire [4 : 0] remainder;
 
   modulo_30 inst (
     .clk(clk),
     .rst(rst),
+    .in_valid(in_valid),
     .in(in),
+    .out_valid(out_valid),
     .quotient(quotient),
     .remainder(remainder)
   );

@@ -17,11 +17,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 18 00:00:50 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 04:20:28 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:24670e28</spirit:value>
+            <spirit:value>9:1a69048b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -36,11 +36,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 18 00:00:50 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 04:20:32 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:24670e28</spirit:value>
+            <spirit:value>9:1a69048b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -51,7 +51,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:24670e28</spirit:value>
+            <spirit:value>9:1a69048b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -67,11 +67,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 18 00:00:50 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 04:20:32 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:24670e28</spirit:value>
+            <spirit:value>9:1a69048b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -86,11 +86,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 18 00:00:50 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 04:20:32 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ba45a331</spirit:value>
+            <spirit:value>9:bded33b9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -106,11 +106,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 18 00:00:50 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 04:20:32 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:ba45a331</spirit:value>
+            <spirit:value>9:bded33b9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -125,11 +125,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Dec 18 00:00:50 UTC 2025</spirit:value>
+            <spirit:value>Mon Dec 22 04:20:32 UTC 2025</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:24670e28</spirit:value>
+            <spirit:value>9:1a69048b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -162,6 +162,19 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
+        <spirit:name>in_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
         <spirit:name>in</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
@@ -172,6 +185,19 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>out_valid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
               <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
             </spirit:wireTypeDef>
@@ -299,7 +325,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>modulo_30_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2a918567_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@14c2ccb6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
@@ -307,12 +333,24 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6daecb0c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6e9fafcb_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@34832ae1_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@391f5dd5_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5caa6b35_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14b7d7c6_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fceb6c9_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e7c5bab_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@525ecbb8_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c9ece7c_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@80a2f40_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@574ec630_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1172da16_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d844bfa_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e8c02f9_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch format 0/pucch-format-0/cyclic_shift_generator/modulo_n</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f6e1aab1"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="34f39343"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7e5abd1d"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="c4ea90f7"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="3af1b2a5"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

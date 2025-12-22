@@ -23,7 +23,9 @@
 module modulo_30 (
 	input clk,	
 	input rst,	
+	input  in_valid,	
 	input [10:0] in,	
+	output  out_valid,
 	output [5:0] quotient,	
 	output [4:0] remainder
 	);
@@ -32,9 +34,13 @@ module modulo_30 (
 	wire [26:0] floor_temp;
 	wire [5:0] floor;
 	wire [10:0] in_less;//30*floor
+	reg  [10:0] reg_in;
+	reg  reg_valid;
+	reg  d_reg_valid;
+	reg  d2_reg_valid;
 	mult_gen_0 mult_gen_0 (
 	  .CLK(clk),  // input wire CLK
-	  .A(in),      // input wire [10 : 0] A
+	  .A(reg_in),      // input wire [10 : 0] A
 	  .B(divisor),      // input wire [15 : 0] B
 	  .P(floor_temp)      // output wire [26 : 0] P
 	);
@@ -45,7 +51,22 @@ module modulo_30 (
 	  .B(5'd30),      // input wire [4 : 0] B
 	  .P(in_less)      // output wire [10 : 0] P
 	);
+	always @(posedge clk)
+		if (rst) begin
+			reg_valid <= 0;
+			d_reg_valid <= 0;
+			d2_reg_valid <= 0;
+			reg_in <= 0;
+		end
+		else begin
+			reg_in <= in_valid ? in: reg_in;
+			reg_valid <= in_valid;
+			d_reg_valid <= reg_valid;
+			d2_reg_valid <= d_reg_valid;
+		end
+			
 	//output 
+	assign out_valid = d2_reg_valid;
 	assign quotient = floor;
-	assign remainder = in -in_less;
+	assign remainder = reg_in -in_less;
 endmodule 

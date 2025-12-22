@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:modulo_30:1.0
--- IP Revision: 2
+-- IP Revision: 3
 
 -- The following code must appear in the VHDL architecture header.
 
@@ -56,7 +56,9 @@ COMPONENT modulo_30_0
   PORT (
     clk : IN STD_LOGIC;
     rst : IN STD_LOGIC;
+    in_valid : IN STD_LOGIC;
     in : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    out_valid : OUT STD_LOGIC;
     quotient : OUT STD_LOGIC_VECTOR(5 DOWNTO 0);
     remainder : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
   );
@@ -71,7 +73,9 @@ your_instance_name : modulo_30_0
   PORT MAP (
     clk => clk,
     rst => rst,
+    in_valid => in_valid,
     in => in,
+    out_valid => out_valid,
     quotient => quotient,
     remainder => remainder
   );
