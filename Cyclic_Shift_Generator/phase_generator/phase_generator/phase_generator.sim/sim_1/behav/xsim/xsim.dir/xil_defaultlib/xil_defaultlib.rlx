@@ -1,0 +1,9 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.ip_user_files/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v,1766548528,verilog,,D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.ip_user_files/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v,,scramble_sequence_8bits;x1_x2_init,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.ip_user_files/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v,1766548528,verilog,,D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.srcs/sources_1/new/phase_generator.v,,scramble_sequence_8bits_0,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.srcs/sim_1/new/tb.v,1766547347,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.srcs/sources_1/new/phase_generator.v,1766552382,verilog,,D:/FPGA/Vivaldo Project/PUCCH FORMAT 0/PUCCH-FORMAT-0/Cyclic_Shift_Generator/phase_generator/phase_generator/phase_generator.srcs/sim_1/new/tb.v,,ack_selection;phase_generator,,,,,,,,

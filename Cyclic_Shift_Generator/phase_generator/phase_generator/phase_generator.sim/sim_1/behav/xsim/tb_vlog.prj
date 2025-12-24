@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../phase_generator.ip_user_files/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" \
+"../../../../phase_generator.ip_user_files/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v" \
+"../../../../phase_generator.srcs/sources_1/new/phase_generator.v" \
+"../../../../phase_generator.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
