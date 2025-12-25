@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../phase_generator.ip_user_files/ip/modulo_12_1_nomalize/ip/mult_gen_1/sim/mult_gen_1.vhd" \
+"../../../../phase_generator.ip_user_files/ip/modulo_12_1_nomalize/ip/mult_gen_0/sim/mult_gen_0.vhd" \
+"../../../../phase_generator.ip_user_files/ip/dis_alpha_gen_0/ip/mult_gen_dis_alpha/sim/mult_gen_dis_alpha.vhd" \
+
+# Do not sort compile order
+nosort

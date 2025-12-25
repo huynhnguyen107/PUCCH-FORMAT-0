@@ -30,9 +30,11 @@ module tb();
 	reg  uci_sym_alloc;
 	reg [3:0] uci_m0;
 	reg [1:0] uci_ack;
+	wire phase_valid;
+	wire [31:0] phase;
 	//call instance
 	phase_generator phase_generator0(clk, rst, in_valid, uci_NID, uci_slot, 
-									  uci_first_symbol, uci_sym_alloc, uci_m0, uci_ack);
+									  uci_first_symbol, uci_sym_alloc, uci_m0, uci_ack, phase_valid, phase  );
 	// create rst and init all signals
 	initial begin
 		clk = 0;
