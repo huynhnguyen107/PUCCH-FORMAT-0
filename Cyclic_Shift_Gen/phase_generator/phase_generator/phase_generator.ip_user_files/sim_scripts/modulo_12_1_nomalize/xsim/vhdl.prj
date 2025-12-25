@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../phase_generator.srcs/sources_1/ip/modulo_12_1_nomalize/ip/modulo12_mult_gen_1/sim/modulo12_mult_gen_1.vhd" \
+"../../../../phase_generator.srcs/sources_1/ip/modulo_12_1_nomalize/ip/modulo12_mult_gen_2/sim/modulo12_mult_gen_2.vhd" \
+
+nosort

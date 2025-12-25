@@ -1,0 +1,7 @@
+Running: xsim.dir/cyclic_shift_generator_behav/xsimk.exe -simmode gui -wdb cyclic_shift_generator_behav.wdb -simrunnum 0 -socket 63660
+Design successfully loaded
+Design Loading Memory Usage: 8452 KB (Peak: 8452 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 9124 KB (Peak: 9124 KB)
+Simulation CPU Usage: 61 ms

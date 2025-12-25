@@ -1,0 +1,64 @@
+vlib modelsim_lib/work
+vlib modelsim_lib/msim
+
+vlib modelsim_lib/msim/xpm
+vlib modelsim_lib/msim/blk_mem_gen_v8_4_4
+vlib modelsim_lib/msim/xil_defaultlib
+vlib modelsim_lib/msim/xbip_utils_v3_0_10
+vlib modelsim_lib/msim/xbip_pipe_v3_0_6
+vlib modelsim_lib/msim/xbip_bram18k_v3_0_6
+vlib modelsim_lib/msim/mult_gen_v12_0_16
+
+vmap xpm modelsim_lib/msim/xpm
+vmap blk_mem_gen_v8_4_4 modelsim_lib/msim/blk_mem_gen_v8_4_4
+vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
+vmap xbip_utils_v3_0_10 modelsim_lib/msim/xbip_utils_v3_0_10
+vmap xbip_pipe_v3_0_6 modelsim_lib/msim/xbip_pipe_v3_0_6
+vmap xbip_bram18k_v3_0_6 modelsim_lib/msim/xbip_bram18k_v3_0_6
+vmap mult_gen_v12_0_16 modelsim_lib/msim/mult_gen_v12_0_16
+
+vlog -work xpm -64 -incr -sv \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+
+vcom -work xpm -64 -93 \
+"D:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vlog -work blk_mem_gen_v8_4_4 -64 -incr \
+"../../../ipstatic/simulation/blk_mem_gen_v8_4.v" \
+
+vlog -work xil_defaultlib -64 -incr \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/phi_matrix_0/phi_matrix.srcs/sources_1/new/phi_matrix.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/phi_matrix_0/sim/phi_matrix_0.v" \
+
+vcom -work xbip_utils_v3_0_10 -64 -93 \
+"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/cyclic_shift_gen/cyclic_shift_generator.srcs/sources_1/ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_pipe_v3_0_6 -64 -93 \
+"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/cyclic_shift_gen/cyclic_shift_generator.srcs/sources_1/ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/hdl/xbip_pipe_v3_0_vh_rfs.vhd" \
+
+vcom -work xbip_bram18k_v3_0_6 -64 -93 \
+"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/cyclic_shift_gen/cyclic_shift_generator.srcs/sources_1/ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" \
+
+vcom -work mult_gen_v12_0_16 -64 -93 \
+"d:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/Cyclic_Shift_Gen/cyclic_shift_gen/cyclic_shift_generator.srcs/sources_1/ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/hdl/mult_gen_v12_0_vh_rfs.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_1/sim/modulo30_mult_gen_1.vhd" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/ip/modulo30_mult_gen_0/sim/modulo30_mult_gen_0.vhd" \
+
+vlog -work xil_defaultlib -64 -incr \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/modulo_n.srcs/sources_1/new/modulo_n.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_2/sim/modulo_30_2.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/scramble_sequence_1bit_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/scramble_sequence_1bit_0/sim/scramble_sequence_1bit_0.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_1/sim/modulo_30_1.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/scramble_sequence_8bits_0/scamble_sequence.srcs/sources_1/new/scramble_sequence.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/scramble_sequence_8bits_0/sim/scramble_sequence_8bits_0.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/ip/modulo_30_0/sim/modulo_30_0.v" \
+"../../../ip/base_sequence_0_1/base_sequence.srcs/sources_1/new/base_sequence.v" \
+"../../../ip/base_sequence_0_1/sim/base_sequence_0.v" \
+
+vlog -work xil_defaultlib \
+"glbl.v"
+
