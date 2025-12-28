@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../correlation.srcs/sources_1/ip/correlation_mult_gen_0/sim/correlation_mult_gen_0.vhd" \
+
+nosort

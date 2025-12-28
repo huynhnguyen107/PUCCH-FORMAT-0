@@ -26,45 +26,103 @@ module correlation(
 	input resourceset_valid,
 	input [31:0] resourcesetresourceset,
 	input cyclic_shift_valid,
-	input [31:0] cyclic_shift
+	input [31:0] cyclic_shift,
+	output sqrt_valid,
+	output [19:0] sqrt//20.15
 		);
-	wire [31:0] d_cyclic_shift;
-	wire [31:0] d_resourceset;
-	reg control_valid;
-	reg [3:0] cnt;
+	wire [31:0] fifo_cyclic_shift;
+	wire [31:0] fifo_resourceset;
+	reg valid_200;
+	wire valid;
+	reg [8:0] cnt_200;
+	reg xcorr_valid;
+	wire [41:0] corre;
+	wire  corre_valid;
+	wire [41:0] I2;
+	wire [41:0] Q2;
+	reg total_valid;
+	wire [25:0] IQ_total;
+
+
 	//save cyclic shift to fifo
 	correlation_fifo_generator_0 correlation_fifo_generator_0 (
 	  .clk(clk),      // input wire clk
 	  .din(cyclic_shift),      // input wire [31 : 0] din
 	  .wr_en(cyclic_shift_valid),  // input wire wr_en
-	  .rd_en(),  // input wire rd_en
-	  .dout(),    // output wire [31 : 0] dout
+	  .rd_en(valid),  // input wire rd_en
+	  .dout(fifo_cyclic_shift),    // output wire [31 : 0] dout
 	  .full(),    // output wire full
 	  .empty()  // output wire empty
 	);
-	correlation_fifo_generator_1 your_instance_name (
+	correlation_fifo_generator_1 correlation_fifo_generator_1 (
 	  .clk(clk),      // input wire clk
 	  .din(resourcesetresourceset),      // input wire [31 : 0] din
 	  .wr_en(resourceset_valid),  // input wire wr_en
-	  .rd_en(),  // input wire rd_en
-	  .dout(),    // output wire [31 : 0] dout
+	  .rd_en(valid),  // input wire rd_en
+	  .dout(fifo_resourceset),    // output wire [31 : 0] dout
 	  .full(),    // output wire full
 	  .empty()  // output wire empty
 	);
 	always @(posedge clk)
 		if (rst) begin
-			control_valid <= 0;
-			cnt <= 0;
-			d_resourceset <= 0;
+			valid_200 <= 0;
+			cnt_200 <= 0;
+			xcorr_valid <= 0;
 		end
 		else begin
-			if (resourceset_valid & cnt < 11)
-				control_valid <= 1;
-			else 
-				control_valid <= 0;
-			if (control_valid)
-				cnt <=  cnt +1 ;
+			if (resourceset_valid )
+				valid_200 <= 1;
+			else if (valid_200 & cnt_200<199)
+				valid_200 <= 1;
 			else
-				cnt <= 0;
+				valid_200 <= 0;
+			if (valid_200)
+				cnt_200 <= cnt_200 +1;
+			else
+				cnt_200 <= 0;
+			xcorr_valid <= valid;
 		end
+	assign valid = valid_200 & ((cnt_200>=0&cnt_200<=11)|(cnt_200>=25&cnt_200<=36)|(cnt_200>=50&cnt_200<=61)|(cnt_200>=75&cnt_200<=86)
+								|(cnt_200>=100&cnt_200<=111)|(cnt_200>=125&cnt_200<=136)|(cnt_200>=150&cnt_200<=161)|(cnt_200>=175&cnt_200<=186));
+	
+	correlation_xcorr_12_0 correlation_xcorr_12_0 (
+	  .clk(clk),              // input wire clk
+	  .rst(rst),              // input wire rst
+	  .in_valid(xcorr_valid),    // input wire in_valid
+	  .a(fifo_resourceset),                  // input wire [31 : 0] a
+	  .b(fifo_cyclic_shift),                  // input wire [31 : 0] b
+	  .out_valid(corre_valid),  // output wire out_valid
+	  .out(corre)              // output wire [41 : 0] out
+	);
+
+	correlation_mult_gen_0 correlation_mult_gen_0 (
+	  .CLK(clk),  // input wire CLK
+	  .A(corre[20:0]),      // input wire [20 : 0] A
+	  .B(corre[20:0]),      // input wire [20 : 0] B
+	  .P(I2)      // output wire [41 : 0] P concat only 25.15
+	);
+	correlation_mult_gen_1 correlation_mult_gen_1 (
+	  .CLK(clk),  // input wire CLK
+	  .A(corre[41:21]),      // input wire [20 : 0] A
+	  .B(corre[41:21]),      // input wire [20 : 0] B
+	  .P(Q2)      // output wire [41 : 0] P// concat only 25.15
+	);
+	assign IQ_total = I2[39:15] + Q2[39:15];
+	 
+	always @(posedge clk)
+		if (rst)
+			total_valid <= 0;
+		else
+			total_valid <= corre_valid;
+	//sqrt I^2+Q^2
+	correlation_cordic_0 correlation_cordic_0 (
+	  .aclk(clk),                                        // input wire aclk
+	  .s_axis_cartesian_tvalid(total_valid),  // input wire s_axis_cartesian_tvalid
+	  .s_axis_cartesian_tdata({6'd0, IQ_total}),    // input wire [31 : 0] s_axis_cartesian_tdata
+	  .m_axis_dout_tvalid(sqrt_valid),            // output wire m_axis_dout_tvalid
+	  .m_axis_dout_tdata(sqrt)              // output wire [23 : 0] m_axis_dout_tdata
+	);
+
+
+
 endmodule

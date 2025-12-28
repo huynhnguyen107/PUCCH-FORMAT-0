@@ -1,0 +1,2 @@
+correlation_mult_gen_1.vhd,vhdl,xil_defaultlib,../../../../correlation.srcs/sources_1/ip/correlation_mult_gen_1/sim/correlation_mult_gen_1.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v
