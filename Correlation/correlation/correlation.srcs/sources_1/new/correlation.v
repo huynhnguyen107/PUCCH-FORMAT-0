@@ -32,9 +32,9 @@ module correlation(
 		);
 	wire [31:0] fifo_cyclic_shift;
 	wire [31:0] fifo_resourceset;
-	reg valid_200;
+	reg valid_400;
 	wire valid;
-	reg [8:0] cnt_200;
+	reg [8:0] cnt_400;
 	reg xcorr_valid;
 	wire [41:0] corre;
 	wire  corre_valid;
@@ -65,25 +65,27 @@ module correlation(
 	);
 	always @(posedge clk)
 		if (rst) begin
-			valid_200 <= 0;
-			cnt_200 <= 0;
+			valid_400 <= 0;
+			cnt_400 <= 0;
 			xcorr_valid <= 0;
 		end
 		else begin
 			if (resourceset_valid )
-				valid_200 <= 1;
-			else if (valid_200 & cnt_200<199)
-				valid_200 <= 1;
+				valid_400 <= 1;
+			else if (valid_400 & cnt_400<399)
+				valid_400 <= 1;
 			else
-				valid_200 <= 0;
-			if (valid_200)
-				cnt_200 <= cnt_200 +1;
+				valid_400 <= 0;
+			if (valid_400)
+				cnt_400 <= cnt_400 +1;
 			else
-				cnt_200 <= 0;
+				cnt_400 <= 0;
 			xcorr_valid <= valid;
 		end
-	assign valid = valid_200 & ((cnt_200>=0&cnt_200<=11)|(cnt_200>=25&cnt_200<=36)|(cnt_200>=50&cnt_200<=61)|(cnt_200>=75&cnt_200<=86)
-								|(cnt_200>=100&cnt_200<=111)|(cnt_200>=125&cnt_200<=136)|(cnt_200>=150&cnt_200<=161)|(cnt_200>=175&cnt_200<=186));
+	assign valid = valid_400 & ((cnt_400>=0&cnt_400<=11)|(cnt_400>=25&cnt_400<=36)|(cnt_400>=50&cnt_400<=61)|(cnt_400>=75&cnt_400<=86)
+								|(cnt_400>=100&cnt_400<=111)|(cnt_400>=125&cnt_400<=136)|(cnt_400>=150&cnt_400<=161)|(cnt_400>=175&cnt_400<=186)
+								|(cnt_400>=200&cnt_400<=211)|(cnt_400>=225&cnt_400<=236)|(cnt_400>=250&cnt_400<=261)|(cnt_400>=275&cnt_400<=286)
+								|(cnt_400>=300&cnt_400<=311)|(cnt_400>=325&cnt_400<=336)|(cnt_400>=350&cnt_400<=361)|(cnt_400>=375&cnt_400<=386));
 	
 	correlation_xcorr_12_0 correlation_xcorr_12_0 (
 	  .clk(clk),              // input wire clk

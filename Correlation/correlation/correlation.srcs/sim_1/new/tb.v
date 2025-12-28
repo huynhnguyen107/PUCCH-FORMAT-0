@@ -45,7 +45,7 @@ module tb();
 	// create others
 	initial begin
 		wait (!rst)
-		for (i=0; i<96; i=i+1)
+		for (i=0; i<192; i=i+1)
 			@(posedge clk) begin
 				resourceset_valid <= 1;
 				resourcesetresourceset <= {16'd16384,16'd16384} ;

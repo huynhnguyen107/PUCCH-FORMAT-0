@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="978708fs"></ZoomStartTime>
+      <ZoomEndTime time="1039659fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="236"></NameColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/tb/combine_rx_sym_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt" type="array">
+      <obj_property name="ElementShortName">in_sqrt[159:0]</obj_property>
+      <obj_property name="ObjectShortName">in_sqrt[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus2283" type="vbus">
+      <obj_property name="label">RX0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/combine_rx_sym_0/in_sqrt[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/out_valid" type="logic">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/peak" type="array">
+      <obj_property name="ElementShortName">peak[160:0]</obj_property>
+      <obj_property name="ObjectShortName">peak[160:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/d_sqrt" type="array">
+      <obj_property name="ElementShortName">d_sqrt[83:0]</obj_property>
+      <obj_property name="ObjectShortName">d_sqrt[83:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/d1_sqrt" type="array">
+      <obj_property name="ElementShortName">d1_sqrt[43:0]</obj_property>
+      <obj_property name="ObjectShortName">d1_sqrt[43:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/d_valid" type="logic">
+      <obj_property name="ElementShortName">d_valid</obj_property>
+      <obj_property name="ObjectShortName">d_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/d1_valid" type="logic">
+      <obj_property name="ElementShortName">d1_valid</obj_property>
+      <obj_property name="ObjectShortName">d1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/d2_valid" type="logic">
+      <obj_property name="ElementShortName">d2_valid</obj_property>
+      <obj_property name="ObjectShortName">d2_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/rd_cnt" type="array">
+      <obj_property name="ElementShortName">rd_cnt[8:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_cnt[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/d2_sqrt" type="array">
+      <obj_property name="ElementShortName">d2_sqrt[22:0]</obj_property>
+      <obj_property name="ObjectShortName">d2_sqrt[22:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/symbol_1" type="array">
+      <obj_property name="ElementShortName">symbol_1[22:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_1[22:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/symbol_valid" type="logic">
+      <obj_property name="ElementShortName">symbol_valid</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/symbol_2" type="array">
+      <obj_property name="ElementShortName">symbol_2[22:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_2[22:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/total_valid" type="logic">
+      <obj_property name="ElementShortName">total_valid</obj_property>
+      <obj_property name="ObjectShortName">total_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/total" type="array">
+      <obj_property name="ElementShortName">total[23:0]</obj_property>
+      <obj_property name="ObjectShortName">total[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+</wave_config>
