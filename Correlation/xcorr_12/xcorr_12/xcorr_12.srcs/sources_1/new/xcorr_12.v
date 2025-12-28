@@ -23,11 +23,11 @@
 module xcorr_12(
 	input clk,
 	input rst,
-	input in_valid, // 2 consecutive input is 24 clk
+	input in_valid, // 2 consecutive input is 25 clk
 	input [31:0] a,
 	input [31:0] b,
 	output reg out_valid,
-	output reg [31:0] out
+	output reg [39:0] out
     );
 	integer k;
 	integer i;
@@ -43,8 +43,9 @@ module xcorr_12(
 	wire tmp_out_valid;
 
 	//start multiply b[0]..b[1]..b[11]*a per cycle
-	reg [65:0] d [0:22];
-	wire [65:0] c [0:11];
+	reg [39:0] d [0:22];//<fixed point 20.15 because total <12
+	reg [39:0] d_reg [0:22];//<fixed point 20.15 because total <12
+	wire [47:0] c [0:11];//fixed point 24.21 (cut to 16.15)
 	reg [4:0] cnt_cal;
 	reg  cnt_cal_valid;
 	reg [65:0] out_tmp [0:11];
@@ -62,7 +63,7 @@ module xcorr_12(
 		else begin
 			if (in_valid) begin
 				cnt_vb <= cnt_vb +1;
-				vb[cnt_vb] <= b;
+				vb[cnt_vb] <= {16'd0-b[31:16],b[15:0]};//conjugate(b) before correlation two complex values
 			end
 			else begin
 				cnt_vb <= 0;
@@ -79,7 +80,7 @@ module xcorr_12(
 			// start calculate a*b
 			if (cnt_va==5)
 				cnt_cal_valid <= 1;
-			else if (cnt_cal>=22)
+			else if (cnt_cal>=23)
 				cnt_cal_valid <= 0;
 			if (cnt_cal_valid)
 				cnt_cal <= cnt_cal +1;	
@@ -99,63 +100,95 @@ module xcorr_12(
 	  .empty()  // output wire empty
 	);
 	//find c out from c[0]--c[23]
+	always @(posedge clk) begin
+		if (rst)
+			for (k=0;k<23;k=k+1)
+				d_reg[k] <=0;
+		else
+			for (k=0;k<23;k=k+1)
+				d_reg[k] <=d[k];
+	end
 	always @(*) begin
 		case (cnt_cal)
 			4'd0: begin
-				for (k=0;k<=22;k=k+1)
+				for (k=0;k<23;k=k+1)
 					d[k] = 0;
 			end
 			4'd1: begin
-				for (k=0;k<=11;k=k+1)
-					d[k] = d[k] + c[k];
+				for (k=0;k<12;k=k+1) begin
+					d[k][19:0]  =   d_reg[k][19:0] +  {{4{c[k][21]}},c[k][21:6]} ; //extend sign of c because c16.15, d20.15
+					d[k][39:20] =   d_reg[k][39:20] + {{4{c[k][45]}},c[k][45:30]};
+					end
 			end
 			4'd2: begin
-				for (k=1;k<=12;k=k+1)
-					d[k] = d[k] + c[k-1];
+				for (k=1;k<13;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-1][21]}},c[k-1][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-1][45]}},c[k-1][45:30]};
+					end
 			end
 			4'd3: begin
-				for (k=2;k<=13;k=k+1)
-					d[k] = d[k] + c[k-2];
+				for (k=2;k<14;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-2][21]}},c[k-2][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-2][45]}},c[k-2][45:30]};
+					end
 			end
 			4'd4: begin
-				for (k=3;k<=14;k=k+1)
-					d[k] = d[k] + c[k-3];
+				for (k=3;k<15;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-3][21]}},c[k-3][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-3][45]}},c[k-3][45:30]};
+					end
 			end
 			4'd5: begin
-				for (k=4;k<=15;k=k+1)
-					d[k] = d[k] + c[k-4];
+				for (k=4;k<16;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-4][21]}},c[k-4][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-4][45]}},c[k-4][45:30]};
+					end
 			end
 			4'd6: begin
-				for (k=5;k<=16;k=k+1)
-					d[k] = d[k] + c[k-5];
+				for (k=5;k<17;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-5][21]}},c[k-5][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-5][45]}},c[k-5][45:30]};
+					end
 			end
 			4'd7: begin
-				for (k=6;k<=17;k=k+1)
-					d[k] = d[k] + c[k-6];
+				for (k=6;k<18;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-6][21]}},c[k-6][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-6][45]}},c[k-6][45:30]};
+					end
 			end
 			4'd8: begin
-				for (k=7;k<=18;k=k+1)
-					d[k] = d[k] + c[k-7];
+				for (k=7;k<19;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-7][21]}},c[k-7][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-7][45]}},c[k-7][45:30]};
+					end
 			end
 			4'd9: begin
-				for (k=8;k<=19;k=k+1)
-					d[k] = d[k] + c[k-8];
+				for (k=8;k<20;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-8][21]}},c[k-8][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-8][45]}},c[k-8][45:30]};
+					end
 			end
 			4'd10: begin
-				for (k=9;k<=20;k=k+1)
-					d[k] = d[k] + c[k-9];
+				for (k=9;k<21;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-9][21]}},c[k-9][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-9][45]}},c[k-9][45:30]};
+					end
 			end
 			4'd11: begin
-				for (k=10;k<=21;k=k+1)
-					d[k] = d[k] + c[k-10];
+				for (k=10;k<22;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-10][21]}},c[k-10][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-10][45]}},c[k-10][45:30]};
+					end
 			end
 			4'd12: begin
-				for (k=11;k<=22;k=k+1)
-					d[k] = d[k] + c[k-11];
+				for (k=11;k<23;k=k+1) begin
+					d[k][19:0]  = d_reg[k][19:0]  + {{4{c[k-11][21]}},c[k-11][21:6]} ;
+					d[k][39:20] = d_reg[k][39:20] + {{4{c[k-11][45]}},c[k-11][45:30]};
+					end
 			end
 			default: begin
-				for (k=0;k<=22;k=k+1)
-					d[k] = d[k] ;
+				for (k=0;k<23;k=k+1)
+					d[k] = d_reg[k] ;
 			end
 		endcase
 	
@@ -169,7 +202,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[0]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[11])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[11])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_1 xcorr_cmpy_1 (
 	  .aclk(clk),                              // input wire aclk
@@ -178,7 +211,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[1]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[10])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[10])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_2 xcorr_cmpy_2 (
 	  .aclk(clk),                              // input wire aclk
@@ -187,7 +220,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[2]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[9])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[9])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_3 xcorr_cmpy_3 (
 	  .aclk(clk),                              // input wire aclk
@@ -196,7 +229,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[3]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[8])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[8])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_4 xcorr_cmpy_4 (
 	  .aclk(clk),                              // input wire aclk
@@ -205,7 +238,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[4]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[7])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[7])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_5 xcorr_cmpy_5 (
 	  .aclk(clk),                              // input wire aclk
@@ -214,7 +247,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[5]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[6])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[6])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_6 xcorr_cmpy_6 (
 	  .aclk(clk),                              // input wire aclk
@@ -223,7 +256,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[6]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[5])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[5])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_7 xcorr_cmpy_7 (
 	  .aclk(clk),                              // input wire aclk
@@ -232,7 +265,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[7]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[4])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[4])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_8 xcorr_cmpy_8 (
 	  .aclk(clk),                              // input wire aclk
@@ -241,7 +274,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[8]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[3])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[3])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_9 xcorr_cmpy_9 (
 	  .aclk(clk),                              // input wire aclk
@@ -250,7 +283,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[9]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[2])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[2])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_10 xcorr_cmpy_10 (
 	  .aclk(clk),                              // input wire aclk
@@ -259,7 +292,7 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[10]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[1])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[1])    // output wire [47: 0] m_axis_dout_tdata
 	);
 	xcorr_cmpy_11 xcorr_cmpy_11 (
 	  .aclk(clk),                              // input wire aclk
@@ -268,9 +301,9 @@ module xcorr_12(
 	  .s_axis_b_tvalid(cal_en),        // input wire s_axis_b_tvalid
 	  .s_axis_b_tdata(vb[11]),          // input wire [31 : 0] s_axis_b_tdata
 	  .m_axis_dout_tvalid(),  // output wire m_axis_dout_tvalid
-	  .m_axis_dout_tdata(c[0])    // output wire [63 : 0] m_axis_dout_tdata
+	  .m_axis_dout_tdata(c[0])    // output wire [47: 0] m_axis_dout_tdata
 	);
-	//output from cnt_cal = 1 to 23
+	//output from cnt_cal = 2 to 24
 	always @(posedge clk) begin
 		if (rst) begin
 			out <= 0;
@@ -279,11 +312,11 @@ module xcorr_12(
 		else begin
 			if (tmp_out_valid) 
 				// out <= {d[cnt_cal-1][63:48], d[cnt_cal-1][30:15]};
-				out <= d[cnt_cal-1];
+				out <= d_reg[cnt_cal-2];
 			else
 				out <= 0;
 			out_valid <= tmp_out_valid;
 		end
 	end
-	assign tmp_out_valid = (cnt_cal >=1 & cnt_cal<=23);
+	assign tmp_out_valid = (cnt_cal >=2 & cnt_cal<=24);
 endmodule

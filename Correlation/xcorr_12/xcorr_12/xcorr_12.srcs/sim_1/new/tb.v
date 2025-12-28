@@ -25,9 +25,10 @@ module tb();
 	reg rst;
 	reg in_valid;
 	reg [31:0] a;
+	reg [15:0] ai;
 	reg [31:0] b;
 	wire out_valid;
-	wire [31:0] out;
+	wire [39 :0] out;
 	integer i;
 	xcorr_12 xcorr_12_0 (clk, rst, in_valid, a, b, out_valid, out);
 	//create rst and initial signals
@@ -47,21 +48,22 @@ module tb();
 		for (i=1;i<=12;i=i+1)
 			@(posedge clk) begin
 				in_valid <=1;
-				a <=1;
-				b <=i;
+				ai=1638*i;
+				a <= {ai, ai};
+				b <={16'd16384, 16'd0};
 			end
 		@(posedge clk) begin
 			in_valid <=0;
 			a <=0;
 			b <=0;
 		end
-		for (i=0;i<11;i=i+1)
+		for (i=0;i<12;i=i+1)
 			@(posedge clk);
 		for (i=1;i<=12;i=i+1)
 			@(posedge clk) begin
 				in_valid <=1;
-				a <=1;
-				b <=i-1;
+				a <={16'd16384, 16'd16384};
+				b <={16'd16384, 16'd0};
 			end
 		@(posedge clk) begin
 			in_valid <=0;
