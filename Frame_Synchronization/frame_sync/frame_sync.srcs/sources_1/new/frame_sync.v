@@ -118,7 +118,8 @@ module des_cnt #(parameter WIDTH=8) (
 		if (rst) begin
 			cnt <= 0;
 		end else begin
-			cnt <= (valid_in) ? (cnt==in? 0: cnt+1): cnt;
+			if (valid_in)
+				cnt <= cnt==in ? 0: cnt+1;
 		end
 	assign index_out = (cnt==0)? in : cnt-1;
 	assign en_out = (cnt ==0) & valid_in;
