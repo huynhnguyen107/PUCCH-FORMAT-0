@@ -1,0 +1,592 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xA60633D89F1A8395",
+      "device": "xcvu9p-flga2104-2L-e",
+      "name": "pucch0",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "physical_control_0": "",
+      "peak_search_0": "",
+      "layer2_parameter_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "xlconcat_0": "",
+      "xlconstant_2": "",
+      "xlslice_0": "",
+      "combine_rx_sym_0": "",
+      "demapping_0": "",
+      "frame_sync_0": "",
+      "frame_sync_1": "",
+      "rx_duplication_0": "",
+      "cyclic_gen_0": "",
+      "correlation_0": "",
+      "cyclic_gen_1": "",
+      "sync_cyclic_0": "",
+      "ofdm_demodulation_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "pucch0_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "122880000"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "trigger_05ms": {
+        "direction": "I"
+      },
+      "strop_request_trigger": {
+        "direction": "I"
+      },
+      "layer2_valid": {
+        "direction": "I"
+      },
+      "layer2_para": {
+        "type": "data",
+        "direction": "I",
+        "left": "511",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "slot_ind": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "group_hopping": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "out_valid": {
+        "direction": "O"
+      },
+      "ack": {
+        "direction": "O",
+        "left": "1",
+        "right": "0"
+      },
+      "mcs": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "ant_input": {
+        "direction": "I",
+        "left": "255",
+        "right": "0"
+      }
+    },
+    "components": {
+      "physical_control_0": {
+        "vlnv": "xilinx.com:user:physical_control:1.0",
+        "xci_name": "pucch0_physical_control_0_0"
+      },
+      "peak_search_0": {
+        "vlnv": "xilinx.com:user:peak_search:1.0",
+        "xci_name": "pucch0_peak_search_0_0"
+      },
+      "layer2_parameter_0": {
+        "vlnv": "xilinx.com:user:layer2_parameter:1.0",
+        "xci_name": "pucch0_layer2_parameter_0_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "pucch0_xlconstant_0_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "pucch0_xlconstant_0_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "pucch0_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "32"
+          },
+          "IN1_WIDTH": {
+            "value": "32"
+          },
+          "IN2_WIDTH": {
+            "value": "32"
+          },
+          "IN3_WIDTH": {
+            "value": "32"
+          },
+          "IN4_WIDTH": {
+            "value": "32"
+          },
+          "IN5_WIDTH": {
+            "value": "32"
+          },
+          "IN6_WIDTH": {
+            "value": "32"
+          },
+          "IN7_WIDTH": {
+            "value": "32"
+          },
+          "NUM_PORTS": {
+            "value": "8"
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "pucch0_xlconstant_0_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "4"
+          },
+          "CONST_WIDTH": {
+            "value": "3"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "pucch0_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "256"
+          },
+          "DOUT_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "combine_rx_sym_0": {
+        "vlnv": "xilinx.com:user:combine_rx_sym:1.0",
+        "xci_name": "pucch0_combine_rx_sym_0_0"
+      },
+      "demapping_0": {
+        "vlnv": "xilinx.com:user:demapping:1.0",
+        "xci_name": "pucch0_demapping_0_0"
+      },
+      "frame_sync_0": {
+        "vlnv": "xilinx.com:user:frame_sync:1.0",
+        "xci_name": "pucch0_frame_sync_0_3"
+      },
+      "frame_sync_1": {
+        "vlnv": "xilinx.com:user:frame_sync:1.0",
+        "xci_name": "pucch0_frame_sync_0_4"
+      },
+      "rx_duplication_0": {
+        "vlnv": "xilinx.com:user:rx_duplication:1.0",
+        "xci_name": "pucch0_rx_duplication_0_0",
+        "parameters": {
+          "RX_num": {
+            "value": "8"
+          }
+        }
+      },
+      "cyclic_gen_0": {
+        "vlnv": "xilinx.com:user:cyclic_gen:1.0",
+        "xci_name": "pucch0_cyclic_gen_0_0"
+      },
+      "correlation_0": {
+        "vlnv": "xilinx.com:user:correlation:1.0",
+        "xci_name": "pucch0_correlation_0_0"
+      },
+      "cyclic_gen_1": {
+        "vlnv": "xilinx.com:user:cyclic_gen:1.0",
+        "xci_name": "pucch0_cyclic_gen_0_1"
+      },
+      "sync_cyclic_0": {
+        "vlnv": "xilinx.com:user:sync_cyclic:1.0",
+        "xci_name": "pucch0_sync_cyclic_0_0"
+      },
+      "ofdm_demodulation_0": {
+        "vlnv": "xilinx.com:user:ofdm_demodulation:1.0",
+        "xci_name": "pucch0_ofdm_demodulation_0_0"
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "physical_control_0/clk",
+          "layer2_parameter_0/clk",
+          "peak_search_0/clk",
+          "combine_rx_sym_0/clk",
+          "demapping_0/clk",
+          "frame_sync_0/clk",
+          "frame_sync_1/clk",
+          "rx_duplication_0/clk",
+          "cyclic_gen_0/clk",
+          "correlation_0/clk",
+          "cyclic_gen_1/clk",
+          "sync_cyclic_0/clk",
+          "ofdm_demodulation_0/clk"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "physical_control_0/rst",
+          "layer2_parameter_0/rst",
+          "peak_search_0/rst",
+          "combine_rx_sym_0/rst",
+          "demapping_0/rst",
+          "frame_sync_0/rst",
+          "frame_sync_1/rst",
+          "rx_duplication_0/rst",
+          "cyclic_gen_0/rst",
+          "correlation_0/rst",
+          "cyclic_gen_1/rst",
+          "sync_cyclic_0/rst",
+          "ofdm_demodulation_0/rst"
+        ]
+      },
+      "trigger_05ms_1": {
+        "ports": [
+          "trigger_05ms",
+          "physical_control_0/in_0_5ms"
+        ]
+      },
+      "strop_request_trigger_1": {
+        "ports": [
+          "strop_request_trigger",
+          "physical_control_0/stop_request_trigger"
+        ]
+      },
+      "physical_control_0_start_symbol": {
+        "ports": [
+          "physical_control_0/start_symbol",
+          "frame_sync_0/in_start_symbol"
+        ]
+      },
+      "layer2_valid_1": {
+        "ports": [
+          "layer2_valid",
+          "layer2_parameter_0/layer2_valid"
+        ]
+      },
+      "layer2_para_1": {
+        "ports": [
+          "layer2_para",
+          "layer2_parameter_0/layer2_para"
+        ]
+      },
+      "layer2_parameter_0_uci_valid": {
+        "ports": [
+          "layer2_parameter_0/uci_valid",
+          "peak_search_0/in_uci_valid",
+          "demapping_0/uci_valid",
+          "cyclic_gen_0/in_valid",
+          "cyclic_gen_1/in_valid"
+        ]
+      },
+      "layer2_parameter_0_uci_intra_fre_hopping": {
+        "ports": [
+          "layer2_parameter_0/uci_intra_fre_hopping",
+          "demapping_0/uci_instra_fre_hop"
+        ]
+      },
+      "slot_ind_1": {
+        "ports": [
+          "slot_ind",
+          "demapping_0/uci_slot",
+          "cyclic_gen_0/uci_slot",
+          "cyclic_gen_1/uci_slot"
+        ]
+      },
+      "layer2_parameter_0_uci_frist_symbol": {
+        "ports": [
+          "layer2_parameter_0/uci_frist_symbol",
+          "demapping_0/uci_first_symbol_idx",
+          "cyclic_gen_0/uci_first_symbol",
+          "cyclic_gen_1/uci_first_symbol"
+        ]
+      },
+      "layer2_parameter_0_uci_symbol": {
+        "ports": [
+          "layer2_parameter_0/uci_symbol",
+          "demapping_0/uci_nsymbols"
+        ]
+      },
+      "layer2_parameter_0_uci_pbr_offset": {
+        "ports": [
+          "layer2_parameter_0/uci_pbr_offset",
+          "demapping_0/uci_prbsoffset"
+        ]
+      },
+      "layer2_parameter_0_uci_second_prb": {
+        "ports": [
+          "layer2_parameter_0/uci_second_prb",
+          "demapping_0/uci_secondhop_prb"
+        ]
+      },
+      "demapping_0_resoureset0_valid": {
+        "ports": [
+          "demapping_0/resoureset0_valid",
+          "rx_duplication_0/resource_set0"
+        ]
+      },
+      "demapping_0_resoureset1_valid": {
+        "ports": [
+          "demapping_0/resoureset1_valid",
+          "rx_duplication_0/resource_set1"
+        ]
+      },
+      "demapping_0_two_symbol_valid": {
+        "ports": [
+          "demapping_0/two_symbol_valid",
+          "rx_duplication_0/two_symbol_valid"
+        ]
+      },
+      "layer2_parameter_0_uci_nid": {
+        "ports": [
+          "layer2_parameter_0/uci_nid",
+          "cyclic_gen_0/uci_nID",
+          "cyclic_gen_1/uci_nID"
+        ]
+      },
+      "layer2_parameter_0_uci_m0": {
+        "ports": [
+          "layer2_parameter_0/uci_m0",
+          "cyclic_gen_0/uci_m0",
+          "cyclic_gen_1/uci_m0"
+        ]
+      },
+      "layer2_parameter_0_uci_ack": {
+        "ports": [
+          "layer2_parameter_0/uci_ack",
+          "peak_search_0/uci_ack",
+          "cyclic_gen_0/uci_ack",
+          "cyclic_gen_1/uci_ack"
+        ]
+      },
+      "group_hopping_1": {
+        "ports": [
+          "group_hopping",
+          "cyclic_gen_0/uci_grouphopping",
+          "cyclic_gen_1/uci_grouphopping"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "cyclic_gen_1/uci_sym_alloc",
+          "cyclic_gen_1/uci_nhop"
+        ]
+      },
+      "sync_cyclic_0_cyclic_valid": {
+        "ports": [
+          "sync_cyclic_0/cyclic_valid",
+          "correlation_0/cyclic_shift_valid"
+        ]
+      },
+      "sync_cyclic_0_cyclic": {
+        "ports": [
+          "sync_cyclic_0/cyclic",
+          "correlation_0/cyclic_shift"
+        ]
+      },
+      "rx_duplication_0_ofdm_resource_ext_valid": {
+        "ports": [
+          "rx_duplication_0/ofdm_resource_ext_valid",
+          "correlation_0/resourceset_valid"
+        ]
+      },
+      "correlation_0_sqrt_valid": {
+        "ports": [
+          "correlation_0/sqrt_valid",
+          "combine_rx_sym_0/in_valid"
+        ]
+      },
+      "combine_rx_sym_0_peak_valid": {
+        "ports": [
+          "combine_rx_sym_0/peak_valid",
+          "peak_search_0/peak_valid"
+        ]
+      },
+      "combine_rx_sym_0_peak": {
+        "ports": [
+          "combine_rx_sym_0/peak",
+          "peak_search_0/peak"
+        ]
+      },
+      "peak_search_0_ack": {
+        "ports": [
+          "peak_search_0/ack",
+          "ack"
+        ]
+      },
+      "peak_search_0_out_valid": {
+        "ports": [
+          "peak_search_0/out_valid",
+          "out_valid"
+        ]
+      },
+      "peak_search_0_mcs": {
+        "ports": [
+          "peak_search_0/mcs",
+          "mcs"
+        ]
+      },
+      "frame_sync_1_slot_idx": {
+        "ports": [
+          "frame_sync_1/slot_idx",
+          "demapping_0/fr_slot"
+        ]
+      },
+      "frame_sync_1_sym_idx": {
+        "ports": [
+          "frame_sync_1/sym_idx",
+          "demapping_0/fr_symbol"
+        ]
+      },
+      "frame_sync_1_rb_idx": {
+        "ports": [
+          "frame_sync_1/rb_idx",
+          "demapping_0/fr_rb"
+        ]
+      },
+      "frame_sync_1_valid_out": {
+        "ports": [
+          "frame_sync_1/valid_out",
+          "demapping_0/fr_data_valid"
+        ]
+      },
+      "frame_sync_0_cp": {
+        "ports": [
+          "frame_sync_0/cp",
+          "ofdm_demodulation_0/i_trigger_cp"
+        ]
+      },
+      "frame_sync_0_start_symbol": {
+        "ports": [
+          "frame_sync_0/start_symbol",
+          "ofdm_demodulation_0/i_start_symbol"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "ofdm_demodulation_0/scale_factor"
+        ]
+      },
+      "ofdm_demodulation_v2_0_pucch_ofdm": {
+        "ports": [
+          "ofdm_demodulation_0/pucch_ofdm",
+          "xlconcat_0/In0",
+          "xlconcat_0/In1",
+          "xlconcat_0/In2",
+          "xlconcat_0/In3",
+          "xlconcat_0/In4",
+          "xlconcat_0/In5",
+          "xlconcat_0/In6",
+          "xlconcat_0/In7"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "rx_duplication_0/in_ofdm"
+        ]
+      },
+      "ant_input_1": {
+        "ports": [
+          "ant_input",
+          "xlslice_0/Din"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "ofdm_demodulation_0/ant_input"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "cyclic_gen_0/uci_sym_alloc",
+          "cyclic_gen_0/uci_nhop"
+        ]
+      },
+      "cyclic_gen_0_cyclic_shift_valid": {
+        "ports": [
+          "cyclic_gen_0/cyclic_shift_valid",
+          "sync_cyclic_0/valid_1"
+        ]
+      },
+      "cyclic_gen_0_cyclic_shift": {
+        "ports": [
+          "cyclic_gen_0/cyclic_shift",
+          "sync_cyclic_0/cyclic_1"
+        ]
+      },
+      "cyclic_gen_1_cyclic_shift_valid": {
+        "ports": [
+          "cyclic_gen_1/cyclic_shift_valid",
+          "sync_cyclic_0/valid_0"
+        ]
+      },
+      "cyclic_gen_1_cyclic_shift": {
+        "ports": [
+          "cyclic_gen_1/cyclic_shift",
+          "sync_cyclic_0/cyclic_0"
+        ]
+      },
+      "ofdm_demodulation_0_start_symbol": {
+        "ports": [
+          "ofdm_demodulation_0/start_symbol",
+          "frame_sync_1/in_start_symbol"
+        ]
+      }
+    }
+  }
+}
