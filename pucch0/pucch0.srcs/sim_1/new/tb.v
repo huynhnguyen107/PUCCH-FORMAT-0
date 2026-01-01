@@ -22,19 +22,18 @@
 module tb();
   // ===== Clock & reset =====
   reg clk;                 
-  reg rst;                 
-  reg [255:0] ant_input;                 
+  reg rst;                       
   reg [7:0] slot_ind;                 
   reg [7:0]group_hopping;         
   reg [511:0]layer2_para;         
   reg layer2_valid;         
   reg strop_request_trigger;         
-  reg trigger_05ms;         
+  reg trigger_05ms;     
+  wire [255:0] ant_input;             
   // create rst and initial others
   initial begin
 	rst=1;
 	clk=0;
-	ant_input=0;
 	slot_ind=0;
 	group_hopping=0;
 	layer2_para=0;
@@ -48,7 +47,6 @@ module tb();
  always #0.5 clk=!clk;
 
   reg signed [15:0] i_imag_pucch_ofdm, i_real_pucch_ofdm;  
-  wire signed [15:0] o_imag_pucch_ofdm, o_real_pucch_ofdm; 
   // loaded from files
   localparam integer NUM_SAMPLES = 2457600;  
 
@@ -60,7 +58,7 @@ module tb();
     $readmemh("D:/5G/send_bang/genarate_data_PUCCH_100MHz/genarate_data_PUCCH_100MHz/16_15convert/I.mem", I_mem);
     $readmemh("D:/5G/send_bang/genarate_data_PUCCH_100MHz/genarate_data_PUCCH_100MHz/16_15convert/Q.mem", Q_mem);
   end
-
+  assign ant_input = {8{i_imag_pucch_ofdm, i_real_pucch_ofdm}};
   pucch0_wrapper pucch0_wrapper (
     .clk (clk),
     .rst(rst), 
@@ -77,16 +75,16 @@ module tb();
   initial begin
 	wait(!rst); 
 	@(posedge clk) begin
-		ant_input <=0;
 		slot_ind <=4;
 		group_hopping <=1;
 		layer2_para <=0;
 		layer2_valid <=1;
 		strop_request_trigger <=0;
 		trigger_05ms <=0;
+		i_real_pucch_ofdm <=0;
+		i_imag_pucch_ofdm <=0;
 		end
 	@(posedge clk) begin
-		ant_input <=0;
 		slot_ind <=0;
 		group_hopping <=0;
 		layer2_para <=0;
@@ -99,12 +97,16 @@ module tb();
 		
     for (idx = 0; idx < NUM_SAMPLES; idx = idx + 1) begin
       @(posedge clk) begin
+	  
 	    if (idx % 61440==0)
 		   trigger_05ms <= 1;
 		else
 		   trigger_05ms <= 0;
-		i_real_pucch_ofdm <= I_mem[idx];
-		i_imag_pucch_ofdm <= Q_mem[idx];
+		   
+		if (idx>=6) begin
+			i_real_pucch_ofdm <= I_mem[idx-6];
+			i_imag_pucch_ofdm <= Q_mem[idx-6];
+			end
 		end
     end
   

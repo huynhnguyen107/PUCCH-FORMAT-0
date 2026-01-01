@@ -182,7 +182,7 @@
         "xci_name": "pucch0_xlconstant_0_2",
         "parameters": {
           "CONST_VAL": {
-            "value": "4"
+            "value": "3"
           },
           "CONST_WIDTH": {
             "value": "3"
@@ -194,7 +194,7 @@
         "xci_name": "pucch0_xlslice_0_0",
         "parameters": {
           "DIN_FROM": {
-            "value": "15"
+            "value": "31"
           },
           "DIN_TO": {
             "value": "0"
@@ -203,7 +203,7 @@
             "value": "256"
           },
           "DOUT_WIDTH": {
-            "value": "16"
+            "value": "32"
           }
         }
       },

@@ -245,17 +245,17 @@ proc create_root_design { parentCell } {
   # Create instance: xlconstant_2, and set properties
   set xlconstant_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_2 ]
   set_property -dict [ list \
-   CONFIG.CONST_VAL {4} \
+   CONFIG.CONST_VAL {3} \
    CONFIG.CONST_WIDTH {3} \
  ] $xlconstant_2
 
   # Create instance: xlslice_0, and set properties
   set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
   set_property -dict [ list \
-   CONFIG.DIN_FROM {15} \
+   CONFIG.DIN_FROM {31} \
    CONFIG.DIN_TO {0} \
    CONFIG.DIN_WIDTH {256} \
-   CONFIG.DOUT_WIDTH {16} \
+   CONFIG.DOUT_WIDTH {32} \
  ] $xlslice_0
 
   # Create port connections

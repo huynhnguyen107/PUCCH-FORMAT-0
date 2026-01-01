@@ -57,7 +57,7 @@
 #include "systemc.h"
 class pucch0_xlconstant_0_2 : public sc_module {
   public:
-xlconstant_v1_1_6<3,4> mod;
+xlconstant_v1_1_6<3,3> mod;
   sc_out< sc_bv<3> > dout;
 pucch0_xlconstant_0_2 (sc_core::sc_module_name name) :sc_module(name), mod("mod") {
     mod.dout(dout);

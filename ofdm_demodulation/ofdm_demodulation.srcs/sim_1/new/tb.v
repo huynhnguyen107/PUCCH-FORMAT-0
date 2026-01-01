@@ -36,7 +36,7 @@ module tb;
     .clk               (clk),
     .rst               (rst),               // active-high
     .i_trigger_cp      (i_trigger_cp),
-    .scale_factor      (4'd4),
+    .scale_factor      (4'd3),
     .i_start_symbol    (i_start_symbol),
     .ant_input ({i_imag_pucch_ofdm,i_real_pucch_ofdm}),
     .pucch_ofdm (),

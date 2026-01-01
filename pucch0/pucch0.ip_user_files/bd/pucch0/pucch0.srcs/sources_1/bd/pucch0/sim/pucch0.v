@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Tue Dec 30 02:17:10 2025
+//Date        : Thu Jan  1 03:00:38 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target pucch0.bd
 //Design      : pucch0
@@ -83,7 +83,7 @@ module pucch0
   wire [0:0]xlconstant_0_dout;
   wire [0:0]xlconstant_1_dout;
   wire [2:0]xlconstant_2_dout;
-  wire [15:0]xlslice_0_Dout;
+  wire [31:0]xlslice_0_Dout;
 
   assign ack[1:0] = peak_search_0_ack;
   assign ant_input_1 = ant_input[255:0];
@@ -186,7 +186,7 @@ module pucch0
         .uci_symbol(layer2_parameter_0_uci_symbol),
         .uci_valid(layer2_parameter_0_uci_valid));
   pucch0_ofdm_demodulation_0_0 ofdm_demodulation_0
-       (.ant_input({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,xlslice_0_Dout}),
+       (.ant_input(xlslice_0_Dout),
         .clk(clk_1),
         .i_start_symbol(frame_sync_0_start_symbol),
         .i_trigger_cp(frame_sync_0_cp),

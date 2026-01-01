@@ -59,11 +59,11 @@ module pucch0_xlslice_0_0 (
 );
 
 input wire [255 : 0] Din;
-output wire [15 : 0] Dout;
+output wire [31 : 0] Dout;
 
   xlslice_v1_0_2_xlslice #(
     .DIN_WIDTH(256),
-    .DIN_FROM(15),
+    .DIN_FROM(31),
     .DIN_TO(0)
   ) inst (
     .Din(Din),

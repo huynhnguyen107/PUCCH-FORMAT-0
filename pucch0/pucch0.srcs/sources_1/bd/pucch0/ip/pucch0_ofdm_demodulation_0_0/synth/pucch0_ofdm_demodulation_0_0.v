@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:ofdm_demodulation:1.0
-// IP Revision: 4
+// IP Revision: 5
 
 (* X_CORE_INFO = "ofdm_demodulation,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch0_ofdm_demodulation_0_0,ofdm_demodulation,{}" *)
-(* CORE_GENERATION_INFO = "pucch0_ofdm_demodulation_0_0,ofdm_demodulation,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ofdm_demodulation,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=16}" *)
+(* CORE_GENERATION_INFO = "pucch0_ofdm_demodulation_0_0,ofdm_demodulation,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=ofdm_demodulation,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,DATA_WIDTH=16}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch0_ofdm_demodulation_0_0 (

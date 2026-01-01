@@ -44,7 +44,7 @@ extend_valid_4096 extend_valid_4096_0(clk, rst, i_start_symbol, {1'b0, i_trigger
 always @(posedge clk)
 	if (rst) begin
 			d_extend_1 <=1'b0;
-			odd_valid <=1'b1;
+			odd_valid <=1'b0;
 			d_valid_tmp <=1'b0;
 			d1_valid_tmp <=1'b0;
 			real_pucch_ofdm_tmp <=0;

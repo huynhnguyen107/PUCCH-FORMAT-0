@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "xlconstant_v1_1_6_xlconstant,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch0_xlconstant_0_2,xlconstant_v1_1_6_xlconstant,{}" *)
-(* CORE_GENERATION_INFO = "pucch0_xlconstant_0_2,xlconstant_v1_1_6_xlconstant,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconstant,x_ipVersion=1.1,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONST_WIDTH=3,CONST_VAL=0x4}" *)
+(* CORE_GENERATION_INFO = "pucch0_xlconstant_0_2,xlconstant_v1_1_6_xlconstant,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=xlconstant,x_ipVersion=1.1,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,CONST_WIDTH=3,CONST_VAL=0x3}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch0_xlconstant_0_2 (
   dout
@@ -62,7 +62,7 @@ output wire [2 : 0] dout;
 
   xlconstant_v1_1_6_xlconstant #(
     .CONST_WIDTH(3),
-    .CONST_VAL('H4)
+    .CONST_VAL('H3)
   ) inst (
     .dout(dout)
   );
