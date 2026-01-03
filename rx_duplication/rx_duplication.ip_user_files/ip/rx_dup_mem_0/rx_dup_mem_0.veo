@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -56,11 +56,10 @@
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 rx_dup_mem_0 your_instance_name (
   .clka(clka),    // input wire clka
-  .ena(ena),      // input wire ena
   .wea(wea),      // input wire [0 : 0] wea
   .addra(addra),  // input wire [6 : 0] addra
-  .dina(dina),    // input wire [127 : 0] dina
-  .douta(douta)  // output wire [127 : 0] douta
+  .dina(dina),    // input wire [255 : 0] dina
+  .douta(douta)  // output wire [255 : 0] douta
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

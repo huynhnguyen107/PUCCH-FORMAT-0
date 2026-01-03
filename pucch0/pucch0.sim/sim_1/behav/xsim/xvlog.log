@@ -2,7 +2,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMA
 INFO: [VRFC 10-311] analyzing module physical_control
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_physical_control_0_0/sim/pucch0_physical_control_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pucch0_physical_control_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/6919/demapping.srcs/sources_1/new/demapping.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/5f87/demapping.srcs/sources_1/new/demapping.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module demapping
 INFO: [VRFC 10-311] analyzing module delay_N
 INFO: [VRFC 10-311] analyzing module rasing_edge
@@ -13,10 +13,10 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMA
 INFO: [VRFC 10-311] analyzing module rx_dup_mem_1
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_rx_duplication_0_0/rx_duplication.srcs/sources_1/ip/rx_dup_mem_0/sim/rx_dup_mem_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rx_dup_mem_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/7569/rx_duplication.srcs/sources_1/new/rx_duplication.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/c2cc/rx_duplication.srcs/sources_1/new/rx_duplication.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rx_duplication
 INFO: [VRFC 10-311] analyzing module extend_valid_new
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'extend_valid_new' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/7569/rx_duplication.srcs/sources_1/new/rx_duplication.v:99]
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'extend_valid_new' [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/c2cc/rx_duplication.srcs/sources_1/new/rx_duplication.v:99]
 INFO: [VRFC 10-311] analyzing module falling_edge
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_rx_duplication_0_0/sim/pucch0_rx_duplication_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pucch0_rx_duplication_0_0
@@ -53,10 +53,6 @@ WARNING: [VRFC 10-3609] overwriting previous definition of module 'delay_N' [D:/
 INFO: [VRFC 10-311] analyzing module extend_valid
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_frame_sync_0_3/sim/pucch0_frame_sync_0_3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pucch0_frame_sync_0_3
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/165e/layer2_parameter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module layer2_parameter
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_layer2_parameter_0_0/sim/pucch0_layer2_parameter_0_0.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pucch0_layer2_parameter_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconstant_0_0/sim/pucch0_xlconstant_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pucch0_xlconstant_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconstant_0_1/sim/pucch0_xlconstant_0_1.v" into library xil_defaultlib
@@ -143,9 +139,23 @@ INFO: [VRFC 10-311] analyzing module ofdm_demodulation
 INFO: [VRFC 10-2458] undeclared symbol m_axis_data_tvalid, assumed default net type wire [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/d443/ofdm_demodulation.srcs/sources_1/new/fft.v:74]
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_ofdm_demodulation_0_0/sim/pucch0_ofdm_demodulation_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pucch0_ofdm_demodulation_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ipshared/a151/ulcch_parameter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ulcch_parameter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_ulcch_parameter_0_0/sim/pucch0_ulcch_parameter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pucch0_ulcch_parameter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlslice_0_1/sim/pucch0_xlslice_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pucch0_xlslice_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconcat_1_0/sim/pucch0_xlconcat_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pucch0_xlconcat_1_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/sim/pucch0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pucch0
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sources_1/bd/pucch0/hdl/pucch0_wrapper.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module pucch0_wrapper
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sim_1/new/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
+WARNING: [VRFC 10-3248] data object 'clk' is already declared [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sim_1/new/tb.v:25]
+WARNING: [VRFC 10-3703] second declaration of 'clk' ignored [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sim_1/new/tb.v:25]
+INFO: [VRFC 10-2458] undeclared symbol mcs, assumed default net type wire [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sim_1/new/tb.v:79]
+INFO: [VRFC 10-2458] undeclared symbol ack, assumed default net type wire [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sim_1/new/tb.v:80]
+WARNING: [VRFC 10-3380] identifier 'i_imag_pucch_ofdm' is used before its declaration [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sim_1/new/tb.v:47]
+WARNING: [VRFC 10-3380] identifier 'i_real_pucch_ofdm' is used before its declaration [D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/pucch0/pucch0.srcs/sim_1/new/tb.v:48]

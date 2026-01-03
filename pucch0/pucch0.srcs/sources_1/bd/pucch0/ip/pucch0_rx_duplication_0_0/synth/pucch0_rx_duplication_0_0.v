@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:rx_duplication:1.0
-// IP Revision: 2
+// IP Revision: 4
 
 (* X_CORE_INFO = "rx_duplication,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch0_rx_duplication_0_0,rx_duplication,{}" *)
-(* CORE_GENERATION_INFO = "pucch0_rx_duplication_0_0,rx_duplication,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=rx_duplication,x_ipVersion=1.0,x_ipCoreRevision=2,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RX_num=8}" *)
+(* CORE_GENERATION_INFO = "pucch0_rx_duplication_0_0,rx_duplication,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=rx_duplication,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RX_num=8}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch0_rx_duplication_0_0 (

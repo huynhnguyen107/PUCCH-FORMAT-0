@@ -59,7 +59,7 @@ vcom -work xpm -64 -93 \
 vlog -work xil_defaultlib -64 -incr \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/fcfe/physical_control.srcs/sources_1/new/physical_control.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_physical_control_0_0/sim/pucch0_physical_control_0_0.v" \
-"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/6919/demapping.srcs/sources_1/new/demapping.v" \
+"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/5f87/demapping.srcs/sources_1/new/demapping.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_demapping_0_0/sim/pucch0_demapping_0_0.v" \
 
 vlog -work blk_mem_gen_v8_4_4 -64 -incr \
@@ -68,7 +68,7 @@ vlog -work blk_mem_gen_v8_4_4 -64 -incr \
 vlog -work xil_defaultlib -64 -incr \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_rx_duplication_0_0/rx_duplication.srcs/sources_1/ip/rx_dup_mem_1/sim/rx_dup_mem_1.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_rx_duplication_0_0/rx_duplication.srcs/sources_1/ip/rx_dup_mem_0/sim/rx_dup_mem_0.v" \
-"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/7569/rx_duplication.srcs/sources_1/new/rx_duplication.v" \
+"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/c2cc/rx_duplication.srcs/sources_1/new/rx_duplication.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_rx_duplication_0_0/sim/pucch0_rx_duplication_0_0.v" \
 
 vcom -work xbip_utils_v3_0_10 -64 -93 \
@@ -150,8 +150,6 @@ vlog -work xil_defaultlib -64 -incr \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_peak_search_0_0/sim/pucch0_peak_search_0_0.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/5e8b/frame_sync.srcs/sources_1/new/frame_sync.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_frame_sync_0_3/sim/pucch0_frame_sync_0_3.v" \
-"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/165e/layer2_parameter.v" \
-"../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_layer2_parameter_0_0/sim/pucch0_layer2_parameter_0_0.v" \
 
 vlog -work xlconstant_v1_1_6 -64 -incr \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v" \
@@ -243,6 +241,10 @@ vlog -work xil_defaultlib -64 -incr \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_ofdm_demodulation_0_0/ofdm_demodulation.srcs/sources_1/ip/ctr_pre_fft_0/sim/ctr_pre_fft_0.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/d443/ofdm_demodulation.srcs/sources_1/new/fft.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_ofdm_demodulation_0_0/sim/pucch0_ofdm_demodulation_0_0.v" \
+"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/a151/ulcch_parameter.v" \
+"../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_ulcch_parameter_0_0/sim/pucch0_ulcch_parameter_0_0.v" \
+"../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlslice_0_1/sim/pucch0_xlslice_0_1.v" \
+"../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconcat_1_0/sim/pucch0_xlconcat_1_0.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/sim/pucch0.v" \
 
 vlog -work xil_defaultlib \

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xA60633D89F1A8395",
+      "boundary_crc": "0xE8964A484833309B",
       "device": "xcvu9p-flga2104-2L-e",
       "name": "pucch0",
       "synth_flow_mode": "None",
@@ -11,22 +11,24 @@
     "design_tree": {
       "physical_control_0": "",
       "peak_search_0": "",
-      "layer2_parameter_0": "",
       "xlconstant_0": "",
       "xlconstant_1": "",
       "xlconcat_0": "",
       "xlconstant_2": "",
       "xlslice_0": "",
       "combine_rx_sym_0": "",
-      "demapping_0": "",
       "frame_sync_0": "",
       "frame_sync_1": "",
-      "rx_duplication_0": "",
       "cyclic_gen_0": "",
       "correlation_0": "",
       "cyclic_gen_1": "",
       "sync_cyclic_0": "",
-      "ofdm_demodulation_0": ""
+      "ofdm_demodulation_0": "",
+      "ulcch_parameter_0": "",
+      "demapping_0": "",
+      "xlslice_1": "",
+      "xlconcat_1": "",
+      "rx_duplication_0": ""
     },
     "ports": {
       "clk": {
@@ -69,10 +71,10 @@
       "strop_request_trigger": {
         "direction": "I"
       },
-      "layer2_valid": {
+      "i_pucch_valid": {
         "direction": "I"
       },
-      "layer2_para": {
+      "ulcch_para": {
         "type": "data",
         "direction": "I",
         "left": "511",
@@ -84,12 +86,7 @@
           }
         }
       },
-      "slot_ind": {
-        "direction": "I",
-        "left": "7",
-        "right": "0"
-      },
-      "group_hopping": {
+      "i_group_hopping": {
         "direction": "I",
         "left": "7",
         "right": "0"
@@ -111,6 +108,14 @@
         "direction": "I",
         "left": "255",
         "right": "0"
+      },
+      "i_hopping_ID": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "i_config_valid": {
+        "direction": "I"
       }
     },
     "components": {
@@ -121,10 +126,6 @@
       "peak_search_0": {
         "vlnv": "xilinx.com:user:peak_search:1.0",
         "xci_name": "pucch0_peak_search_0_0"
-      },
-      "layer2_parameter_0": {
-        "vlnv": "xilinx.com:user:layer2_parameter:1.0",
-        "xci_name": "pucch0_layer2_parameter_0_0"
       },
       "xlconstant_0": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
@@ -211,10 +212,6 @@
         "vlnv": "xilinx.com:user:combine_rx_sym:1.0",
         "xci_name": "pucch0_combine_rx_sym_0_0"
       },
-      "demapping_0": {
-        "vlnv": "xilinx.com:user:demapping:1.0",
-        "xci_name": "pucch0_demapping_0_0"
-      },
       "frame_sync_0": {
         "vlnv": "xilinx.com:user:frame_sync:1.0",
         "xci_name": "pucch0_frame_sync_0_3"
@@ -222,15 +219,6 @@
       "frame_sync_1": {
         "vlnv": "xilinx.com:user:frame_sync:1.0",
         "xci_name": "pucch0_frame_sync_0_4"
-      },
-      "rx_duplication_0": {
-        "vlnv": "xilinx.com:user:rx_duplication:1.0",
-        "xci_name": "pucch0_rx_duplication_0_0",
-        "parameters": {
-          "RX_num": {
-            "value": "8"
-          }
-        }
       },
       "cyclic_gen_0": {
         "vlnv": "xilinx.com:user:cyclic_gen:1.0",
@@ -251,6 +239,74 @@
       "ofdm_demodulation_0": {
         "vlnv": "xilinx.com:user:ofdm_demodulation:1.0",
         "xci_name": "pucch0_ofdm_demodulation_0_0"
+      },
+      "ulcch_parameter_0": {
+        "vlnv": "xilinx.com:user:ulcch_parameter:1.0",
+        "xci_name": "pucch0_ulcch_parameter_0_0"
+      },
+      "demapping_0": {
+        "vlnv": "xilinx.com:user:demapping:1.0",
+        "xci_name": "pucch0_demapping_0_0"
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "pucch0_xlslice_0_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "31"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "256"
+          },
+          "DOUT_WIDTH": {
+            "value": "32"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "pucch0_xlconcat_1_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "20"
+          },
+          "IN1_WIDTH": {
+            "value": "20"
+          },
+          "IN2_WIDTH": {
+            "value": "20"
+          },
+          "IN3_WIDTH": {
+            "value": "20"
+          },
+          "IN4_WIDTH": {
+            "value": "20"
+          },
+          "IN5_WIDTH": {
+            "value": "20"
+          },
+          "IN6_WIDTH": {
+            "value": "20"
+          },
+          "IN7_WIDTH": {
+            "value": "20"
+          },
+          "NUM_PORTS": {
+            "value": "8"
+          }
+        }
+      },
+      "rx_duplication_0": {
+        "vlnv": "xilinx.com:user:rx_duplication:1.0",
+        "xci_name": "pucch0_rx_duplication_0_0",
+        "parameters": {
+          "RX_num": {
+            "value": "8"
+          }
+        }
       }
     },
     "nets": {
@@ -258,36 +314,36 @@
         "ports": [
           "clk",
           "physical_control_0/clk",
-          "layer2_parameter_0/clk",
           "peak_search_0/clk",
           "combine_rx_sym_0/clk",
-          "demapping_0/clk",
           "frame_sync_0/clk",
           "frame_sync_1/clk",
-          "rx_duplication_0/clk",
           "cyclic_gen_0/clk",
           "correlation_0/clk",
           "cyclic_gen_1/clk",
           "sync_cyclic_0/clk",
-          "ofdm_demodulation_0/clk"
+          "ofdm_demodulation_0/clk",
+          "ulcch_parameter_0/clk",
+          "demapping_0/clk",
+          "rx_duplication_0/clk"
         ]
       },
       "rst_1": {
         "ports": [
           "rst",
           "physical_control_0/rst",
-          "layer2_parameter_0/rst",
           "peak_search_0/rst",
           "combine_rx_sym_0/rst",
-          "demapping_0/rst",
           "frame_sync_0/rst",
           "frame_sync_1/rst",
-          "rx_duplication_0/rst",
           "cyclic_gen_0/rst",
           "correlation_0/rst",
           "cyclic_gen_1/rst",
           "sync_cyclic_0/rst",
-          "ofdm_demodulation_0/rst"
+          "ofdm_demodulation_0/rst",
+          "ulcch_parameter_0/rst",
+          "demapping_0/rst",
+          "rx_duplication_0/rst"
         ]
       },
       "trigger_05ms_1": {
@@ -310,63 +366,39 @@
       },
       "layer2_valid_1": {
         "ports": [
-          "layer2_valid",
-          "layer2_parameter_0/layer2_valid"
+          "i_pucch_valid",
+          "ulcch_parameter_0/i_pucch_valid"
         ]
       },
       "layer2_para_1": {
         "ports": [
-          "layer2_para",
-          "layer2_parameter_0/layer2_para"
+          "ulcch_para",
+          "ulcch_parameter_0/ulcch_para"
         ]
       },
       "layer2_parameter_0_uci_valid": {
         "ports": [
-          "layer2_parameter_0/uci_valid",
+          "ulcch_parameter_0/pucch_valid",
           "peak_search_0/in_uci_valid",
-          "demapping_0/uci_valid",
           "cyclic_gen_0/in_valid",
-          "cyclic_gen_1/in_valid"
-        ]
-      },
-      "layer2_parameter_0_uci_intra_fre_hopping": {
-        "ports": [
-          "layer2_parameter_0/uci_intra_fre_hopping",
-          "demapping_0/uci_instra_fre_hop"
+          "cyclic_gen_1/in_valid",
+          "demapping_0/uci_valid"
         ]
       },
       "slot_ind_1": {
         "ports": [
-          "slot_ind",
-          "demapping_0/uci_slot",
+          "ulcch_parameter_0/uci_slot_idx",
           "cyclic_gen_0/uci_slot",
-          "cyclic_gen_1/uci_slot"
+          "cyclic_gen_1/uci_slot",
+          "demapping_0/uci_slot"
         ]
       },
       "layer2_parameter_0_uci_frist_symbol": {
         "ports": [
-          "layer2_parameter_0/uci_frist_symbol",
-          "demapping_0/uci_first_symbol_idx",
+          "ulcch_parameter_0/uci_frist_symbol",
           "cyclic_gen_0/uci_first_symbol",
-          "cyclic_gen_1/uci_first_symbol"
-        ]
-      },
-      "layer2_parameter_0_uci_symbol": {
-        "ports": [
-          "layer2_parameter_0/uci_symbol",
-          "demapping_0/uci_nsymbols"
-        ]
-      },
-      "layer2_parameter_0_uci_pbr_offset": {
-        "ports": [
-          "layer2_parameter_0/uci_pbr_offset",
-          "demapping_0/uci_prbsoffset"
-        ]
-      },
-      "layer2_parameter_0_uci_second_prb": {
-        "ports": [
-          "layer2_parameter_0/uci_second_prb",
-          "demapping_0/uci_secondhop_prb"
+          "cyclic_gen_1/uci_first_symbol",
+          "demapping_0/uci_first_symbol_idx"
         ]
       },
       "demapping_0_resoureset0_valid": {
@@ -389,21 +421,21 @@
       },
       "layer2_parameter_0_uci_nid": {
         "ports": [
-          "layer2_parameter_0/uci_nid",
+          "ulcch_parameter_0/hopping_ID",
           "cyclic_gen_0/uci_nID",
           "cyclic_gen_1/uci_nID"
         ]
       },
       "layer2_parameter_0_uci_m0": {
         "ports": [
-          "layer2_parameter_0/uci_m0",
+          "ulcch_parameter_0/uci_m0",
           "cyclic_gen_0/uci_m0",
           "cyclic_gen_1/uci_m0"
         ]
       },
       "layer2_parameter_0_uci_ack": {
         "ports": [
-          "layer2_parameter_0/uci_ack",
+          "ulcch_parameter_0/uci_ack",
           "peak_search_0/uci_ack",
           "cyclic_gen_0/uci_ack",
           "cyclic_gen_1/uci_ack"
@@ -411,14 +443,14 @@
       },
       "group_hopping_1": {
         "ports": [
-          "group_hopping",
+          "ulcch_parameter_0/group_hopping",
           "cyclic_gen_0/uci_grouphopping",
           "cyclic_gen_1/uci_grouphopping"
         ]
       },
       "xlconstant_0_dout": {
         "ports": [
-          "xlconstant_0/dout",
+          "xlconstant_1/dout",
           "cyclic_gen_1/uci_sym_alloc",
           "cyclic_gen_1/uci_nhop"
         ]
@@ -552,7 +584,7 @@
       },
       "xlconstant_1_dout": {
         "ports": [
-          "xlconstant_1/dout",
+          "xlconstant_0/dout",
           "cyclic_gen_0/uci_sym_alloc",
           "cyclic_gen_0/uci_nhop"
         ]
@@ -585,6 +617,79 @@
         "ports": [
           "ofdm_demodulation_0/start_symbol",
           "frame_sync_1/in_start_symbol"
+        ]
+      },
+      "i_hopping_ID_1": {
+        "ports": [
+          "i_hopping_ID",
+          "ulcch_parameter_0/i_hopping_ID"
+        ]
+      },
+      "i_config_valid_1": {
+        "ports": [
+          "i_config_valid",
+          "ulcch_parameter_0/i_config_valid"
+        ]
+      },
+      "ulcch_parameter_0_uci_pbr_offset": {
+        "ports": [
+          "ulcch_parameter_0/uci_pbr_offset",
+          "demapping_0/uci_prbsoffset"
+        ]
+      },
+      "ulcch_parameter_0_uci_second_prb": {
+        "ports": [
+          "ulcch_parameter_0/uci_second_prb",
+          "demapping_0/uci_secondhop_prb"
+        ]
+      },
+      "ulcch_parameter_0_uci_symbol": {
+        "ports": [
+          "ulcch_parameter_0/uci_symbol",
+          "demapping_0/uci_nsymbols"
+        ]
+      },
+      "ulcch_parameter_0_uci_intra_fre_hopping": {
+        "ports": [
+          "ulcch_parameter_0/uci_intra_fre_hopping",
+          "demapping_0/uci_instra_fre_hop"
+        ]
+      },
+      "i_group_hopping_1": {
+        "ports": [
+          "i_group_hopping",
+          "ulcch_parameter_0/i_group_hopping"
+        ]
+      },
+      "rx_duplication_0_ofdm_resource_ext": {
+        "ports": [
+          "rx_duplication_0/ofdm_resource_ext",
+          "xlslice_1/Din"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "correlation_0/resourcesetresourceset"
+        ]
+      },
+      "correlation_0_sqrt": {
+        "ports": [
+          "correlation_0/sqrt",
+          "xlconcat_1/In0",
+          "xlconcat_1/In1",
+          "xlconcat_1/In2",
+          "xlconcat_1/In3",
+          "xlconcat_1/In4",
+          "xlconcat_1/In5",
+          "xlconcat_1/In6",
+          "xlconcat_1/In7"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "combine_rx_sym_0/in_sqrt"
         ]
       }
     }

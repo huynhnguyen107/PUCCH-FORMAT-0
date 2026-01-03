@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -55,11 +55,10 @@
 COMPONENT rx_dup_mem_1
   PORT (
     clka : IN STD_LOGIC;
-    ena : IN STD_LOGIC;
     wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     addra : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
-    dina : IN STD_LOGIC_VECTOR(127 DOWNTO 0);
-    douta : OUT STD_LOGIC_VECTOR(127 DOWNTO 0)
+    dina : IN STD_LOGIC_VECTOR(255 DOWNTO 0);
+    douta : OUT STD_LOGIC_VECTOR(255 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------
@@ -71,7 +70,6 @@ END COMPONENT;
 your_instance_name : rx_dup_mem_1
   PORT MAP (
     clka => clka,
-    ena => ena,
     wea => wea,
     addra => addra,
     dina => dina,

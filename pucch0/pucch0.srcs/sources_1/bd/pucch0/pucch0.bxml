@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="pucch0" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1767254442"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1767254442"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1767254442"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1767254442"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1767422648"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1767422648"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1767422648"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1767422648"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\pucch0_physical_control_0_0\pucch0_physical_control_0_0.xci" Type="IP">
         <Instance HierarchyPath="physical_control_0"/>
@@ -57,14 +57,6 @@
       </File>
       <File Name="ip\pucch0_frame_sync_0_3\pucch0_frame_sync_0_3.xci" Type="IP">
         <Instance HierarchyPath="frame_sync_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\pucch0_layer2_parameter_0_0\pucch0_layer2_parameter_0_0.xci" Type="IP">
-        <Instance HierarchyPath="layer2_parameter_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -145,6 +137,30 @@
       </File>
       <File Name="ip\pucch0_ofdm_demodulation_0_0\pucch0_ofdm_demodulation_0_0.xci" Type="IP">
         <Instance HierarchyPath="ofdm_demodulation_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\pucch0_ulcch_parameter_0_0\pucch0_ulcch_parameter_0_0.xci" Type="IP">
+        <Instance HierarchyPath="ulcch_parameter_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\pucch0_xlslice_0_1\pucch0_xlslice_0_1.xci" Type="IP">
+        <Instance HierarchyPath="xlslice_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\pucch0_xlconcat_1_0\pucch0_xlconcat_1_0.xci" Type="IP">
+        <Instance HierarchyPath="xlconcat_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
