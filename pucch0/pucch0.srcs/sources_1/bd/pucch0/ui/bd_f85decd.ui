@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.47132",
-   "Default View_TopLeft":"1957,634",
+   "Default View_TopLeft":"1930,590",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -29,7 +29,6 @@ preplace inst combine_rx_sym_0 -pg 1 -lvl 8 -x 2870 -y 770 -defaultsOSRD
 preplace inst frame_sync_0 -pg 1 -lvl 2 -x 590 -y 750 -defaultsOSRD
 preplace inst frame_sync_1 -pg 1 -lvl 4 -x 1300 -y 10 -defaultsOSRD
 preplace inst cyclic_gen_0 -pg 1 -lvl 5 -x 1810 -y 320 -defaultsOSRD
-preplace inst correlation_0 -pg 1 -lvl 7 -x 2590 -y 800 -defaultsOSRD
 preplace inst cyclic_gen_1 -pg 1 -lvl 5 -x 1810 -y 1020 -defaultsOSRD
 preplace inst ofdm_demodulation_0 -pg 1 -lvl 3 -x 930 -y 810 -defaultsOSRD
 preplace inst ulcch_parameter_0 -pg 1 -lvl 4 -x 1300 -y 660 -defaultsOSRD
@@ -38,6 +37,7 @@ preplace inst xlslice_1 -pg 1 -lvl 6 -x 2220 -y 630 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 8 -x 2870 -y 970 -defaultsOSRD
 preplace inst rx_duplication_0 -pg 1 -lvl 6 -x 2220 -y 480 -defaultsOSRD
 preplace inst sync_cyclic_0 -pg 1 -lvl 6 -x 2220 -y 840 -defaultsOSRD
+preplace inst correlation_0 -pg 1 -lvl 7 -x 2590 -y 800 -defaultsOSRD
 preplace netloc clk_1 1 0 9 -340 730 -20 900 730 600 1070 -140 1560 480 2020 710 2440 690 2740 660 3020
 preplace netloc rst_1 1 0 9 -330 740 -40 910 740 620 1100 160 1590 490 2000 720 2430 680 2750 670 2990
 preplace netloc trigger_05ms_1 1 0 1 -330J 830n
