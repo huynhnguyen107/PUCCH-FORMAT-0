@@ -3,6 +3,6 @@
 Nov  6 2019
 21:57:16
 D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sim_1/new/tb.v,1767058030,verilog,,,,tb,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sim_1/new/tb.v,1767500793,verilog,,,,tb,,,,,,,,
 D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sources_1/ip/cycliic_fifo_0/sim/cycliic_fifo_0.v,1767056487,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sources_1/new/sync_cyclic.v,,cycliic_fifo_0,,,,,,,,
-D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sources_1/new/sync_cyclic.v,1767074685,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sim_1/new/tb.v,,sync_cyclic,,,,,,,,
+D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sources_1/new/sync_cyclic.v,1767506053,verilog,,D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sim_1/new/tb.v,,sync_cyclic,,,,,,,,

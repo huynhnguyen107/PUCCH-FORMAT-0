@@ -158,7 +158,7 @@ vlog -work xil_defaultlib  -v2k5 \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconstant_0_0/sim/pucch0_xlconstant_0_0.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconstant_0_1/sim/pucch0_xlconstant_0_1.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_sync_cyclic_0_0/sync_cyclic.srcs/sources_1/ip/cycliic_fifo_0/sim/cycliic_fifo_0.v" \
-"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/ff42/sync_cyclic.srcs/sources_1/new/sync_cyclic.v" \
+"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/184e/sync_cyclic.srcs/sources_1/new/sync_cyclic.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_sync_cyclic_0_0/sim/pucch0_sync_cyclic_0_0.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_frame_sync_0_4/sim/pucch0_frame_sync_0_4.v" \
 

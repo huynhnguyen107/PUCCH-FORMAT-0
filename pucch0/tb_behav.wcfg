@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="263081160fs"></ZoomStartTime>
-      <ZoomEndTime time="263093351fs"></ZoomEndTime>
-      <Cursor1Time time="263085120fs"></Cursor1Time>
+      <ZoomStartTime time="314008fs"></ZoomStartTime>
+      <ZoomEndTime time="326599fs"></ZoomEndTime>
+      <Cursor1Time time="324500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="236"></NameColumnWidth>
-      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+      <NameColumnWidth column_width="205"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="61" />
+   <WVObjectSize size="94" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -450,6 +450,22 @@
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/sqrt" type="array">
       <obj_property name="ElementShortName">sqrt[19:0]</obj_property>
       <obj_property name="ObjectShortName">sqrt[19:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/peak_valid" type="logic">
+      <obj_property name="ElementShortName">peak_valid</obj_property>
+      <obj_property name="ObjectShortName">peak_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/peak" type="array">
+      <obj_property name="ElementShortName">peak[23:0]</obj_property>
+      <obj_property name="ObjectShortName">peak[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/mcs" type="array">
       <obj_property name="ElementShortName">mcs[3:0]</obj_property>
@@ -463,95 +479,1210 @@
       <obj_property name="ElementShortName">out_valid</obj_property>
       <obj_property name="ObjectShortName">out_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/clk" type="logic">
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/rst" type="logic">
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/rst" type="logic">
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/resource_set0" type="logic">
-      <obj_property name="ElementShortName">resource_set0</obj_property>
-      <obj_property name="ObjectShortName">resource_set0</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/resourceset_valid" type="logic">
+      <obj_property name="ElementShortName">resourceset_valid</obj_property>
+      <obj_property name="ObjectShortName">resourceset_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/resource_set1" type="logic">
-      <obj_property name="ElementShortName">resource_set1</obj_property>
-      <obj_property name="ObjectShortName">resource_set1</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/resourcesetresourceset" type="array">
+      <obj_property name="ElementShortName">resourcesetresourceset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">resourcesetresourceset[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/two_symbol_valid" type="logic">
-      <obj_property name="ElementShortName">two_symbol_valid</obj_property>
-      <obj_property name="ObjectShortName">two_symbol_valid</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_shift_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/in_ofdm" type="array">
-      <obj_property name="ElementShortName">in_ofdm[255:0]</obj_property>
-      <obj_property name="ObjectShortName">in_ofdm[255:0]</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift" type="array">
+      <obj_property name="ElementShortName">cyclic_shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm0" type="array">
-      <obj_property name="ElementShortName">ofdm0[255:0]</obj_property>
-      <obj_property name="ObjectShortName">ofdm0[255:0]</obj_property>
+   <wvobject fp_name="vbus7714" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm1" type="array">
-      <obj_property name="ElementShortName">ofdm1[255:0]</obj_property>
-      <obj_property name="ObjectShortName">ofdm1[255:0]</obj_property>
+   <wvobject fp_name="vbus7697" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cyclic_shift[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/valid_96_0" type="logic">
-      <obj_property name="ElementShortName">valid_96_0</obj_property>
-      <obj_property name="ObjectShortName">valid_96_0</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/sqrt_valid" type="logic">
+      <obj_property name="ElementShortName">sqrt_valid</obj_property>
+      <obj_property name="ObjectShortName">sqrt_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d1_valid_96_0" type="logic">
-      <obj_property name="ElementShortName">d1_valid_96_0</obj_property>
-      <obj_property name="ObjectShortName">d1_valid_96_0</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/sqrt" type="array">
+      <obj_property name="ElementShortName">sqrt[19:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt[19:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d2_valid_96_0" type="logic">
-      <obj_property name="ElementShortName">d2_valid_96_0</obj_property>
-      <obj_property name="ObjectShortName">d2_valid_96_0</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/xcorr_valid" type="logic">
+      <obj_property name="ElementShortName">xcorr_valid</obj_property>
+      <obj_property name="ObjectShortName">xcorr_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/f_edge" type="logic">
-      <obj_property name="ElementShortName">f_edge</obj_property>
-      <obj_property name="ObjectShortName">f_edge</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift" type="array">
+      <obj_property name="ElementShortName">fifo_cyclic_shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_cyclic_shift[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/valid_96_1" type="logic">
-      <obj_property name="ElementShortName">valid_96_1</obj_property>
-      <obj_property name="ObjectShortName">valid_96_1</obj_property>
+   <wvobject fp_name="vbus6370" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d1_valid_96_1" type="logic">
-      <obj_property name="ElementShortName">d1_valid_96_1</obj_property>
-      <obj_property name="ObjectShortName">d1_valid_96_1</obj_property>
+   <wvobject fp_name="vbus6353" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_cyclic_shift[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/d2_valid_96_1" type="logic">
-      <obj_property name="ElementShortName">d2_valid_96_1</obj_property>
-      <obj_property name="ObjectShortName">d2_valid_96_1</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset" type="array">
+      <obj_property name="ElementShortName">fifo_resourceset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_resourceset[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/RX_num" type="array">
-      <obj_property name="ElementShortName">RX_num[31:0]</obj_property>
-      <obj_property name="ObjectShortName">RX_num[31:0]</obj_property>
+   <wvobject fp_name="vbus6436" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus6419" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/fifo_resourceset[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/valid_400" type="logic">
+      <obj_property name="ElementShortName">valid_400</obj_property>
+      <obj_property name="ObjectShortName">valid_400</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/cnt_400" type="array">
+      <obj_property name="ElementShortName">cnt_400[8:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_400[8:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/addra0" type="array">
-      <obj_property name="ElementShortName">addra0[6:0]</obj_property>
-      <obj_property name="ObjectShortName">addra0[6:0]</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/xcorr_valid" type="logic">
+      <obj_property name="ElementShortName">xcorr_valid</obj_property>
+      <obj_property name="ObjectShortName">xcorr_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre" type="array">
+      <obj_property name="ElementShortName">corre[41:0]</obj_property>
+      <obj_property name="ObjectShortName">corre[41:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre_valid" type="logic">
+      <obj_property name="ElementShortName">corre_valid</obj_property>
+      <obj_property name="ObjectShortName">corre_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus6299" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus6277" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[41]" type="logic">
+         <obj_property name="ElementShortName">[41]</obj_property>
+         <obj_property name="ObjectShortName">[41]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[40]" type="logic">
+         <obj_property name="ElementShortName">[40]</obj_property>
+         <obj_property name="ObjectShortName">[40]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[39]" type="logic">
+         <obj_property name="ElementShortName">[39]</obj_property>
+         <obj_property name="ObjectShortName">[39]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[38]" type="logic">
+         <obj_property name="ElementShortName">[38]</obj_property>
+         <obj_property name="ObjectShortName">[38]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[37]" type="logic">
+         <obj_property name="ElementShortName">[37]</obj_property>
+         <obj_property name="ObjectShortName">[37]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[36]" type="logic">
+         <obj_property name="ElementShortName">[36]</obj_property>
+         <obj_property name="ObjectShortName">[36]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[35]" type="logic">
+         <obj_property name="ElementShortName">[35]</obj_property>
+         <obj_property name="ObjectShortName">[35]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[34]" type="logic">
+         <obj_property name="ElementShortName">[34]</obj_property>
+         <obj_property name="ObjectShortName">[34]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[33]" type="logic">
+         <obj_property name="ElementShortName">[33]</obj_property>
+         <obj_property name="ObjectShortName">[33]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[32]" type="logic">
+         <obj_property name="ElementShortName">[32]</obj_property>
+         <obj_property name="ObjectShortName">[32]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/corre[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/I2" type="array">
+      <obj_property name="ElementShortName">I2[41:0]</obj_property>
+      <obj_property name="ObjectShortName">I2[41:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/Q2" type="array">
+      <obj_property name="ElementShortName">Q2[41:0]</obj_property>
+      <obj_property name="ObjectShortName">Q2[41:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/total_valid" type="logic">
+      <obj_property name="ElementShortName">total_valid</obj_property>
+      <obj_property name="ObjectShortName">total_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/inst/IQ_total" type="array">
+      <obj_property name="ElementShortName">IQ_total[25:0]</obj_property>
+      <obj_property name="ObjectShortName">IQ_total[25:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_shift_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift" type="array">
+      <obj_property name="ElementShortName">cyclic_shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus7256" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus7273" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_0/cyclic_shift[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_shift_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift" type="array">
+      <obj_property name="ElementShortName">cyclic_shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus7339" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus7322" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/cyclic_gen_1/cyclic_shift[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic" type="array">
+      <obj_property name="ElementShortName">cyclic[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="vbus7782" type="vbus">
+      <obj_property name="label">I</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus7765" type="vbus">
+      <obj_property name="label">Q</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">SIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[31]" type="logic">
+         <obj_property name="ElementShortName">[31]</obj_property>
+         <obj_property name="ObjectShortName">[31]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[30]" type="logic">
+         <obj_property name="ElementShortName">[30]</obj_property>
+         <obj_property name="ObjectShortName">[30]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[29]" type="logic">
+         <obj_property name="ElementShortName">[29]</obj_property>
+         <obj_property name="ObjectShortName">[29]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[28]" type="logic">
+         <obj_property name="ElementShortName">[28]</obj_property>
+         <obj_property name="ObjectShortName">[28]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[27]" type="logic">
+         <obj_property name="ElementShortName">[27]</obj_property>
+         <obj_property name="ObjectShortName">[27]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[26]" type="logic">
+         <obj_property name="ElementShortName">[26]</obj_property>
+         <obj_property name="ObjectShortName">[26]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[25]" type="logic">
+         <obj_property name="ElementShortName">[25]</obj_property>
+         <obj_property name="ObjectShortName">[25]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[24]" type="logic">
+         <obj_property name="ElementShortName">[24]</obj_property>
+         <obj_property name="ObjectShortName">[24]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[23]" type="logic">
+         <obj_property name="ElementShortName">[23]</obj_property>
+         <obj_property name="ObjectShortName">[23]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[22]" type="logic">
+         <obj_property name="ElementShortName">[22]</obj_property>
+         <obj_property name="ObjectShortName">[22]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[21]" type="logic">
+         <obj_property name="ElementShortName">[21]</obj_property>
+         <obj_property name="ObjectShortName">[21]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[20]" type="logic">
+         <obj_property name="ElementShortName">[20]</obj_property>
+         <obj_property name="ObjectShortName">[20]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/cyclic[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/valid_0" type="logic">
+      <obj_property name="ElementShortName">valid_0</obj_property>
+      <obj_property name="ObjectShortName">valid_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/valid_1" type="logic">
+      <obj_property name="ElementShortName">valid_1</obj_property>
+      <obj_property name="ObjectShortName">valid_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic_1" type="array">
+      <obj_property name="ElementShortName">cyclic_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic_0" type="array">
+      <obj_property name="ElementShortName">cyclic_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/wr_cyclic_1" type="array">
+      <obj_property name="ElementShortName">wr_cyclic_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_cyclic_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cnt_valid" type="logic">
+      <obj_property name="ElementShortName">cnt_valid</obj_property>
+      <obj_property name="ObjectShortName">cnt_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/douta0" type="array">
-      <obj_property name="ElementShortName">douta0[255:0]</obj_property>
-      <obj_property name="ObjectShortName">douta0[255:0]</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/addra1" type="array">
-      <obj_property name="ElementShortName">addra1[6:0]</obj_property>
-      <obj_property name="ObjectShortName">addra1[6:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm_resource_ext" type="array">
-      <obj_property name="ElementShortName">ofdm_resource_ext[255:0]</obj_property>
-      <obj_property name="ObjectShortName">ofdm_resource_ext[255:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/douta1" type="array">
-      <obj_property name="ElementShortName">douta1[255:0]</obj_property>
-      <obj_property name="ObjectShortName">douta1[255:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/rx_duplication_0/inst/ofdm_resource_ext_valid" type="logic">
-      <obj_property name="ElementShortName">ofdm_resource_ext_valid</obj_property>
-      <obj_property name="ObjectShortName">ofdm_resource_ext_valid</obj_property>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/sync_cyclic_0/inst/cyclic" type="array">
+      <obj_property name="ElementShortName">cyclic[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic[31:0]</obj_property>
    </wvobject>
 </wave_config>

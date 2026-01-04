@@ -38,7 +38,7 @@ pucch0_frame_sync_0_3.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1
 pucch0_xlconstant_0_0.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconstant_0_0/sim/pucch0_xlconstant_0_0.v,
 pucch0_xlconstant_0_1.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconstant_0_1/sim/pucch0_xlconstant_0_1.v,
 cycliic_fifo_0.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_sync_cyclic_0_0/sync_cyclic.srcs/sources_1/ip/cycliic_fifo_0/sim/cycliic_fifo_0.v,
-sync_cyclic.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/ff42/sync_cyclic.srcs/sources_1/new/sync_cyclic.v,
+sync_cyclic.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/184e/sync_cyclic.srcs/sources_1/new/sync_cyclic.v,
 pucch0_sync_cyclic_0_0.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_sync_cyclic_0_0/sim/pucch0_sync_cyclic_0_0.v,
 pucch0_frame_sync_0_4.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_frame_sync_0_4/sim/pucch0_frame_sync_0_4.v,
 pucch0_xlconcat_0_0.v,verilog,xil_defaultlib,../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_xlconcat_0_0/sim/pucch0_xlconcat_0_0.v,

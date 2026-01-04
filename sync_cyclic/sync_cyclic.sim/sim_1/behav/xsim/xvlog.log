@@ -4,5 +4,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMA
 INFO: [VRFC 10-311] analyzing module sync_cyclic
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.srcs/sim_1/new/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/Vivaldo Project/PUCCH-FORMAT-0/sync_cyclic/sync_cyclic.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

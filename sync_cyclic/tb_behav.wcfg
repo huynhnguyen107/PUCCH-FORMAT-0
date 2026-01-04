@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="999995fs"></ZoomStartTime>
-      <ZoomEndTime time="1000001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000fs"></Cursor1Time>
+      <ZoomStartTime time="46387fs"></ZoomStartTime>
+      <ZoomEndTime time="71068fs"></ZoomEndTime>
+      <Cursor1Time time="50887fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="235"></NameColumnWidth>
+      <NameColumnWidth column_width="230"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="13" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -35,6 +35,7 @@
    <wvobject fp_name="/tb/cyclic_0" type="array">
       <obj_property name="ElementShortName">cyclic_0[31:0]</obj_property>
       <obj_property name="ObjectShortName">cyclic_0[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/valid_1" type="logic">
       <obj_property name="ElementShortName">valid_1</obj_property>
@@ -43,9 +44,37 @@
    <wvobject fp_name="/tb/cyclic_1" type="array">
       <obj_property name="ElementShortName">cyclic_1[31:0]</obj_property>
       <obj_property name="ObjectShortName">cyclic_1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/i" type="array">
       <obj_property name="ElementShortName">i[31:0]</obj_property>
       <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync_cyclic0/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync_cyclic0/cnt_valid" type="logic">
+      <obj_property name="ElementShortName">cnt_valid</obj_property>
+      <obj_property name="ObjectShortName">cnt_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync_cyclic0/wr_cyclic_1" type="array">
+      <obj_property name="ElementShortName">wr_cyclic_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_cyclic_1[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync_cyclic0/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync_cyclic0/cyclic_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync_cyclic0/cyclic" type="array">
+      <obj_property name="ElementShortName">cyclic[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

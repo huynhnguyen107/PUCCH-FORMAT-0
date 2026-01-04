@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:sync_cyclic:1.0
-// IP Revision: 3
+// IP Revision: 6
 
 (* X_CORE_INFO = "sync_cyclic,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch0_sync_cyclic_0_0,sync_cyclic,{}" *)
-(* CORE_GENERATION_INFO = "pucch0_sync_cyclic_0_0,sync_cyclic,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=sync_cyclic,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "pucch0_sync_cyclic_0_0,sync_cyclic,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=sync_cyclic,x_ipVersion=1.0,x_ipCoreRevision=6,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch0_sync_cyclic_0_0 (

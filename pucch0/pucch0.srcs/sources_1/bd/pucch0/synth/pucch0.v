@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Sat Jan  3 01:43:58 2026
+//Date        : Sun Jan  4 00:55:52 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target pucch0.bd
 //Design      : pucch0
@@ -219,12 +219,12 @@ module pucch0
   pucch0_sync_cyclic_0_0 sync_cyclic_0
        (.clk(clk_1),
         .cyclic(sync_cyclic_0_cyclic),
-        .cyclic_0(cyclic_gen_1_cyclic_shift),
-        .cyclic_1(cyclic_gen_0_cyclic_shift),
+        .cyclic_0(cyclic_gen_0_cyclic_shift),
+        .cyclic_1(cyclic_gen_1_cyclic_shift),
         .cyclic_valid(sync_cyclic_0_cyclic_valid),
         .rst(rst_1),
-        .valid_0(cyclic_gen_1_cyclic_shift_valid),
-        .valid_1(cyclic_gen_0_cyclic_shift_valid));
+        .valid_0(cyclic_gen_0_cyclic_shift_valid),
+        .valid_1(cyclic_gen_1_cyclic_shift_valid));
   pucch0_ulcch_parameter_0_0 ulcch_parameter_0
        (.clk(clk_1),
         .group_hopping(group_hopping_1),

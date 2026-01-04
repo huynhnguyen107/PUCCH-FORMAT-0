@@ -62,7 +62,7 @@ module sync_cyclic(
 			else
 				cnt <= 0;
 		end
-	assign rd_en = (cnt>=94&cnt<=189);
-	assign cyclic_valid = valid_0 |(cnt>=94&cnt<=190);
+	assign rd_en = (cnt>=93&cnt<=188);
+	assign cyclic_valid = valid_0 |(cnt>=94&cnt<=189);
 	assign cyclic = valid_0 ? cyclic_0: wr_cyclic_1;
 endmodule

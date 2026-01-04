@@ -29,7 +29,7 @@ module tb( );
 	reg [31:0] cyclic_0;
 	reg valid_1;
 	reg [31:0] cyclic_1;
-	integer i;
+	integer i=0;
 	// call instance
 	sync_cyclic sync_cyclic0 (clk, rst, valid_0, cyclic_0, valid_1, cyclic_1);
 	// create rst and init others
@@ -47,19 +47,31 @@ module tb( );
 	//create others
 	initial begin
 		wait(!rst)
-		for (i=0; i<96; i=i+1)
-			@(posedge clk) begin
+		@(posedge clk) begin
 				valid_0 <= 1;
-				cyclic_0 <= i;
-				valid_1 <= 1;
-				cyclic_1 <= 95-i;
-			end
-		for (i=0; i<96; i=i+1)
-			@(posedge clk) begin
-				valid_0 <= 0;
-				cyclic_0 <= 0;
+				cyclic_0 <= 1;
 				valid_1 <= 0;
 				cyclic_1 <= 0;
 			end
+		for (i=1; i<96; i=i+1)
+			@(posedge clk) begin
+				valid_0 <= 1;
+				cyclic_0 <= i+2;
+				valid_1 <= 1;
+				cyclic_1 <= 96-i;
+			end
+		
+		@(posedge clk) begin
+			valid_0 <= 0;
+			cyclic_0 <= 0;
+			valid_1 <= 1;
+			cyclic_1 <= 0;
+		end
+		@(posedge clk) begin
+			valid_0 <= 0;
+			cyclic_0 <= 0;
+			valid_1 <= 0;
+			cyclic_1 <= 0;
+		end
 	end
 endmodule
