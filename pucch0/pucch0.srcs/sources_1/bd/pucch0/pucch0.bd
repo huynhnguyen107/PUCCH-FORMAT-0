@@ -16,7 +16,6 @@
       "xlconcat_0": "",
       "xlconstant_2": "",
       "xlslice_0": "",
-      "combine_rx_sym_0": "",
       "frame_sync_0": "",
       "frame_sync_1": "",
       "cyclic_gen_0": "",
@@ -28,7 +27,8 @@
       "xlconcat_1": "",
       "rx_duplication_0": "",
       "sync_cyclic_0": "",
-      "correlation_0": ""
+      "correlation_0": "",
+      "combine_rx_sym_0": ""
     },
     "ports": {
       "clk": {
@@ -208,10 +208,6 @@
           }
         }
       },
-      "combine_rx_sym_0": {
-        "vlnv": "xilinx.com:user:combine_rx_sym:1.0",
-        "xci_name": "pucch0_combine_rx_sym_0_0"
-      },
       "frame_sync_0": {
         "vlnv": "xilinx.com:user:frame_sync:1.0",
         "xci_name": "pucch0_frame_sync_0_3"
@@ -307,6 +303,10 @@
       "correlation_0": {
         "vlnv": "xilinx.com:user:correlation:1.0",
         "xci_name": "pucch0_correlation_0_0"
+      },
+      "combine_rx_sym_0": {
+        "vlnv": "xilinx.com:user:combine_rx_sym:1.0",
+        "xci_name": "pucch0_combine_rx_sym_0_0"
       }
     },
     "nets": {
@@ -315,7 +315,6 @@
           "clk",
           "physical_control_0/clk",
           "peak_search_0/clk",
-          "combine_rx_sym_0/clk",
           "frame_sync_0/clk",
           "frame_sync_1/clk",
           "cyclic_gen_0/clk",
@@ -325,7 +324,8 @@
           "demapping_0/clk",
           "rx_duplication_0/clk",
           "sync_cyclic_0/clk",
-          "correlation_0/clk"
+          "correlation_0/clk",
+          "combine_rx_sym_0/clk"
         ]
       },
       "rst_1": {
@@ -333,7 +333,6 @@
           "rst",
           "physical_control_0/rst",
           "peak_search_0/rst",
-          "combine_rx_sym_0/rst",
           "frame_sync_0/rst",
           "frame_sync_1/rst",
           "cyclic_gen_0/rst",
@@ -343,7 +342,8 @@
           "demapping_0/rst",
           "rx_duplication_0/rst",
           "sync_cyclic_0/rst",
-          "correlation_0/rst"
+          "correlation_0/rst",
+          "combine_rx_sym_0/rst"
         ]
       },
       "trigger_05ms_1": {

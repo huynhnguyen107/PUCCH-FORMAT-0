@@ -112,7 +112,25 @@ module tb();
   // };
 
 
-  assign ulcch_para_tmp = {
+  assign ulcch_para_tmp = idx >1 ? {
+	144'd0,//null
+	16'd2,//ack
+	64'd0,//null
+	16'd0,//m0
+	8'd1,//fre_hop
+	8'd2,//symbol
+	16'd1,//prb
+	16'd272,//uci_second_prb
+	16'd0,//uci_pbr_offset
+	8'd0,//uci_frist_symbol
+	8'd0,//uci_srflag
+	16'd0,//	null_1
+	16'd0,//uci_nid
+	80'd0,//null_2
+	16'd0,//uci_rnti
+	56'd0,//null_3
+	8'd9//uci_slot_idx
+  }: {
 	144'd0,//null
 	16'd2,//ack
 	64'd0,//null
@@ -168,6 +186,22 @@ module tb();
 			i_real_pucch_ofdm <= I_mem[idx-6];
 			i_imag_pucch_ofdm <= Q_mem[idx-6];
 			end
+		end
+		if (idx % (61440*5)==0) begin
+			i_group_hopping <=1;
+			i_hopping_ID <=35;
+			i_config_valid <=1;
+			ulcch_para <=ulcch_para_tmp;
+			i_pucch_valid <=1;
+			strop_request_trigger <=0;
+		end
+		else begin
+			i_group_hopping <=0;
+			i_hopping_ID <=0;
+			i_config_valid <=0;
+			ulcch_para <=0;
+			i_pucch_valid <=0;
+			strop_request_trigger <=0;
 		end
     end
   

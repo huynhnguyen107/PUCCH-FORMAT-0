@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="263415400fs"></ZoomStartTime>
-      <ZoomEndTime time="263479101fs"></ZoomEndTime>
-      <Cursor1Time time="263425100fs"></Cursor1Time>
+      <ZoomStartTime time="570328360fs"></ZoomStartTime>
+      <ZoomEndTime time="570341251fs"></ZoomEndTime>
+      <Cursor1Time time="570334500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="63" />
+   <WVObjectSize size="105" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -570,5 +570,174 @@
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack2" type="array">
       <obj_property name="ElementShortName">ack2[1:0]</obj_property>
       <obj_property name="ObjectShortName">ack2[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/in_uci_valid" type="logic">
+      <obj_property name="ElementShortName">in_uci_valid</obj_property>
+      <obj_property name="ObjectShortName">in_uci_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/uci_ack" type="array">
+      <obj_property name="ElementShortName">uci_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">uci_ack[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/peak_valid" type="logic">
+      <obj_property name="ElementShortName">peak_valid</obj_property>
+      <obj_property name="ObjectShortName">peak_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/peak" type="array">
+      <obj_property name="ElementShortName">peak[23:0]</obj_property>
+      <obj_property name="ObjectShortName">peak[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/mcs" type="array">
+      <obj_property name="ElementShortName">mcs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mcs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack" type="array">
+      <obj_property name="ElementShortName">ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/out_valid" type="logic">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/reg_ack" type="array">
+      <obj_property name="ElementShortName">reg_ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_ack[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack_1" type="logic">
+      <obj_property name="ElementShortName">ack_1</obj_property>
+      <obj_property name="ObjectShortName">ack_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/cnt_res" type="array">
+      <obj_property name="ElementShortName">cnt_res[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_res[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/idx" type="array">
+      <obj_property name="ElementShortName">idx[2:0]</obj_property>
+      <obj_property name="ObjectShortName">idx[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/max" type="array">
+      <obj_property name="ElementShortName">max[23:0]</obj_property>
+      <obj_property name="ObjectShortName">max[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/latch_valid" type="logic">
+      <obj_property name="ElementShortName">latch_valid</obj_property>
+      <obj_property name="ObjectShortName">latch_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/latch_idx" type="array">
+      <obj_property name="ElementShortName">latch_idx[2:0]</obj_property>
+      <obj_property name="ObjectShortName">latch_idx[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/mcs1" type="array">
+      <obj_property name="ElementShortName">mcs1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mcs1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack1" type="array">
+      <obj_property name="ElementShortName">ack1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ack1[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/mcs2" type="array">
+      <obj_property name="ElementShortName">mcs2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mcs2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/peak_search_0/inst/ack2" type="array">
+      <obj_property name="ElementShortName">ack2[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ack2[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt" type="array">
+      <obj_property name="ElementShortName">in_sqrt[159:0]</obj_property>
+      <obj_property name="ObjectShortName">in_sqrt[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d_sqrt" type="array">
+      <obj_property name="ElementShortName">d_sqrt[83:0]</obj_property>
+      <obj_property name="ObjectShortName">d_sqrt[83:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d1_sqrt" type="array">
+      <obj_property name="ElementShortName">d1_sqrt[43:0]</obj_property>
+      <obj_property name="ObjectShortName">d1_sqrt[43:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d2_sqrt" type="array">
+      <obj_property name="ElementShortName">d2_sqrt[22:0]</obj_property>
+      <obj_property name="ObjectShortName">d2_sqrt[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d_valid" type="logic">
+      <obj_property name="ElementShortName">d_valid</obj_property>
+      <obj_property name="ObjectShortName">d_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d1_valid" type="logic">
+      <obj_property name="ElementShortName">d1_valid</obj_property>
+      <obj_property name="ObjectShortName">d1_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d2_valid" type="logic">
+      <obj_property name="ElementShortName">d2_valid</obj_property>
+      <obj_property name="ObjectShortName">d2_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/rd_cnt" type="array">
+      <obj_property name="ElementShortName">rd_cnt[8:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_cnt[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_1" type="array">
+      <obj_property name="ElementShortName">symbol_1[22:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_1[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d_symbol_2" type="array">
+      <obj_property name="ElementShortName">d_symbol_2[22:0]</obj_property>
+      <obj_property name="ObjectShortName">d_symbol_2[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_2" type="array">
+      <obj_property name="ElementShortName">symbol_2[22:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_2[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_valid" type="logic">
+      <obj_property name="ElementShortName">symbol_valid</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/empty" type="logic">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/RX" type="array">
+      <obj_property name="ElementShortName">RX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RX[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/peak_valid" type="logic">
+      <obj_property name="ElementShortName">peak_valid</obj_property>
+      <obj_property name="ObjectShortName">peak_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/peak" type="array">
+      <obj_property name="ElementShortName">peak[23:0]</obj_property>
+      <obj_property name="ObjectShortName">peak[23:0]</obj_property>
    </wvobject>
 </wave_config>

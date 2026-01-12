@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="978708fs"></ZoomStartTime>
-      <ZoomEndTime time="1039659fs"></ZoomEndTime>
-      <Cursor1Time time="1000000fs"></Cursor1Time>
+      <ZoomStartTime time="867740fs"></ZoomStartTime>
+      <ZoomEndTime time="892221fs"></ZoomEndTime>
+      <Cursor1Time time="876500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="236"></NameColumnWidth>
-      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="20" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/tb/combine_rx_sym_0/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -124,13 +124,9 @@
          <obj_property name="ObjectShortName">[0]</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="/tb/combine_rx_sym_0/out_valid" type="logic">
-      <obj_property name="ElementShortName">out_valid</obj_property>
-      <obj_property name="ObjectShortName">out_valid</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/combine_rx_sym_0/peak" type="array">
-      <obj_property name="ElementShortName">peak[160:0]</obj_property>
-      <obj_property name="ObjectShortName">peak[160:0]</obj_property>
+      <obj_property name="ElementShortName">peak[23:0]</obj_property>
+      <obj_property name="ObjectShortName">peak[23:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/combine_rx_sym_0/d_sqrt" type="array">
       <obj_property name="ElementShortName">d_sqrt[83:0]</obj_property>
@@ -148,18 +144,14 @@
       <obj_property name="ElementShortName">d1_valid</obj_property>
       <obj_property name="ObjectShortName">d1_valid</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/combine_rx_sym_0/d2_valid" type="logic">
-      <obj_property name="ElementShortName">d2_valid</obj_property>
-      <obj_property name="ObjectShortName">d2_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/combine_rx_sym_0/rd_en" type="logic">
-      <obj_property name="ElementShortName">rd_en</obj_property>
-      <obj_property name="ObjectShortName">rd_en</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/combine_rx_sym_0/rd_cnt" type="array">
       <obj_property name="ElementShortName">rd_cnt[8:0]</obj_property>
       <obj_property name="ObjectShortName">rd_cnt[8:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/d2_valid" type="logic">
+      <obj_property name="ElementShortName">d2_valid</obj_property>
+      <obj_property name="ObjectShortName">d2_valid</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/combine_rx_sym_0/d2_sqrt" type="array">
       <obj_property name="ElementShortName">d2_sqrt[22:0]</obj_property>
@@ -169,6 +161,10 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb/combine_rx_sym_0/rd_en" type="logic">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/combine_rx_sym_0/symbol_1" type="array">
       <obj_property name="ElementShortName">symbol_1[22:0]</obj_property>
       <obj_property name="ObjectShortName">symbol_1[22:0]</obj_property>
@@ -176,10 +172,6 @@
       <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/combine_rx_sym_0/symbol_valid" type="logic">
-      <obj_property name="ElementShortName">symbol_valid</obj_property>
-      <obj_property name="ObjectShortName">symbol_valid</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/combine_rx_sym_0/symbol_2" type="array">
       <obj_property name="ElementShortName">symbol_2[22:0]</obj_property>
@@ -189,16 +181,8 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/combine_rx_sym_0/total_valid" type="logic">
-      <obj_property name="ElementShortName">total_valid</obj_property>
-      <obj_property name="ObjectShortName">total_valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/combine_rx_sym_0/total" type="array">
-      <obj_property name="ElementShortName">total[23:0]</obj_property>
-      <obj_property name="ObjectShortName">total[23:0]</obj_property>
-      <obj_property name="Radix">REALRADIX</obj_property>
-      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
-      <obj_property name="radix_fractionWidth">15</obj_property>
-      <obj_property name="radix_otherWidth">0</obj_property>
+   <wvobject fp_name="/tb/combine_rx_sym_0/symbol_valid" type="logic">
+      <obj_property name="ElementShortName">symbol_valid</obj_property>
+      <obj_property name="ObjectShortName">symbol_valid</obj_property>
    </wvobject>
 </wave_config>

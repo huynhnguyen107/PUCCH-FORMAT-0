@@ -68,6 +68,34 @@ module tb();
 					in_sqrt[159:140] <=i-1;
 				end
 		end
+		for (i=0; i<23;i=i+1)
+				@(posedge clk) ;
+		for (k=0; k<16;k=k+1) begin
+			for (i=0; i<23;i=i+1)
+				@(posedge clk) begin
+					in_valid <=1;
+					in_sqrt[19:0] <=(i)*(32768);
+					in_sqrt[39:20] <=(i)*(32768);
+					in_sqrt[59:40] <=(i)*(32768);
+					in_sqrt[79:60] <=(i)*(32768);
+					in_sqrt[99:80] <=(i)*(32768);
+					in_sqrt[119:100] <=(i)*(32768);
+					in_sqrt[139:120] <=(i)*(32768);
+					in_sqrt[159:140] <=(i)*(32768);
+				end
+			for (i=0; i<2;i=i+1)
+				@(posedge clk) begin
+					in_valid <=0;
+					in_sqrt[19:0] <=i-1;
+					in_sqrt[39:20] <=i-1;
+					in_sqrt[59:40] <=i-1;
+					in_sqrt[79:60] <=i-1;
+					in_sqrt[99:80] <=i-1;
+					in_sqrt[119:100] <=i-1;
+					in_sqrt[139:120] <=i-1;
+					in_sqrt[159:140] <=i-1;
+				end
+		end
 			
 	end
 	

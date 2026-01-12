@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.47132",
-   "Default View_TopLeft":"1930,590",
+   "Default View_TopLeft":"2870,610",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -10,91 +10,91 @@ preplace port rst -pg 1 -lvl 0 -x -360 -y 760 -defaultsOSRD
 preplace port trigger_05ms -pg 1 -lvl 0 -x -360 -y 830 -defaultsOSRD
 preplace port strop_request_trigger -pg 1 -lvl 0 -x -360 -y 860 -defaultsOSRD
 preplace port i_pucch_valid -pg 1 -lvl 0 -x -360 -y 480 -defaultsOSRD
-preplace port out_valid -pg 1 -lvl 10 -x 3260 -y 760 -defaultsOSRD
+preplace port out_valid -pg 1 -lvl 10 -x 3400 -y 760 -defaultsOSRD
 preplace port i_config_valid -pg 1 -lvl 0 -x -360 -y 1250 -defaultsOSRD
 preplace portBus ulcch_para -pg 1 -lvl 0 -x -360 -y 510 -defaultsOSRD
 preplace portBus i_group_hopping -pg 1 -lvl 0 -x -360 -y 1060 -defaultsOSRD
-preplace portBus ack -pg 1 -lvl 10 -x 3260 -y 730 -defaultsOSRD
-preplace portBus mcs -pg 1 -lvl 10 -x 3260 -y 700 -defaultsOSRD
+preplace portBus ack -pg 1 -lvl 10 -x 3400 -y 730 -defaultsOSRD
+preplace portBus mcs -pg 1 -lvl 10 -x 3400 -y 700 -defaultsOSRD
 preplace portBus ant_input -pg 1 -lvl 0 -x -360 -y 560 -defaultsOSRD
 preplace portBus i_hopping_ID -pg 1 -lvl 0 -x -360 -y 1140 -defaultsOSRD
 preplace inst physical_control_0 -pg 1 -lvl 1 -x -180 -y 830 -defaultsOSRD
-preplace inst peak_search_0 -pg 1 -lvl 9 -x 3130 -y 730 -defaultsOSRD
-preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1300 -y 1010 -defaultsOSRD
-preplace inst xlconstant_1 -pg 1 -lvl 4 -x 1300 -y 910 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1810 -y 1290 -defaultsOSRD
+preplace inst peak_search_0 -pg 1 -lvl 9 -x 3270 -y 730 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -x 1340 -y 1010 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 4 -x 1340 -y 910 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1880 -y 1290 -defaultsOSRD
 preplace inst xlconstant_2 -pg 1 -lvl 2 -x 590 -y 970 -defaultsOSRD
 preplace inst xlslice_0 -pg 1 -lvl 2 -x 590 -y 560 -defaultsOSRD
-preplace inst combine_rx_sym_0 -pg 1 -lvl 8 -x 2870 -y 770 -defaultsOSRD
 preplace inst frame_sync_0 -pg 1 -lvl 2 -x 590 -y 750 -defaultsOSRD
-preplace inst frame_sync_1 -pg 1 -lvl 4 -x 1300 -y 10 -defaultsOSRD
-preplace inst cyclic_gen_0 -pg 1 -lvl 5 -x 1810 -y 320 -defaultsOSRD
-preplace inst cyclic_gen_1 -pg 1 -lvl 5 -x 1810 -y 1020 -defaultsOSRD
-preplace inst ofdm_demodulation_0 -pg 1 -lvl 3 -x 930 -y 810 -defaultsOSRD
-preplace inst ulcch_parameter_0 -pg 1 -lvl 4 -x 1300 -y 660 -defaultsOSRD
-preplace inst demapping_0 -pg 1 -lvl 5 -x 1810 -y 0 -defaultsOSRD
-preplace inst xlslice_1 -pg 1 -lvl 6 -x 2220 -y 630 -defaultsOSRD
-preplace inst xlconcat_1 -pg 1 -lvl 8 -x 2870 -y 970 -defaultsOSRD
-preplace inst rx_duplication_0 -pg 1 -lvl 6 -x 2220 -y 480 -defaultsOSRD
-preplace inst sync_cyclic_0 -pg 1 -lvl 6 -x 2220 -y 840 -defaultsOSRD
-preplace inst correlation_0 -pg 1 -lvl 7 -x 2590 -y 800 -defaultsOSRD
-preplace netloc clk_1 1 0 9 -340 730 -20 900 730 600 1070 -140 1560 480 2020 710 2440 690 2740 660 3020
-preplace netloc rst_1 1 0 9 -330 740 -40 910 740 620 1100 160 1590 490 2000 720 2430 680 2750 670 2990
+preplace inst frame_sync_1 -pg 1 -lvl 4 -x 1340 -y 10 -defaultsOSRD
+preplace inst cyclic_gen_0 -pg 1 -lvl 5 -x 1880 -y 320 -defaultsOSRD
+preplace inst cyclic_gen_1 -pg 1 -lvl 5 -x 1880 -y 1020 -defaultsOSRD
+preplace inst ofdm_demodulation_0 -pg 1 -lvl 3 -x 950 -y 810 -defaultsOSRD
+preplace inst ulcch_parameter_0 -pg 1 -lvl 4 -x 1340 -y 660 -defaultsOSRD
+preplace inst demapping_0 -pg 1 -lvl 5 -x 1880 -y 0 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 6 -x 2300 -y 630 -defaultsOSRD
+preplace inst xlconcat_1 -pg 1 -lvl 8 -x 3000 -y 970 -defaultsOSRD
+preplace inst rx_duplication_0 -pg 1 -lvl 6 -x 2300 -y 480 -defaultsOSRD
+preplace inst sync_cyclic_0 -pg 1 -lvl 6 -x 2300 -y 840 -defaultsOSRD
+preplace inst correlation_0 -pg 1 -lvl 7 -x 2690 -y 800 -defaultsOSRD
+preplace inst combine_rx_sym_0 -pg 1 -lvl 8 -x 3000 -y 770 -defaultsOSRD
+preplace netloc clk_1 1 0 9 -340 730 -20 900 730 600 1090 -140 1600 480 2090 710 2520 690 2840 660 3150
+preplace netloc rst_1 1 0 9 -330 740 -40 910 740 620 1120 160 1630 490 2070 720 2510 680 2850 670 3120
 preplace netloc trigger_05ms_1 1 0 1 -330J 830n
 preplace netloc strop_request_trigger_1 1 0 1 NJ 860
 preplace netloc physical_control_0_start_symbol 1 1 1 -30 770n
-preplace netloc layer2_valid_1 1 0 4 NJ 480 NJ 480 NJ 480 1120J
-preplace netloc layer2_para_1 1 0 4 -340J 500 NJ 500 NJ 500 1110J
-preplace netloc layer2_parameter_0_uci_valid 1 4 5 1640 700 NJ 700 2420J 650 NJ 650 3000J
-preplace netloc slot_ind_1 1 4 1 1570 -60n
-preplace netloc layer2_parameter_0_uci_frist_symbol 1 4 1 1600 -20n
-preplace netloc demapping_0_resoureset0_valid 1 5 1 2030 -20n
-preplace netloc demapping_0_resoureset1_valid 1 5 1 2010 0n
-preplace netloc demapping_0_two_symbol_valid 1 5 1 1990 20n
-preplace netloc layer2_parameter_0_uci_nid 1 4 1 1650 280n
-preplace netloc layer2_parameter_0_uci_m0 1 4 1 1610 360n
-preplace netloc layer2_parameter_0_uci_ack 1 4 5 1620 690 NJ 690 2400J 640 NJ 640 3010
-preplace netloc group_hopping_1 1 4 1 1630 400n
-preplace netloc xlconstant_0_dout 1 4 1 1510 910n
+preplace netloc layer2_valid_1 1 0 4 NJ 480 NJ 480 NJ 480 1140J
+preplace netloc layer2_para_1 1 0 4 -340J 500 NJ 500 NJ 500 1130J
+preplace netloc layer2_parameter_0_uci_valid 1 4 5 1680 700 NJ 700 2500J 650 NJ 650 3130J
+preplace netloc slot_ind_1 1 4 1 1610 -60n
+preplace netloc layer2_parameter_0_uci_frist_symbol 1 4 1 1640 -20n
+preplace netloc demapping_0_resoureset0_valid 1 5 1 2100 -20n
+preplace netloc demapping_0_resoureset1_valid 1 5 1 2080 0n
+preplace netloc demapping_0_two_symbol_valid 1 5 1 2060 20n
+preplace netloc layer2_parameter_0_uci_nid 1 4 1 1690 280n
+preplace netloc layer2_parameter_0_uci_m0 1 4 1 1650 360n
+preplace netloc layer2_parameter_0_uci_ack 1 4 5 1660 690 NJ 690 2480J 640 NJ 640 3140
+preplace netloc group_hopping_1 1 4 1 1670 400n
+preplace netloc xlconstant_0_dout 1 4 1 1550 910n
 preplace netloc sync_cyclic_0_cyclic_valid 1 6 1 N 830
 preplace netloc sync_cyclic_0_cyclic 1 6 1 N 850
-preplace netloc rx_duplication_0_ofdm_resource_ext_valid 1 6 1 2410 490n
-preplace netloc correlation_0_sqrt_valid 1 7 1 2740 780n
+preplace netloc rx_duplication_0_ofdm_resource_ext_valid 1 6 1 2490 490n
+preplace netloc correlation_0_sqrt_valid 1 7 1 2840 780n
 preplace netloc combine_rx_sym_0_peak_valid 1 8 1 N 760
 preplace netloc combine_rx_sym_0_peak 1 8 1 N 780
 preplace netloc peak_search_0_ack 1 9 1 NJ 730
-preplace netloc peak_search_0_out_valid 1 9 1 3240J 750n
-preplace netloc peak_search_0_mcs 1 9 1 3240J 700n
-preplace netloc frame_sync_1_slot_idx 1 4 1 1480 -80n
-preplace netloc frame_sync_1_sym_idx 1 4 1 1510 0n
-preplace netloc frame_sync_1_rb_idx 1 4 1 1550 -20n
-preplace netloc frame_sync_1_valid_out 1 4 1 1540 100n
+preplace netloc peak_search_0_out_valid 1 9 1 3380J 750n
+preplace netloc peak_search_0_mcs 1 9 1 3380J 700n
+preplace netloc frame_sync_1_slot_idx 1 4 1 1520 -80n
+preplace netloc frame_sync_1_sym_idx 1 4 1 1550 0n
+preplace netloc frame_sync_1_rb_idx 1 4 1 1590 -20n
+preplace netloc frame_sync_1_valid_out 1 4 1 1580 100n
 preplace netloc frame_sync_0_cp 1 2 1 N 820
 preplace netloc frame_sync_0_start_symbol 1 2 1 720 760n
 preplace netloc xlconstant_2_dout 1 2 1 780J 800n
-preplace netloc ofdm_demodulation_v2_0_pucch_ofdm 1 3 2 1070J 1220 1560J
-preplace netloc xlconcat_0_dout 1 5 1 1990 530n
+preplace netloc ofdm_demodulation_v2_0_pucch_ofdm 1 3 2 1090J 1220 1600J
+preplace netloc xlconcat_0_dout 1 5 1 2060 530n
 preplace netloc ant_input_1 1 0 2 NJ 560 NJ
 preplace netloc xlslice_0_Dout 1 2 1 750J 560n
-preplace netloc xlconstant_1_dout 1 4 1 1580 340n
-preplace netloc ofdm_demodulation_0_start_symbol 1 3 1 1090 30n
-preplace netloc i_hopping_ID_1 1 0 4 NJ 1140 N 1140 790 700 1070
+preplace netloc xlconstant_1_dout 1 4 1 1620 340n
+preplace netloc ofdm_demodulation_0_start_symbol 1 3 1 1110 30n
+preplace netloc i_hopping_ID_1 1 0 4 NJ 1140 N 1140 790 700 1090
 preplace netloc i_config_valid_1 1 0 4 NJ 1250 N 1250 770 680 N
-preplace netloc ulcch_parameter_0_uci_pbr_offset 1 4 1 1520 0n
-preplace netloc ulcch_parameter_0_uci_second_prb 1 4 1 1530 20n
-preplace netloc ulcch_parameter_0_uci_symbol 1 4 1 1500 -40n
-preplace netloc ulcch_parameter_0_uci_intra_fre_hopping 1 4 1 1490 -80n
-preplace netloc i_group_hopping_1 1 0 4 NJ 1060 NJ 1060 760J 690 1080
-preplace netloc rx_duplication_0_ofdm_resource_ext 1 5 2 2040 370 2390
-preplace netloc xlslice_1_Dout 1 6 1 2390 630n
-preplace netloc correlation_0_sqrt 1 7 1 2750 810n
-preplace netloc xlconcat_1_dout 1 7 2 2760 680 2980
-preplace netloc cyclic_gen_1_cyclic_shift 1 5 1 2030 890n
-preplace netloc cyclic_gen_0_cyclic_shift 1 5 1 1970 330n
-preplace netloc cyclic_gen_1_cyclic_shift_valid 1 5 1 1970 870n
-preplace netloc cyclic_gen_0_cyclic_shift_valid 1 5 1 1980 310n
-levelinfo -pg 1 -360 -180 590 930 1300 1810 2220 2590 2870 3130 3260
-pagesize -pg 1 -db -bbox -sgen -550 -200 3370 1470
+preplace netloc ulcch_parameter_0_uci_pbr_offset 1 4 1 1560 0n
+preplace netloc ulcch_parameter_0_uci_second_prb 1 4 1 1570 20n
+preplace netloc ulcch_parameter_0_uci_symbol 1 4 1 1540 -40n
+preplace netloc ulcch_parameter_0_uci_intra_fre_hopping 1 4 1 1530 -80n
+preplace netloc i_group_hopping_1 1 0 4 NJ 1060 NJ 1060 760J 690 1100
+preplace netloc rx_duplication_0_ofdm_resource_ext 1 5 2 2110 370 2470
+preplace netloc xlslice_1_Dout 1 6 1 2470 630n
+preplace netloc correlation_0_sqrt 1 7 1 2850 810n
+preplace netloc xlconcat_1_dout 1 7 2 2860 680 3110
+preplace netloc cyclic_gen_1_cyclic_shift 1 5 1 2100 890n
+preplace netloc cyclic_gen_0_cyclic_shift 1 5 1 2040 330n
+preplace netloc cyclic_gen_1_cyclic_shift_valid 1 5 1 2040 870n
+preplace netloc cyclic_gen_0_cyclic_shift_valid 1 5 1 2050 310n
+levelinfo -pg 1 -360 -180 590 950 1340 1880 2300 2690 3000 3270 3400
+pagesize -pg 1 -db -bbox -sgen -550 -200 3510 1470
 "
 }
 0

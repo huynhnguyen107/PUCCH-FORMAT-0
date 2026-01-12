@@ -73,10 +73,11 @@ module combine_rx_sym #(parameter RX=8)(
 			d_symbol_2 <= 0;
 			symbol_2 <= 0;
 			symbol_valid <= 0;
-		end else begin
+		end 
+		else begin
 			if (d2_valid) 
 				rd_cnt <= rd_cnt +1;
-			else if (d2_valid & rd_cnt==367)
+			else if (rd_cnt==368)
 				rd_cnt <= 0;
 		end
 		rd_en <= d2_valid & (rd_cnt>183);

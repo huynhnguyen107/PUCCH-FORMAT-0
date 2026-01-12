@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan  4 02:00:42 2026" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Jan 11 18:09:02 2026" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:vcu118:part0:2.3" DEVICE="xcvu9p" NAME="pucch0" PACKAGE="flga2104" SPEEDGRADE="-2L"/>
 
@@ -8,7 +8,6 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="physical_control_0" PORT="clk"/>
         <CONNECTION INSTANCE="peak_search_0" PORT="clk"/>
-        <CONNECTION INSTANCE="combine_rx_sym_0" PORT="clk"/>
         <CONNECTION INSTANCE="frame_sync_0" PORT="clk"/>
         <CONNECTION INSTANCE="frame_sync_1" PORT="clk"/>
         <CONNECTION INSTANCE="cyclic_gen_0" PORT="clk"/>
@@ -19,13 +18,13 @@
         <CONNECTION INSTANCE="rx_duplication_0" PORT="clk"/>
         <CONNECTION INSTANCE="sync_cyclic_0" PORT="clk"/>
         <CONNECTION INSTANCE="correlation_0" PORT="clk"/>
+        <CONNECTION INSTANCE="combine_rx_sym_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
       <CONNECTIONS>
         <CONNECTION INSTANCE="physical_control_0" PORT="rst"/>
         <CONNECTION INSTANCE="peak_search_0" PORT="rst"/>
-        <CONNECTION INSTANCE="combine_rx_sym_0" PORT="rst"/>
         <CONNECTION INSTANCE="frame_sync_0" PORT="rst"/>
         <CONNECTION INSTANCE="frame_sync_1" PORT="rst"/>
         <CONNECTION INSTANCE="cyclic_gen_0" PORT="rst"/>
@@ -36,6 +35,7 @@
         <CONNECTION INSTANCE="rx_duplication_0" PORT="rst"/>
         <CONNECTION INSTANCE="sync_cyclic_0" PORT="rst"/>
         <CONNECTION INSTANCE="correlation_0" PORT="rst"/>
+        <CONNECTION INSTANCE="combine_rx_sym_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="trigger_05ms" SIGIS="undef" SIGNAME="External_Ports_trigger_05ms">
@@ -98,7 +98,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="2" FULLNAME="/combine_rx_sym_0" HWVERSION="1.0" INSTANCE="combine_rx_sym_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="combine_rx_sym" VLNV="xilinx.com:user:combine_rx_sym:1.0">
+    <MODULE COREREVISION="3" FULLNAME="/combine_rx_sym_0" HWVERSION="1.0" INSTANCE="combine_rx_sym_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="combine_rx_sym" VLNV="xilinx.com:user:combine_rx_sym:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="RX" VALUE="8"/>

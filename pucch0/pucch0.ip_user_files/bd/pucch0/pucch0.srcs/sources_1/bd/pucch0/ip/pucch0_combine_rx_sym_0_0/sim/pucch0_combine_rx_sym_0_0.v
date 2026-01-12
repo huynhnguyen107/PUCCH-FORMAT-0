@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2025 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:combine_rx_sym:1.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
