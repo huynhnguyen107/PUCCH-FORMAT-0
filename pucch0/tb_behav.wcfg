@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="263332060fs"></ZoomStartTime>
-      <ZoomEndTime time="263345151fs"></ZoomEndTime>
-      <Cursor1Time time="263335500fs"></Cursor1Time>
+      <ZoomStartTime time="263135920fs"></ZoomStartTime>
+      <ZoomEndTime time="263149111fs"></ZoomEndTime>
+      <Cursor1Time time="263138500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="155"></NameColumnWidth>
+      <NameColumnWidth column_width="145"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="128" />
+   <WVObjectSize size="129" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -791,6 +791,10 @@
       <obj_property name="radix_fractionWidth">15</obj_property>
       <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/wr_en" type="logic">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/rd_en" type="logic">
       <obj_property name="ElementShortName">rd_en</obj_property>
       <obj_property name="ObjectShortName">rd_en</obj_property>
@@ -835,6 +839,7 @@
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/RX" type="array">
       <obj_property name="ElementShortName">RX[31:0]</obj_property>
       <obj_property name="ObjectShortName">RX[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/peak_valid" type="logic">
       <obj_property name="ElementShortName">peak_valid</obj_property>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 26 16:55:57 2026" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 26 22:35:15 2026" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:vcu118:part0:2.3" DEVICE="xcvu9p" NAME="pucch0" PACKAGE="flga2104" SPEEDGRADE="-2L"/>
 
@@ -98,7 +98,7 @@
   <EXTERNALINTERFACES/>
 
   <MODULES>
-    <MODULE COREREVISION="5" FULLNAME="/combine_rx_sym_0" HWVERSION="1.0" INSTANCE="combine_rx_sym_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="combine_rx_sym" VLNV="xilinx.com:user:combine_rx_sym:1.0">
+    <MODULE COREREVISION="7" FULLNAME="/combine_rx_sym_0" HWVERSION="1.0" INSTANCE="combine_rx_sym_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="combine_rx_sym" VLNV="xilinx.com:user:combine_rx_sym:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="RX" VALUE="8"/>
