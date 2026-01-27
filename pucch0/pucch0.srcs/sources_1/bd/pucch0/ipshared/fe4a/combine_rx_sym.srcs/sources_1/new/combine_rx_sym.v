@@ -33,6 +33,7 @@ module combine_rx_sym #(parameter RX=8)(
 	reg d_valid;
 	reg d1_valid;
 	reg d2_valid;
+	reg wr_en;
 	reg rd_en;
 	reg [8:0] rd_cnt;
 	wire [22 : 0] symbol_1;
@@ -68,6 +69,7 @@ module combine_rx_sym #(parameter RX=8)(
 		end
 	always @(posedge clk) begin
 		if (rst) begin
+			wr_en <= 0;
 			rd_en <= 0;
 			rd_cnt <= 0;
 			d_symbol_2 <= 0;
@@ -81,6 +83,7 @@ module combine_rx_sym #(parameter RX=8)(
 				rd_cnt <= 0;
 		end
 		rd_en <= d2_valid & (rd_cnt>183);
+		wr_en <= d2_valid & (rd_cnt<183);
 		d_symbol_2 <= d2_sqrt;
 		symbol_2 <= d_symbol_2;
 		symbol_valid <= rd_en;
@@ -89,7 +92,7 @@ module combine_rx_sym #(parameter RX=8)(
 	combine_fifo_generator_0 combine_fifo_generator_0 (
 	  .clk(clk),      // input wire clk
 	  .din(d2_sqrt),      // input wire [22 : 0] din
-	  .wr_en(d2_valid),  // input wire wr_en
+	  .wr_en(wr_en),  // input wire wr_en
 	  .rd_en(rd_en),  // input wire rd_en
 	  .dout(symbol_1),    // output wire [22 : 0] dout
 	  .full(),    // output wire full

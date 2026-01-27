@@ -12,15 +12,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="570328360fs"></ZoomStartTime>
-      <ZoomEndTime time="570341251fs"></ZoomEndTime>
-      <Cursor1Time time="570334500fs"></Cursor1Time>
+      <ZoomStartTime time="263332060fs"></ZoomStartTime>
+      <ZoomEndTime time="263345151fs"></ZoomEndTime>
+      <Cursor1Time time="263335500fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <NameColumnWidth column_width="155"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="105" />
+   <WVObjectSize size="128" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -675,6 +675,94 @@
       <obj_property name="ElementShortName">in_sqrt[159:0]</obj_property>
       <obj_property name="ObjectShortName">in_sqrt[159:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="vbus1090" type="vbus">
+      <obj_property name="label">TX0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[19]" type="logic">
+         <obj_property name="ElementShortName">[19]</obj_property>
+         <obj_property name="ObjectShortName">[19]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[18]" type="logic">
+         <obj_property name="ElementShortName">[18]</obj_property>
+         <obj_property name="ObjectShortName">[18]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[17]" type="logic">
+         <obj_property name="ElementShortName">[17]</obj_property>
+         <obj_property name="ObjectShortName">[17]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[16]" type="logic">
+         <obj_property name="ElementShortName">[16]</obj_property>
+         <obj_property name="ObjectShortName">[16]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[15]" type="logic">
+         <obj_property name="ElementShortName">[15]</obj_property>
+         <obj_property name="ObjectShortName">[15]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[14]" type="logic">
+         <obj_property name="ElementShortName">[14]</obj_property>
+         <obj_property name="ObjectShortName">[14]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[13]" type="logic">
+         <obj_property name="ElementShortName">[13]</obj_property>
+         <obj_property name="ObjectShortName">[13]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[12]" type="logic">
+         <obj_property name="ElementShortName">[12]</obj_property>
+         <obj_property name="ObjectShortName">[12]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[11]" type="logic">
+         <obj_property name="ElementShortName">[11]</obj_property>
+         <obj_property name="ObjectShortName">[11]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[10]" type="logic">
+         <obj_property name="ElementShortName">[10]</obj_property>
+         <obj_property name="ObjectShortName">[10]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[9]" type="logic">
+         <obj_property name="ElementShortName">[9]</obj_property>
+         <obj_property name="ObjectShortName">[9]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[8]" type="logic">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[7]" type="logic">
+         <obj_property name="ElementShortName">[7]</obj_property>
+         <obj_property name="ObjectShortName">[7]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[6]" type="logic">
+         <obj_property name="ElementShortName">[6]</obj_property>
+         <obj_property name="ObjectShortName">[6]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[5]" type="logic">
+         <obj_property name="ElementShortName">[5]</obj_property>
+         <obj_property name="ObjectShortName">[5]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[4]" type="logic">
+         <obj_property name="ElementShortName">[4]</obj_property>
+         <obj_property name="ObjectShortName">[4]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[3]" type="logic">
+         <obj_property name="ElementShortName">[3]</obj_property>
+         <obj_property name="ObjectShortName">[3]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[2]" type="logic">
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">[2]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[1]" type="logic">
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">[1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/in_sqrt[0]" type="logic">
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">[0]</obj_property>
+      </wvobject>
+   </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d_sqrt" type="array">
       <obj_property name="ElementShortName">d_sqrt[83:0]</obj_property>
       <obj_property name="ObjectShortName">d_sqrt[83:0]</obj_property>
@@ -682,10 +770,6 @@
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d1_sqrt" type="array">
       <obj_property name="ElementShortName">d1_sqrt[43:0]</obj_property>
       <obj_property name="ObjectShortName">d1_sqrt[43:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d2_sqrt" type="array">
-      <obj_property name="ElementShortName">d2_sqrt[22:0]</obj_property>
-      <obj_property name="ObjectShortName">d2_sqrt[22:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d_valid" type="logic">
       <obj_property name="ElementShortName">d_valid</obj_property>
@@ -699,6 +783,14 @@
       <obj_property name="ElementShortName">d2_valid</obj_property>
       <obj_property name="ObjectShortName">d2_valid</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d2_sqrt" type="array">
+      <obj_property name="ElementShortName">d2_sqrt[22:0]</obj_property>
+      <obj_property name="ObjectShortName">d2_sqrt[22:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/rd_en" type="logic">
       <obj_property name="ElementShortName">rd_en</obj_property>
       <obj_property name="ObjectShortName">rd_en</obj_property>
@@ -708,21 +800,33 @@
       <obj_property name="ObjectShortName">rd_cnt[8:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_1" type="array">
-      <obj_property name="ElementShortName">symbol_1[22:0]</obj_property>
-      <obj_property name="ObjectShortName">symbol_1[22:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/d_symbol_2" type="array">
       <obj_property name="ElementShortName">d_symbol_2[22:0]</obj_property>
       <obj_property name="ObjectShortName">d_symbol_2[22:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_2" type="array">
-      <obj_property name="ElementShortName">symbol_2[22:0]</obj_property>
-      <obj_property name="ObjectShortName">symbol_2[22:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_valid" type="logic">
       <obj_property name="ElementShortName">symbol_valid</obj_property>
       <obj_property name="ObjectShortName">symbol_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_1" type="array">
+      <obj_property name="ElementShortName">symbol_1[22:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_1[22:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/symbol_2" type="array">
+      <obj_property name="ElementShortName">symbol_2[22:0]</obj_property>
+      <obj_property name="ObjectShortName">symbol_2[22:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/empty" type="logic">
       <obj_property name="ElementShortName">empty</obj_property>
@@ -739,5 +843,102 @@
    <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/combine_rx_sym_0/inst/peak" type="array">
       <obj_property name="ElementShortName">peak[23:0]</obj_property>
       <obj_property name="ObjectShortName">peak[23:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/ack" type="array">
+      <obj_property name="ElementShortName">ack[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ack[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/ant_input" type="array">
+      <obj_property name="ElementShortName">ant_input[255:0]</obj_property>
+      <obj_property name="ObjectShortName">ant_input[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/idx" type="array">
+      <obj_property name="ElementShortName">idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">idx[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/i_config_valid" type="logic">
+      <obj_property name="ElementShortName">i_config_valid</obj_property>
+      <obj_property name="ObjectShortName">i_config_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/i_group_hopping" type="array">
+      <obj_property name="ElementShortName">i_group_hopping[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_group_hopping[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/i_hopping_ID" type="array">
+      <obj_property name="ElementShortName">i_hopping_ID[15:0]</obj_property>
+      <obj_property name="ObjectShortName">i_hopping_ID[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/i_pucch_valid" type="logic">
+      <obj_property name="ElementShortName">i_pucch_valid</obj_property>
+      <obj_property name="ObjectShortName">i_pucch_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/mcs" type="array">
+      <obj_property name="ElementShortName">mcs[3:0]</obj_property>
+      <obj_property name="ObjectShortName">mcs[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/out_valid" type="logic">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/strop_request_trigger" type="logic">
+      <obj_property name="ElementShortName">strop_request_trigger</obj_property>
+      <obj_property name="ObjectShortName">strop_request_trigger</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/trigger_05ms" type="logic">
+      <obj_property name="ElementShortName">trigger_05ms</obj_property>
+      <obj_property name="ObjectShortName">trigger_05ms</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/ulcch_para" type="array">
+      <obj_property name="ElementShortName">ulcch_para[511:0]</obj_property>
+      <obj_property name="ObjectShortName">ulcch_para[511:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/resourceset_valid" type="logic">
+      <obj_property name="ElementShortName">resourceset_valid</obj_property>
+      <obj_property name="ObjectShortName">resourceset_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/resourcesetresourceset" type="array">
+      <obj_property name="ElementShortName">resourcesetresourceset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">resourcesetresourceset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/cyclic_shift_valid" type="logic">
+      <obj_property name="ElementShortName">cyclic_shift_valid</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/cyclic_shift" type="array">
+      <obj_property name="ElementShortName">cyclic_shift[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cyclic_shift[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/sqrt_valid" type="logic">
+      <obj_property name="ElementShortName">sqrt_valid</obj_property>
+      <obj_property name="ObjectShortName">sqrt_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pucch0_wrapper/pucch0_i/correlation_0/sqrt" type="array">
+      <obj_property name="ElementShortName">sqrt[19:0]</obj_property>
+      <obj_property name="ObjectShortName">sqrt[19:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">UNSIGNEDFIXEDPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">15</obj_property>
+      <obj_property name="radix_otherWidth">0</obj_property>
    </wvobject>
 </wave_config>

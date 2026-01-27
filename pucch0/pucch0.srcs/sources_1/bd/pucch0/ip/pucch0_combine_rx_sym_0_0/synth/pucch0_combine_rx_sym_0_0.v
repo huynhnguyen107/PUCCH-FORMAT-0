@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:combine_rx_sym:1.0
-// IP Revision: 3
+// IP Revision: 5
 
 (* X_CORE_INFO = "combine_rx_sym,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch0_combine_rx_sym_0_0,combine_rx_sym,{}" *)
-(* CORE_GENERATION_INFO = "pucch0_combine_rx_sym_0_0,combine_rx_sym,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=combine_rx_sym,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RX=8}" *)
+(* CORE_GENERATION_INFO = "pucch0_combine_rx_sym_0_0,combine_rx_sym,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=combine_rx_sym,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,RX=8}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch0_combine_rx_sym_0_0 (

@@ -177,31 +177,32 @@ module tb();
     for (idx = 0; idx < NUM_SAMPLES; idx = idx + 1) begin
       @(posedge clk) begin
 	  
-	    if (idx % 61440==0)
-		   trigger_05ms <= 1;
-		else
-		   trigger_05ms <= 0;
-		   
-		if (idx>=6) begin
-			i_real_pucch_ofdm <= I_mem[idx-6];
-			i_imag_pucch_ofdm <= Q_mem[idx-6];
+			if (idx % 61440==0)
+			   trigger_05ms <= 1;
+			else
+			   trigger_05ms <= 0;
+			   
+			if (idx>=6) begin
+				i_real_pucch_ofdm <= I_mem[idx-6];
+				i_imag_pucch_ofdm <= Q_mem[idx-6];
+				end
+		
+			if (idx % (61440*5)==0 & idx>0) begin
+				i_group_hopping <=1;
+				i_hopping_ID <=35;
+				i_config_valid <=1;
+				ulcch_para <=ulcch_para_tmp;
+				i_pucch_valid <=1;
+				strop_request_trigger <=0;
 			end
-		end
-		if (idx % (61440*5)==0) begin
-			i_group_hopping <=1;
-			i_hopping_ID <=35;
-			i_config_valid <=1;
-			ulcch_para <=ulcch_para_tmp;
-			i_pucch_valid <=1;
-			strop_request_trigger <=0;
-		end
-		else begin
-			i_group_hopping <=0;
-			i_hopping_ID <=0;
-			i_config_valid <=0;
-			ulcch_para <=0;
-			i_pucch_valid <=0;
-			strop_request_trigger <=0;
+			else begin
+				i_group_hopping <=0;
+				i_hopping_ID <=0;
+				i_config_valid <=0;
+				ulcch_para <=0;
+				i_pucch_valid <=0;
+				strop_request_trigger <=0;
+			end
 		end
     end
   
