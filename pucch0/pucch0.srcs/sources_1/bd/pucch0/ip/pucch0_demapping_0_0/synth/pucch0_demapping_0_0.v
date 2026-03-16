@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:demapping:1.0
-// IP Revision: 4
+// IP Revision: 5
 
 (* X_CORE_INFO = "demapping,Vivado 2019.2" *)
 (* CHECK_LICENSE_TYPE = "pucch0_demapping_0_0,demapping,{}" *)
-(* CORE_GENERATION_INFO = "pucch0_demapping_0_0,demapping,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=demapping,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "pucch0_demapping_0_0,demapping,{x_ipProduct=Vivado 2019.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=demapping,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module pucch0_demapping_0_0 (
@@ -69,16 +69,14 @@ module pucch0_demapping_0_0 (
   fr_symbol,
   fr_rb,
   fr_data_valid,
-  resoureset0_valid,
-  resoureset1_valid,
-  two_symbol_valid
+  resoureset_valid
 );
 
 input wire clk;
 input wire rst;
 input wire uci_instra_fre_hop;
 input wire [4 : 0] uci_slot;
-input wire [1 : 0] uci_nsymbols;
+input wire [3 : 0] uci_nsymbols;
 input wire [3 : 0] uci_first_symbol_idx;
 input wire [1 : 0] uci_prbsoffset;
 input wire [9 : 0] uci_secondhop_prb;
@@ -87,9 +85,7 @@ input wire [4 : 0] fr_slot;
 input wire [3 : 0] fr_symbol;
 input wire [8 : 0] fr_rb;
 input wire fr_data_valid;
-output wire resoureset0_valid;
-output wire resoureset1_valid;
-output wire two_symbol_valid;
+output wire resoureset_valid;
 
   demapping inst (
     .clk(clk),
@@ -105,8 +101,6 @@ output wire two_symbol_valid;
     .fr_symbol(fr_symbol),
     .fr_rb(fr_rb),
     .fr_data_valid(fr_data_valid),
-    .resoureset0_valid(resoureset0_valid),
-    .resoureset1_valid(resoureset1_valid),
-    .two_symbol_valid(two_symbol_valid)
+    .resoureset_valid(resoureset_valid)
   );
 endmodule

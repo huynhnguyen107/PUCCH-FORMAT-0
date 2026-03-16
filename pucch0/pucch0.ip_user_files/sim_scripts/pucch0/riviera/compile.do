@@ -59,7 +59,7 @@ vcom -work xpm -93 \
 vlog -work xil_defaultlib  -v2k5 \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/fcfe/physical_control.srcs/sources_1/new/physical_control.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_physical_control_0_0/sim/pucch0_physical_control_0_0.v" \
-"../../../../pucch0.srcs/sources_1/bd/pucch0/ipshared/5f87/demapping.srcs/sources_1/new/demapping.v" \
+"../../../../pucch0.srcs/sources_1/FPGA/Vivaldo Project/PUCCH-FORMAT-1/resoure_demapping/demapping.srcs/sources_1/new/demapping.v" \
 "../../../../pucch0.srcs/sources_1/bd/pucch0/ip/pucch0_demapping_0_0/sim/pucch0_demapping_0_0.v" \
 
 vlog -work blk_mem_gen_v8_4_4  -v2k5 \

@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-//Date        : Mon Jan 26 22:35:13 2026
+//Date        : Thu Jan 29 17:46:14 2026
 //Host        : LAPTOP-CHCSI1R5 running 64-bit major release  (build 9200)
 //Command     : generate_target pucch0.bd
 //Design      : pucch0
@@ -48,9 +48,6 @@ module pucch0
   wire cyclic_gen_0_cyclic_shift_valid;
   wire [31:0]cyclic_gen_1_cyclic_shift;
   wire cyclic_gen_1_cyclic_shift_valid;
-  wire demapping_0_resoureset0_valid;
-  wire demapping_0_resoureset1_valid;
-  wire demapping_0_two_symbol_valid;
   wire [11:0]frame_sync_0_cp;
   wire frame_sync_0_start_symbol;
   wire [8:0]frame_sync_1_rb_idx;
@@ -157,13 +154,10 @@ module pucch0
         .fr_rb(frame_sync_1_rb_idx),
         .fr_slot(frame_sync_1_slot_idx),
         .fr_symbol(frame_sync_1_sym_idx),
-        .resoureset0_valid(demapping_0_resoureset0_valid),
-        .resoureset1_valid(demapping_0_resoureset1_valid),
         .rst(rst_1),
-        .two_symbol_valid(demapping_0_two_symbol_valid),
         .uci_first_symbol_idx(layer2_parameter_0_uci_frist_symbol[3:0]),
         .uci_instra_fre_hop(ulcch_parameter_0_uci_intra_fre_hopping[0]),
-        .uci_nsymbols(ulcch_parameter_0_uci_symbol[1:0]),
+        .uci_nsymbols(ulcch_parameter_0_uci_symbol[3:0]),
         .uci_prbsoffset(ulcch_parameter_0_uci_pbr_offset[1:0]),
         .uci_secondhop_prb(ulcch_parameter_0_uci_second_prb[9:0]),
         .uci_slot(slot_ind_1[4:0]),
@@ -212,10 +206,7 @@ module pucch0
         .in_ofdm(xlconcat_0_dout),
         .ofdm_resource_ext(rx_duplication_0_ofdm_resource_ext),
         .ofdm_resource_ext_valid(rx_duplication_0_ofdm_resource_ext_valid),
-        .resource_set0(demapping_0_resoureset0_valid),
-        .resource_set1(demapping_0_resoureset1_valid),
-        .rst(rst_1),
-        .two_symbol_valid(demapping_0_two_symbol_valid));
+        .rst(rst_1));
   pucch0_sync_cyclic_0_0 sync_cyclic_0
        (.clk(clk_1),
         .cyclic(sync_cyclic_0_cyclic),

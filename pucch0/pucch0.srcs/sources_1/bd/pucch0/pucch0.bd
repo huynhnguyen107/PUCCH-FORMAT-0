@@ -22,13 +22,13 @@
       "cyclic_gen_1": "",
       "ofdm_demodulation_0": "",
       "ulcch_parameter_0": "",
-      "demapping_0": "",
       "xlslice_1": "",
       "xlconcat_1": "",
       "rx_duplication_0": "",
       "sync_cyclic_0": "",
       "correlation_0": "",
-      "combine_rx_sym_0": ""
+      "combine_rx_sym_0": "",
+      "demapping_0": ""
     },
     "ports": {
       "clk": {
@@ -232,10 +232,6 @@
         "vlnv": "xilinx.com:user:ulcch_parameter:1.0",
         "xci_name": "pucch0_ulcch_parameter_0_0"
       },
-      "demapping_0": {
-        "vlnv": "xilinx.com:user:demapping:1.0",
-        "xci_name": "pucch0_demapping_0_0"
-      },
       "xlslice_1": {
         "vlnv": "xilinx.com:ip:xlslice:1.0",
         "xci_name": "pucch0_xlslice_0_1",
@@ -307,6 +303,10 @@
       "combine_rx_sym_0": {
         "vlnv": "xilinx.com:user:combine_rx_sym:1.0",
         "xci_name": "pucch0_combine_rx_sym_0_0"
+      },
+      "demapping_0": {
+        "vlnv": "xilinx.com:user:demapping:1.0",
+        "xci_name": "pucch0_demapping_0_0"
       }
     },
     "nets": {
@@ -321,11 +321,11 @@
           "cyclic_gen_1/clk",
           "ofdm_demodulation_0/clk",
           "ulcch_parameter_0/clk",
-          "demapping_0/clk",
           "rx_duplication_0/clk",
           "sync_cyclic_0/clk",
           "correlation_0/clk",
-          "combine_rx_sym_0/clk"
+          "combine_rx_sym_0/clk",
+          "demapping_0/clk"
         ]
       },
       "rst_1": {
@@ -339,11 +339,11 @@
           "cyclic_gen_1/rst",
           "ofdm_demodulation_0/rst",
           "ulcch_parameter_0/rst",
-          "demapping_0/rst",
           "rx_duplication_0/rst",
           "sync_cyclic_0/rst",
           "correlation_0/rst",
-          "combine_rx_sym_0/rst"
+          "combine_rx_sym_0/rst",
+          "demapping_0/rst"
         ]
       },
       "trigger_05ms_1": {
@@ -403,19 +403,16 @@
       },
       "demapping_0_resoureset0_valid": {
         "ports": [
-          "demapping_0/resoureset0_valid",
           "rx_duplication_0/resource_set0"
         ]
       },
       "demapping_0_resoureset1_valid": {
         "ports": [
-          "demapping_0/resoureset1_valid",
           "rx_duplication_0/resource_set1"
         ]
       },
       "demapping_0_two_symbol_valid": {
         "ports": [
-          "demapping_0/two_symbol_valid",
           "rx_duplication_0/two_symbol_valid"
         ]
       },

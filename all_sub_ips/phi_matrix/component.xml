@@ -260,8 +260,8 @@
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2025-12-30T05:39:44Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-02-23T00:18:10Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3d39c216_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6e148dfe_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
@@ -269,6 +269,12 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@38366fb3_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4312959e_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6e36a165_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@489eae5b_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cbf9506_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8f107cd_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71b676b9_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@572b7858_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cab3307_ARCHIVE_LOCATION">d:/fpga/vivaldo project/pucch-format-0/all_sub_ips/phi_matrix</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

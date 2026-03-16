@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jan 26 22:35:15 2026" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan 29 17:46:15 2026" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="virtexuplus" BOARD="xilinx.com:vcu118:part0:2.3" DEVICE="xcvu9p" NAME="pucch0" PACKAGE="flga2104" SPEEDGRADE="-2L"/>
 
@@ -14,11 +14,11 @@
         <CONNECTION INSTANCE="cyclic_gen_1" PORT="clk"/>
         <CONNECTION INSTANCE="ofdm_demodulation_0" PORT="clk"/>
         <CONNECTION INSTANCE="ulcch_parameter_0" PORT="clk"/>
-        <CONNECTION INSTANCE="demapping_0" PORT="clk"/>
         <CONNECTION INSTANCE="rx_duplication_0" PORT="clk"/>
         <CONNECTION INSTANCE="sync_cyclic_0" PORT="clk"/>
         <CONNECTION INSTANCE="correlation_0" PORT="clk"/>
         <CONNECTION INSTANCE="combine_rx_sym_0" PORT="clk"/>
+        <CONNECTION INSTANCE="demapping_0" PORT="clk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="rst" SIGIS="rst" SIGNAME="External_Ports_rst">
@@ -31,11 +31,11 @@
         <CONNECTION INSTANCE="cyclic_gen_1" PORT="rst"/>
         <CONNECTION INSTANCE="ofdm_demodulation_0" PORT="rst"/>
         <CONNECTION INSTANCE="ulcch_parameter_0" PORT="rst"/>
-        <CONNECTION INSTANCE="demapping_0" PORT="rst"/>
         <CONNECTION INSTANCE="rx_duplication_0" PORT="rst"/>
         <CONNECTION INSTANCE="sync_cyclic_0" PORT="rst"/>
         <CONNECTION INSTANCE="correlation_0" PORT="rst"/>
         <CONNECTION INSTANCE="combine_rx_sym_0" PORT="rst"/>
+        <CONNECTION INSTANCE="demapping_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="trigger_05ms" SIGIS="undef" SIGNAME="External_Ports_trigger_05ms">
@@ -346,7 +346,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="4" FULLNAME="/demapping_0" HWVERSION="1.0" INSTANCE="demapping_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="demapping" VLNV="xilinx.com:user:demapping:1.0">
+    <MODULE COREREVISION="5" FULLNAME="/demapping_0" HWVERSION="1.0" INSTANCE="demapping_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="demapping" VLNV="xilinx.com:user:demapping:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="pucch0_demapping_0_0"/>
@@ -373,7 +373,7 @@
             <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_slot_idx"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="1" NAME="uci_nsymbols" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
+        <PORT DIR="I" LEFT="3" NAME="uci_nsymbols" RIGHT="0" SIGIS="undef" SIGNAME="ulcch_parameter_0_uci_symbol">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ulcch_parameter_0" PORT="uci_symbol"/>
           </CONNECTIONS>
@@ -418,21 +418,7 @@
             <CONNECTION INSTANCE="frame_sync_1" PORT="valid_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="resoureset0_valid" SIGIS="undef" SIGNAME="demapping_0_resoureset0_valid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rx_duplication_0" PORT="resource_set0"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="resoureset1_valid" SIGIS="undef" SIGNAME="demapping_0_resoureset1_valid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rx_duplication_0" PORT="resource_set1"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="two_symbol_valid" SIGIS="undef" SIGNAME="demapping_0_two_symbol_valid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="rx_duplication_0" PORT="two_symbol_valid"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="resoureset_valid" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -697,21 +683,9 @@
             <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="resource_set0" SIGIS="undef" SIGNAME="demapping_0_resoureset0_valid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="demapping_0" PORT="resoureset0_valid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="resource_set1" SIGIS="undef" SIGNAME="demapping_0_resoureset1_valid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="demapping_0" PORT="resoureset1_valid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="two_symbol_valid" SIGIS="undef" SIGNAME="demapping_0_two_symbol_valid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="demapping_0" PORT="two_symbol_valid"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" NAME="resource_set0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="resource_set1" SIGIS="undef"/>
+        <PORT DIR="I" NAME="two_symbol_valid" SIGIS="undef"/>
         <PORT DIR="I" LEFT="255" NAME="in_ofdm" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>

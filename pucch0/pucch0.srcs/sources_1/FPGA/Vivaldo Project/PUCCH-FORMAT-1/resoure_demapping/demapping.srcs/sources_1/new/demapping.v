@@ -3,10 +3,10 @@
 // Company: 
 // Engineer: Van-Huynh Nguyen-nvhuynh107@gmail.com
 // 
-// Create Date: 12/23/2025 08:29:40 PM
+// Create Date: 01/28/2026 08:29:40 PM
 // Design Name: Resource Demapping
 // Module Name: mapping
-// Project Name: PUCCH-FORMAT-0
+// Project Name: PUCCH-FORMAT-1
 // Target Devices: VCU108
 // Tool Versions: Vivado2019a
 // Description:  FFT
@@ -26,7 +26,7 @@ module demapping(
 		//uci from layer 2
 		input       uci_instra_fre_hop,
 		input [4:0] uci_slot,
-		input [1:0] uci_nsymbols,
+		input [3:0] uci_nsymbols,
 		input [3:0] uci_first_symbol_idx,
 		input [1:0] uci_prbsoffset,
 		input [9:0] uci_secondhop_prb,
@@ -36,77 +36,65 @@ module demapping(
 		input [3:0] fr_symbol,
 		input [8:0] fr_rb,
 		input  fr_data_valid,
-		output resoureset0_valid,
-		output resoureset1_valid,
-		output two_symbol_valid
+		output resoureset_valid
     );
+	//reg uci_instra_fre_hop
+	reg fre_hopping_valid;
 	//definition
 	wire uci_ex_valid;
 	wire valid;
 	//reg enable
 	reg slot_valid;
-	reg symbol_valid;
-	reg rb_valid;
-	reg second_symbol_valid;
-	reg second_rb_valid;
-	reg two_symbol_valid_temp;
-	reg fre_hopping_valid;
-	// resource set
-	wire resource_set0;
-	wire resource_set1;
-	wire h_resource_set0;
-	wire h_resource_set1;
-	wire final_resource_set0;
-	wire final_resource_set1;
-	wire edge_resource_set0;
-	wire edge_resource_set1;
-	wire d_resource_set0;
-	wire d_resource_set1;
+	//first_hop
+	reg symbol_valid1;
+	reg rb_valid1;
+	//second_hop
+	reg symbol_valid2;
+	reg rb_valid2;
+	//intra
+	wire intra_valid;
+	//non_intra
+	wire non_intra_valid;
+	//final Resource set
+	wire final_resource_set;
+	wire edge_resource_set;
 	//extend valid to 3 slot
 	extend_valid_new #(307200) extend_valid_0(clk, rst, uci_valid, uci_ex_valid);
 	assign valid = uci_ex_valid & fr_data_valid;
 	// logic checks
 	always @(posedge clk)
 		if (rst) begin
-			slot_valid <= 0;
-			symbol_valid <= 0;
-			rb_valid <= 0;
-			second_symbol_valid <= 0;
-			second_rb_valid <= 0;
-			two_symbol_valid_temp <= 0;
 			fre_hopping_valid <= 0;
+			slot_valid <= 0;
+			symbol_valid1 <= 0;
+			rb_valid1 <= 0;
+			symbol_valid2 <= 0;
+			rb_valid2 <= 0;
 		end
 		else begin
-			slot_valid <= valid ? uci_slot == fr_slot : slot_valid;
-			symbol_valid <= valid ? uci_first_symbol_idx == fr_symbol  : symbol_valid;
-			rb_valid <= valid ? uci_prbsoffset == fr_rb  : rb_valid;
-			second_symbol_valid <= valid ? (uci_first_symbol_idx + 1) == fr_symbol  : second_symbol_valid;
-			second_rb_valid <= valid ? (uci_prbsoffset + uci_secondhop_prb) == fr_rb  : second_rb_valid;
-			two_symbol_valid_temp <= valid ? uci_nsymbols == 2'd2  : two_symbol_valid_temp;
-			fre_hopping_valid <= valid ?  uci_instra_fre_hop == 1'b1  : fre_hopping_valid;
+			if (valid) begin
+				fre_hopping_valid <= uci_instra_fre_hop;
+				slot_valid <= uci_slot == fr_slot;
+				symbol_valid1 <= (fr_symbol >= uci_first_symbol_idx)&(fr_symbol <= (uci_nsymbols[3:1]+uci_first_symbol_idx-1));
+				rb_valid1 <= uci_prbsoffset == fr_rb;
+				symbol_valid2 <= (fr_symbol >= (uci_nsymbols[3:1]+uci_first_symbol_idx))&(fr_symbol <= uci_nsymbols-1);
+				rb_valid2 <= uci_secondhop_prb == fr_rb;
+			end
 		end
 		//assign all conditions
-		//case 1 no-hopping
-		assign resource_set0 = slot_valid & symbol_valid & rb_valid;
-		assign resource_set1 = slot_valid & second_symbol_valid & rb_valid;
 		//case 1 hopping
-		assign h_resource_set0 = resource_set0;
-		assign h_resource_set1 = slot_valid & second_symbol_valid & second_rb_valid;
+		assign intra_valid = slot_valid & ((symbol_valid1 & rb_valid1)|(symbol_valid2 & rb_valid2));
+		//case 2 non_hopping
+		assign non_intra_valid = slot_valid & (symbol_valid1 | symbol_valid2)&(rb_valid1);
 		//selection hopping or no-hopping
-		assign final_resource_set0 = fre_hopping_valid ? h_resource_set0: resource_set0;
-		assign final_resource_set1 = fre_hopping_valid ? h_resource_set1: resource_set1;
+		assign final_resource_set = fre_hopping_valid ? intra_valid: non_intra_valid;
 		//calib delays and 12 cyclyes
 		//rasing edge
-		rasing_edge rasing_edge_0(clk, rst, final_resource_set0, edge_resource_set0 );
-		rasing_edge rasing_edge_1(clk, rst, final_resource_set1, edge_resource_set1 );
+		rasing_edge rasing_edge_0(clk, rst, final_resource_set, edge_resource_set );
 		//calib delays
-		delay_N #(403, 1)delay_N_0 (clk, rst, edge_resource_set0, d_resource_set0 );
-		delay_N #(403, 1)delay_N_1 (clk, rst, edge_resource_set1, d_resource_set1 );
+		delay_N #(403, 1)delay_N_0 (clk, rst, edge_resource_set, d_resource_set );
 		//extend 12 cyclyes=1rb
-		extend_valid_new #(12) extend_valid_1(clk, rst, d_resource_set0,  resoureset0_valid);
-		extend_valid_new #(12) extend_valid_2(clk, rst, d_resource_set1,  resoureset1_valid);
-		assign two_symbol_valid = two_symbol_valid_temp;
-		
+		extend_valid_new #(12) extend_valid_1(clk, rst, d_resource_set,  resoureset_valid);
 endmodule
 
 //delay module
